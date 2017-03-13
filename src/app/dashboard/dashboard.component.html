@@ -1,0 +1,108 @@
+<md-sidenav-container fullscreen>
+  <md-sidenav #sidenav mode="side">
+    <md-toolbar color="primary">
+      Options
+    </md-toolbar>
+    <div fxLayout="column">
+    <button md-button [mdMenuTriggerFor]="config">
+            Configuration
+    </button>
+      <button md-button [mdMenuTriggerFor]="view">
+            View
+    </button>
+    <button md-button>
+            Status
+    </button>
+    <button md-button>
+            Save/Restore
+    </button>
+    <button md-button [mdMenuTriggerFor]="startStop">
+            Start
+    </button>
+    </div>
+
+  </md-sidenav>
+  <md-toolbar color="primary">
+    <button md-button (click)="sidenav.toggle()">
+      <md-icon>menu</md-icon>
+    </button>
+    <span>MCON Angular</span>
+  </md-toolbar>
+  <div class="margin-left-right-50">
+    <div>
+      <h3 class="primary-color">
+        Snackbar displaying string
+      </h3>
+    </div>
+    <div>
+      <button md-raised-button color="primary" (click)="openSnackBar()">Click to see snack bar</button>
+    </div>
+    <div>
+      <h3 class="primary-color">
+        Snackbar displaying component
+      </h3>
+    </div>
+    <div>
+      <button md-raised-button color="primary" (click)="openSnackBarComponent()">Click to see snack bar</button>
+    </div>
+    <h3 class="primary-color">
+      Stacked Toolbar
+    </h3>
+    <div>
+      <md-toolbar>
+        <span>First Row</span>
+        <md-toolbar-row>
+          <span>Second Row</span>
+        </md-toolbar-row>
+        <md-toolbar-row>
+          <span>Third Row</span>
+        </md-toolbar-row>
+      </md-toolbar>
+    </div>
+  </div>
+</md-sidenav-container>
+<md-menu #config="mdMenu">
+  <button md-menu-item>
+      <md-icon>dialpad</md-icon>
+      <span>Call 1-800-SOO-COOL</span>
+   </button>
+  <button md-menu-item disabled>
+      <md-icon>voicemail</md-icon>
+      <span>You can't check your voicemail</span>
+   </button>
+  <button md-menu-item>
+      <md-icon>notifications_off</md-icon>
+      <span>Do Not Disturb</span>
+   </button>
+</md-menu>
+
+<md-menu #view="mdMenu">
+  <button md-menu-item>
+      <md-icon>dialpad</md-icon>
+      <span>Call 1-800-SOO-COOL</span>
+   </button>
+  <button md-menu-item disabled>
+      <md-icon>voicemail</md-icon>
+      <span>You can't check your voicemail</span>
+   </button>
+  <button md-menu-item>
+      <md-icon>notifications_off</md-icon>
+      <span>Do Not Disturb</span>
+   </button>
+</md-menu>
+
+
+<md-menu #startStop="mdMenu">
+  <button md-menu-item>
+      <md-icon>dialpad</md-icon>
+      <span>Call 1-800-SOO-COOL</span>
+   </button>
+  <button md-menu-item disabled>
+      <md-icon>voicemail</md-icon>
+      <span>You can't check your voicemail</span>
+   </button>
+  <button md-menu-item>
+      <md-icon>notifications_off</md-icon>
+      <span>Do Not Disturb</span>
+   </button>
+</md-menu>
