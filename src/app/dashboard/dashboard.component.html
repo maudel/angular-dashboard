@@ -1,6 +1,6 @@
 <md-sidenav-container fullscreen>
-  <md-sidenav #sidenav mode="side">
-    <md-toolbar color="primary">
+  <md-sidenav  #sidenav mode="side">
+    <md-toolbar color="accent">
       Options
     </md-toolbar>
     <div fxLayout="column">
@@ -64,30 +64,26 @@
 <md-menu #config="mdMenu">
   <button md-menu-item>
       <md-icon>dialpad</md-icon>
-      <span>Call 1-800-SOO-COOL</span>
+      <span>Hardware</span>
    </button>
   <button md-menu-item disabled>
       <md-icon>voicemail</md-icon>
-      <span>You can't check your voicemail</span>
+      <span>Software</span>
    </button>
   <button md-menu-item>
       <md-icon>notifications_off</md-icon>
-      <span>Do Not Disturb</span>
+      <span>System</span>
    </button>
 </md-menu>
 
 <md-menu #view="mdMenu">
   <button md-menu-item>
       <md-icon>dialpad</md-icon>
-      <span>Call 1-800-SOO-COOL</span>
+      <span>Tag Viewer</span>
    </button>
   <button md-menu-item disabled>
       <md-icon>voicemail</md-icon>
-      <span>You can't check your voicemail</span>
-   </button>
-  <button md-menu-item>
-      <md-icon>notifications_off</md-icon>
-      <span>Do Not Disturb</span>
+      <span>Report Viewer</span>
    </button>
 </md-menu>
 
@@ -95,14 +91,8 @@
 <md-menu #startStop="mdMenu">
   <button md-menu-item>
       <md-icon>dialpad</md-icon>
-      <span>Call 1-800-SOO-COOL</span>
-   </button>
-  <button md-menu-item disabled>
-      <md-icon>voicemail</md-icon>
-      <span>You can't check your voicemail</span>
-   </button>
-  <button md-menu-item>
-      <md-icon>notifications_off</md-icon>
-      <span>Do Not Disturb</span>
+      <span>Stop</span>
    </button>
 </md-menu>
+
+
