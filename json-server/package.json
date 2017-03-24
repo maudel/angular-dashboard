@@ -4,8 +4,14 @@
   "description": "server that provides mocked data",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "maudel",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "koa-router": "^5.4.0",
+    "koa-send": "^3.2.0"
+  }
 }

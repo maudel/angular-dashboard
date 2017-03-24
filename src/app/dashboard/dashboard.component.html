@@ -1,5 +1,6 @@
 <md-sidenav-container fullscreen>
-  <md-sidenav  #sidenav mode="side">
+  <md-sidenav  #sidenav  [opened]="!isScreenSmall()"
+               [mode]="isScreenSmall() ? 'over' : 'side'">
     <md-toolbar color="accent">
       Options
     </md-toolbar>
@@ -59,6 +60,9 @@
         </md-toolbar-row>
       </md-toolbar>
     </div>
+  </div>
+  <div>
+
   </div>
 </md-sidenav-container>
 <md-menu #config="mdMenu">

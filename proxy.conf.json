@@ -1,0 +1,8 @@
+[
+  {
+    "context": "/",
+    "target": "http://localhost/",
+    "secure": false
+  }
+]
+
