@@ -1,102 +1,21 @@
-<md-sidenav-container fullscreen>
-  <md-sidenav  #sidenav  [opened]="!isScreenSmall()"
-               [mode]="isScreenSmall() ? 'over' : 'side'">
-    <md-toolbar color="accent">
-      Options
-    </md-toolbar>
-    <div fxLayout="column">
-    <button md-button [mdMenuTriggerFor]="config">
-            Configuration
-    </button>
-      <button md-button [mdMenuTriggerFor]="view">
-            View
-    </button>
-    <button md-button>
-            Status
-    </button>
-    <button md-button>
-            Save/Restore
-    </button>
-    <button md-button [mdMenuTriggerFor]="startStop">
-            Start
-    </button>
-    </div>
+<div class="margin-left-right-50">
 
-  </md-sidenav>
-  <md-toolbar color="primary">
-    <button md-button (click)="sidenav.toggle()">
-      <md-icon>menu</md-icon>
-    </button>
-    <span>MCON Angular</span>
-  </md-toolbar>
-  <div class="margin-left-right-50">
-    <div>
-      <h3 class="primary-color">
-        Snackbar displaying string
-      </h3>
-    </div>
-    <div>
-      <button md-raised-button color="primary" (click)="openSnackBar()">Click to see snack bar</button>
-    </div>
-    <div>
-      <h3 class="primary-color">
-        Snackbar displaying component
-      </h3>
-    </div>
-    <div>
-      <button md-raised-button color="primary" (click)="openSnackBarComponent()">Click to see snack bar</button>
-    </div>
-    <h3 class="primary-color">
-      Stacked Toolbar
-    </h3>
-    <div>
-      <md-toolbar>
-        <span>First Row</span>
-        <md-toolbar-row>
-          <span>Second Row</span>
-        </md-toolbar-row>
-        <md-toolbar-row>
-          <span>Third Row</span>
-        </md-toolbar-row>
-      </md-toolbar>
-    </div>
-  </div>
-  <div>
+  <ngx-datatable
+    class="material"
+    [rows]="rows"
+    [columnMode]="'force'"
+    [headerHeight]="50"
+    [footerHeight]="50"
+    [rowHeight]="50"
+    [scrollbarV]="true"
 
-  </div>
-</md-sidenav-container>
-<md-menu #config="mdMenu">
-  <button md-menu-item>
-      <md-icon>dialpad</md-icon>
-      <span>Hardware</span>
-   </button>
-  <button md-menu-item disabled>
-      <md-icon>voicemail</md-icon>
-      <span>Software</span>
-   </button>
-  <button md-menu-item>
-      <md-icon>notifications_off</md-icon>
-      <span>System</span>
-   </button>
-</md-menu>
-
-<md-menu #view="mdMenu">
-  <button md-menu-item>
-      <md-icon>dialpad</md-icon>
-      <span>Tag Viewer</span>
-   </button>
-  <button md-menu-item disabled>
-      <md-icon>voicemail</md-icon>
-      <span>Report Viewer</span>
-   </button>
-</md-menu>
+    [scrollbarH]="true">
+    <ngx-datatable-column name="StarType" ></ngx-datatable-column>
+    <ngx-datatable-column name="Used"></ngx-datatable-column>
+    <ngx-datatable-column name="AiaName"></ngx-datatable-column>
+  </ngx-datatable>
+</div>
 
 
-<md-menu #startStop="mdMenu">
-  <button md-menu-item>
-      <md-icon>dialpad</md-icon>
-      <span>Stop</span>
-   </button>
-</md-menu>
 
 

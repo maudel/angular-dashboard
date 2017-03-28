@@ -1,7 +1,7 @@
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import 'hammerjs';
-// import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 // import { AngularFireModule } from 'angularfire2';
 import { ReadersComponent } from './readers/readers.component';
 
@@ -14,10 +14,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule , MdDialog  } from '@angular/material';
+import { routing } from './routes';
 
 // 3rd Party
 
-//import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 // feature/shared modules
@@ -40,17 +43,21 @@ import { MaterialModule , MdDialog  } from '@angular/material';
     AppComponent,
     DashboardComponent,
     ReadersComponent,
+    SidenavComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     MaterialModule.forRoot(),
-    // FlexLayoutModule,
+    FlexLayoutModule,
+
     // AngularFireModule.initializeApp(firebaseConfig),
     CoreModule,
     SharedModule,
-    //NgxDatatableModule
+    NgxDatatableModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
