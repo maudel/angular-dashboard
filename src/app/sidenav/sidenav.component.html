@@ -1,6 +1,7 @@
-<md-sidenav-container fullscreen>
+<md-sidenav-container fullscreen class="sidenav-container">
   <md-sidenav  #sidenav  [opened]="!isScreenSmall()"
-               [mode]="isScreenSmall() ? 'over' : 'side'" class="docs-component-viewer-sidenav">
+               [mode]="isScreenSmall() ? 'over' : 'side'"
+               class="sidenav">
     <md-toolbar color="accent">
       Options
     </md-toolbar>
@@ -8,7 +9,8 @@
       <h3>{{elem.name}}</h3>
       <ul>
         <li *ngFor="let component of elem.items">
-          <a >
+          <a [routerLink]="['/component/', component.id]"
+             routerLinkActive="docs-component-viewer-sidenav-item-selected">
             {{component.name}}
           </a>
         </li>
@@ -17,7 +19,7 @@
 
   </md-sidenav>
 
-  <div class="margin-left-right-50">
+  <div class="sidenav-content">
     <app-navbar (toggleSidenav)="sidenav.toggle()" ></app-navbar>
     <router-outlet></router-outlet>
   </div>

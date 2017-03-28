@@ -1,0 +1,96 @@
+@import '~@angular/material/core/theming/all-theme';
+
+
+$sidenav-spacing-unit: 8px;
+$sidenav-width: 240px;
+// Define the light theme.
+$primary: mat-palette($mat-indigo);
+$accent:  mat-palette($mat-pink, A200, A100, A400);
+$theme: mat-light-theme($primary, $accent);
+
+$warn: map-get($theme, warn);
+$background: map-get($theme, background);
+$foreground: map-get($theme, foreground);
+.sidenav-container{
+
+  .sidenav{
+    box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
+    padding-bottom: 72px;
+    width: $sidenav-width;
+    bottom: 0;
+    overflow: auto;
+    height: 100%;
+
+    &.mat-sidenav-opened {
+      box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
+    }
+
+    // Section divider
+    h3 {
+      border: none;
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: $sidenav-spacing-unit * 3;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin: 0;
+      color: #fff;
+      padding: 0 ($sidenav-spacing-unit * 2);
+      background: rgba(mat-color($foreground, secondary-text), .32);
+
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    // Sidenav navigation item
+    li {
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      margin: 0;
+      padding: 0;
+
+
+      // Hide the border on the last item
+      &:last-child {
+        border-color: transparent;
+      }
+
+      > a {
+        box-sizing: border-box;
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: ($sidenav-spacing-unit * 6) - 1;
+        text-decoration: none;
+        transition: all .3s;
+        padding: 0 ($sidenav-spacing-unit * 2);
+        position: relative;
+
+        &.docs-component-viewer-sidenav-item-selected {
+          font-weight: 600;
+        }
+      }
+      border-color: rgba(mat-color($foreground, secondary-text), .06);
+      color: mat-color($foreground, secondary-text);
+
+      > a {
+        color: mat-color($foreground, secondary-text);
+
+        &.is-selected,
+        &:hover,
+        &:focus {
+          background: mat-color($background, background);
+          color: mat-color($primary);
+        }
+      }
+    }
+  }
+  .sidenav-content{
+
+  }
+}
+

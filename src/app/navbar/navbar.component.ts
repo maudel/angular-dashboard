@@ -1,4 +1,5 @@
 import { Component, OnInit, Output ,EventEmitter } from '@angular/core';
+const SMALL_WIDTH_BREAKPOINT = 840;
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +12,9 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+  isScreenSmall(): boolean {
+    return window.matchMedia(`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`).matches;
   }
 
 }
