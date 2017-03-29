@@ -2,9 +2,8 @@
   <md-sidenav  #sidenav  [opened]="!isScreenSmall()"
                [mode]="isScreenSmall() ? 'over' : 'side'"
                class="sidenav">
-    <md-toolbar color="accent">
-      Options
-    </md-toolbar>
+    <app-navbar (toggleSidenav)="sidenav.toggle()" ></app-navbar>
+
     <nav *ngFor="let elem of sideElems">
       <h3>{{elem.name}}</h3>
       <ul>

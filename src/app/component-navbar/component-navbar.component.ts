@@ -16,9 +16,10 @@ export class ComponentNavbarComponent implements OnInit {
         name: 'hardware',
         summary: 'See hardware tabs ',
         items: [
-          {id: 'hardware', name: 'Hardware', examples: ['autocomplete-overview']},
-          {id: 'software', name: 'Software', examples: ['checkbox-configurable']},
-          {id: 'system', name: 'System', examples: ['input-form']}
+          {id: 'readers', name: 'Readers', summary: 'here you can config your readers'},
+          {id: 'zones ', name: 'Zones', summary: 'here you can config your zones'},
+          {id: 'antennas ', name: 'Antennas', summary: 'here you can config your zones'},
+          {id: 'inventoryWizard ', name: 'Inventory Wizard', summary: 'here you can config your zones'},
         ]
       },
       {

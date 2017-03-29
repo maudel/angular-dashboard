@@ -1,5 +1,5 @@
 <md-toolbar color="primary">
-  <button  md-button (click)="toggleSidenav.emit()">
+  <button *ngIf="isScreenSmall()" md-button (click)="toggleSidenav.emit()">
     <md-icon>menu</md-icon>
   </button>
   <span>MCON Angular</span>

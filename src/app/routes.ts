@@ -11,7 +11,7 @@ const ANGULAR_MCON_ROUTES: Routes = [
     component: SidenavComponent,
     children: [{
       path: 'hardware',
-      component: DashboardComponent
+      component: ComponentNavbarComponent
     },{
       path: '',
       redirectTo: '/hardware',
