@@ -21,6 +21,8 @@ import { routing } from './routes';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { GenericFormComponent } from './generic-form/generic-form.component';
+import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
 
 
 // feature/shared modules
@@ -45,6 +47,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     ReadersComponent,
     SidenavComponent,
     NavbarComponent,
+    GenericFormComponent,
+    ComponentNavbarComponent,
   ],
   imports: [
     BrowserModule,
