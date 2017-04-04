@@ -1,0 +1,29 @@
+.docs-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px 16px;
+  font-size: 50px;
+  .fill-space{
+    flex: 1 1 ;
+  }
+  > .md-icon-button {
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+  background-color: rgba(0, 0, 0, 0.32);
+  color: white;
+
+}
+
+.docs-angular-logo {
+  height: 26px;
+  margin: 0 4px 3px 0;
+  vertical-align: middle;
+}
+
+.docs-github-logo {
+  height: 21px;
+  margin: 0 7px 2px 0;
+  vertical-align: middle;
+}

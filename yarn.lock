@@ -90,10 +90,6 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.0.0.tgz#fd877e074b29dfa9c63b96a21995fc7556d423a3"
 
-"@angular/flex-layout@^2.0.0-rc.1":
-  version "2.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@angular/flex-layout/-/flex-layout-2.0.0-rc.1.tgz#96fa7f85b2c4bacf2784913a2d607e2ed23dc7f1"
-
 "@angular/forms@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-4.0.0.tgz#03163047a2e84af42106270da2e1f47ab0fafc37"
@@ -102,9 +98,9 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.0.0.tgz#45a538eac42a0b13f3744c7e8bafeb17d58da31c"
 
-"@angular/material@^2.0.0-beta.2":
+"@angular/material@git+https://github.com/angular/material2-builds.git":
   version "2.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@angular/material/-/material-2.0.0-beta.2.tgz#65ee8733990347b7518b7f42113e02e069dc109b"
+  resolved "git+https://github.com/angular/material2-builds.git#06ce5b413dffed1eacd5f3574fc7b9ec7ba36bde"
 
 "@angular/platform-browser-dynamic@^4.0.0":
   version "4.0.0"

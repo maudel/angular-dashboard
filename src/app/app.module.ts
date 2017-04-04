@@ -1,7 +1,7 @@
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import 'hammerjs';
-import { FlexLayoutModule } from '@angular/flex-layout';
+// import { FlexLayoutModule } from '@angular/flex-layout';
 // import { AngularFireModule } from 'angularfire2';
 import { ReadersComponent } from './readers/readers.component';
 
@@ -57,7 +57,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     FormsModule,
     HttpModule,
     MaterialModule.forRoot(),
-    FlexLayoutModule,
+    // FlexLayoutModule,
 
     // AngularFireModule.initializeApp(firebaseConfig),
     CoreModule,

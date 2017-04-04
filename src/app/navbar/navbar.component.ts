@@ -17,4 +17,8 @@ export class NavbarComponent implements OnInit {
     return window.matchMedia(`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`).matches;
   }
 
+  openDialog(){
+
+  }
+
 }
