@@ -23,6 +23,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GenericFormComponent } from './generic-form/generic-form.component';
 import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 // feature/shared modules
@@ -49,6 +50,7 @@ import { ComponentNavbarComponent } from './component-navbar/component-navbar.co
     NavbarComponent,
     GenericFormComponent,
     ComponentNavbarComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,

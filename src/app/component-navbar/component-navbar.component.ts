@@ -27,8 +27,8 @@ export class ComponentNavbarComponent implements OnInit {
         name: 'View',
         summary: 'See views',
         items: [
-          {id: 'tagViewer', name: 'Tag Viewer', examples: ['menu-icons']},
-          {id: 'reportViewer', name: 'Report Viewer', examples: ['sidenav-fab']}]
+          {id: 'tagViewer', name: 'Tag Viewer', summary: 'here you can config your readers'},
+          {id: 'reportViewer', name: 'Report Viewer', summary: 'here you can config your reports'}]
       },
       {
         id: 'status',
