@@ -15,15 +15,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule , MdDialog  } from '@angular/material';
 import { routing } from './routes';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 // 3rd Party
 
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent, DialogOverviewExampleDialog } from './navbar/navbar.component';
 import { GenericFormComponent } from './generic-form/generic-form.component';
 import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
+
 
 
 // feature/shared modules
@@ -51,6 +54,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     GenericFormComponent,
     ComponentNavbarComponent,
     HomepageComponent,
+    DialogOverviewExampleDialog
   ],
   imports: [
     BrowserModule,
@@ -63,10 +67,14 @@ import { HomepageComponent } from './homepage/homepage.component';
     CoreModule,
     SharedModule,
     NgxDatatableModule,
-    routing
+    routing,
+    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    DialogOverviewExampleDialog
+  ]
 })
 export class AppModule {
   constructor(public dialog: MdDialog){

@@ -98,9 +98,9 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.0.0.tgz#45a538eac42a0b13f3744c7e8bafeb17d58da31c"
 
-"@angular/material@git+https://github.com/angular/material2-builds.git":
-  version "2.0.0-beta.2"
-  resolved "git+https://github.com/angular/material2-builds.git#06ce5b413dffed1eacd5f3574fc7b9ec7ba36bde"
+"@angular/material@2.0.0-beta.3":
+  version "2.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-2.0.0-beta.3.tgz#ec31dee61d7300ece28fee476852db236ded1e13"
 
 "@angular/platform-browser-dynamic@^4.0.0":
   version "4.0.0"

@@ -1,5 +1,7 @@
 import { Component, OnInit, Output ,EventEmitter } from '@angular/core';
 const SMALL_WIDTH_BREAKPOINT = 840;
+import {MdDialog, MdDialogRef} from '@angular/material';
+
 
 @Component({
   selector: 'app-navbar',
@@ -8,8 +10,9 @@ const SMALL_WIDTH_BREAKPOINT = 840;
 })
 export class NavbarComponent implements OnInit {
   @Output() toggleSidenav = new EventEmitter<void>();
+  selectedOption: string;
 
-  constructor() { }
+  constructor(public dialog: MdDialog) { }
 
   ngOnInit() {
   }
@@ -17,8 +20,14 @@ export class NavbarComponent implements OnInit {
     return window.matchMedia(`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`).matches;
   }
 
-  openDialog(){
-
+  openDialog() {
+    this.dialog.open(DialogOverviewExampleDialog);
   }
 
+}
+@Component({
+  selector: 'dialog-result-example-dialog',
+  templateUrl: './dialog-user-settings.html',
+})
+export class DialogOverviewExampleDialog {
 }
