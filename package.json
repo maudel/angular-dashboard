@@ -12,7 +12,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "ng build --aot -sm -ec -bh /repo name/ & ngh --silent=false",
-    "test:coverage": "ng test --single-run --code-coverage"
+    "test:coverage": "ng test --single-run --code-coverage",
+    "test:once": "ng test --watch=false",
+    "ci" : "npm run lint && npm run test:once && npm run e2e"
   },
   "private": true,
   "dependencies": {
