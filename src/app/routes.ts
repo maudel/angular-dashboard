@@ -10,11 +10,14 @@ const ANGULAR_MCON_ROUTES: Routes = [
     path: 'dashboard',
     component: SidenavComponent,
     children: [{
-      path: 'config',
+      path: 'configuration',
       component: ComponentNavbarComponent
-    },{
+    }, {
+        path: 'configuration/:id',
+        component: ComponentNavbarComponent
+     },{
       path: '',
-      redirectTo: 'config',
+      redirectTo: 'configuration/readers',
       pathMatch: 'full'
     }, {
       path: '**',

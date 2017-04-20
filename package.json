@@ -14,8 +14,8 @@
     "deploy": "ng build --aot -sm -ec -bh /repo name/ & ngh --silent=false",
     "test:coverage": "ng test --single-run --code-coverage",
     "test:once": "ng test --watch=false",
-    "ci" : "npm run test:once && npm run e2e && npm run build:prod:github",
-    "build:prod:github" : "ng build --prod --base-href 'https://maudel.github.io/angular_mcon'"
+    "ci": "npm run test:once && npm run e2e && npm run build:prod:github",
+    "build:prod:github": "ng build --prod --base-href 'https://maudel.github.io/angular_mcon'"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +24,7 @@
     "@angular/compiler": "^4.0.0",
     "@angular/compiler-cli": "^4.0.0",
     "@angular/core": "^4.0.0",
+    "@angular/flex-layout": "^2.0.0-beta.8",
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
     "@angular/material": "2.0.0-beta.3",
