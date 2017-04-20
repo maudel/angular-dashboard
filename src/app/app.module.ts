@@ -26,6 +26,10 @@ import { NavbarComponent, DialogOverviewExampleDialog } from './navbar/navbar.co
 import { GenericFormComponent } from './generic-form/generic-form.component';
 import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ZonesComponent } from './zones/zones.component';
+import { IoDevicesComponent } from './io-devices/io-devices.component';
+import { AntennasComponent } from './antennas/antennas.component';
+import { InventoryWizardComponent } from './inventory-wizard/inventory-wizard.component';
 
 
 
@@ -54,7 +58,11 @@ import { HomepageComponent } from './homepage/homepage.component';
     GenericFormComponent,
     ComponentNavbarComponent,
     HomepageComponent,
-    DialogOverviewExampleDialog
+    DialogOverviewExampleDialog,
+    ZonesComponent,
+    IoDevicesComponent,
+    AntennasComponent,
+    InventoryWizardComponent
   ],
   imports: [
     BrowserModule,

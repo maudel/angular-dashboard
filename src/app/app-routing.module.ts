@@ -5,31 +5,39 @@ import {SidenavComponent} from './sidenav/sidenav.component';
 import {Routes, RouterModule} from '@angular/router';
 import {ComponentNavbarComponent} from './component-navbar/component-navbar.component'
 import {HomepageComponent} from './homepage/homepage.component'
-
+import {ReadersComponent} from './readers/readers.component'
+import {IoDevicesComponent} from './io-devices/io-devices.component'
+import {ZonesComponent} from './zones/zones.component'
+import {AntennasComponent} from './antennas/antennas.component'
+import {InventoryWizardComponent} from './inventory-wizard/inventory-wizard.component'
 const APP_ROUTES: Routes = [
   {
     path: 'dashboard',
     component: SidenavComponent,
     children: [{
-      path: 'configuration',
-      component: ComponentNavbarComponent
-    }, {
-      path: 'configuration/:id',
-      component: ComponentNavbarComponent
-    },{
       path: '',
       redirectTo: 'configuration/readers',
       pathMatch: 'full'
-    }, {
-      path: '**',
-      component: GenericFormComponent
-    },{
-      path: 'config/readers',
-      component: DashboardComponent
-    }]
-  },{
+    }
+      , {
+        path: 'configuration/readers',
+        component: ReadersComponent
+      }, {
+        path: 'configuration/zones',
+        component: ZonesComponent
+      }, {
+        path: 'configuration/io-devices',
+        component: IoDevicesComponent
+      }, {
+        path: 'configuration/antennas',
+        component: AntennasComponent
+      }, {
+        path: 'configuration/inventory-wizard',
+        component: InventoryWizardComponent
+      }]
+  }, {
     path: '',
-    component:HomepageComponent
+    component: HomepageComponent
   }
 ];
 
@@ -41,9 +49,10 @@ const appRouting = RouterModule.forRoot(APP_ROUTES, {
 });
 
 @NgModule({
-  imports: [ appRouting ],
-  exports: [ RouterModule ],
-  providers: [  ]
+  imports: [appRouting],
+  exports: [RouterModule],
+  providers: []
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+}
 
