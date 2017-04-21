@@ -6,7 +6,7 @@ import { config } from '../../config';
 // export interface IAppOptions {
 //   skipLoadingMask?: boolean;
 // }
-const newUrl = url => `${config.XT_URL}${url}`;
+const newUrl = url => `${config.URL}${url}`;
 @Injectable()
 export class GenericService {
 
