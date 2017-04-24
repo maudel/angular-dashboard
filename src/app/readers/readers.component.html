@@ -1,4 +1,15 @@
+<!--<md-card>-->
+    <!--<div *ngFor='let col of allColumns'>-->
+      <!--<md-checkbox-->
+        <!--type='checkbox'-->
+        <!--[id]="col.name"-->
+        <!--(click)='toggle(col)'-->
+        <!--[checked]='isChecked(col)'-->
+      <!--&gt;</md-checkbox>-->
+      <!--<label [attr.for]="col.name">{{col.name}}</label>-->
+    <!--</div>-->
 
+<!--</md-card>-->
 <div class="margin-left-right-50">
 
   <ngx-datatable
@@ -11,19 +22,33 @@
     [scrollbarV]="true"
 
     [scrollbarH]="true">
-    <ngx-datatable-column name="aiaName" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="aiaDottedIP" [width]="50" ></ngx-datatable-column>
-    <ngx-datatable-column name="runningState" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="macAddress" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="starType" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="posXFt" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="posYFt" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="posZFt" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="boresightCoazDeg" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="boresightElevDeg"[width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="boresightRollDeg" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="tsMod" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="used" [width]="50"></ngx-datatable-column>
+    <ngx-datatable-column prop="aiaName" name="Name" [width]="50"></ngx-datatable-column>
+    <ngx-datatable-column prop="aiaDottedIP" name="IP" [width]="50" >
+      <ng-template let-value="value" ngx-datatable-cell-template>
+        <a href="value">{{value}}</a>
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column prop="runningState" name="&nbsp;" [width]="20">
+      <ng-template let-value="value" ngx-datatable-cell-template>
+        <md-slide-toggle
+          class="example-margin"
+          [color]="color"
+          [checked]="value"
+          [disabled]="disabled">
+        </md-slide-toggle>
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column prop="macAddress" name="MAC" [width]="85"></ngx-datatable-column>
+    <ngx-datatable-column prop="starType" name="Type" [width]="50"></ngx-datatable-column>
+    <ngx-datatable-column prop="posXFt" name="X (m)" [width]="15"></ngx-datatable-column>
+    <ngx-datatable-column prop="posYFt" name="Y (m)"[width]="15"></ngx-datatable-column>
+    <ngx-datatable-column prop="posZFt" name="Z (m)"[width]="15"></ngx-datatable-column>
+    <ngx-datatable-column prop="boresightCoazDeg" name="Coaz" [width]="15"></ngx-datatable-column>
+    <ngx-datatable-column prop="boresightElevDeg" name="Elev" [width]="15"></ngx-datatable-column>
+    <ngx-datatable-column prop="boresightRollDeg" name="Roll"[width]="15"></ngx-datatable-column>
+    <ngx-datatable-column prop="tsMod" name="Last Saved Date" [width]="60"></ngx-datatable-column>
+    <ngx-datatable-column prop="used" name="Use"[width]="50" ></ngx-datatable-column>
+    <ngx-datatable-column prop="delete" [checkboxable]="true" [sortable]="false" name="Delete"[width]="50"></ngx-datatable-column>
   </ngx-datatable>
 </div>
 

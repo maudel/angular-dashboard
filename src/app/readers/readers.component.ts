@@ -19,7 +19,18 @@ export class ReadersComponent implements OnInit {
   constructor( private $aiaconfigservice: AiaConfigService) {
 
   }
-
+  columns = [
+    { name: 'aiaName' },
+    { name: 'aiaDottedIP' },
+    { name: 'macAddress' },
+    { name: 'aiaDottedIP' }
+  ];
+  allColumns = [
+    { name: 'aiaName' },
+    { name: 'aiaDottedIP' },
+    { name: 'macAddress' },
+    { name: 'aiaDottedIP' }
+  ];
   ngOnInit() {
     this.fetch((data) => {
       this.rows = data;
@@ -113,6 +124,23 @@ export class ReadersComponent implements OnInit {
     this.rows = temp;
     // Whenever the filter changes, always go back to the first page
     this.table.offset = 0;
+  }
+  toggle(col) {
+    const isChecked = this.isChecked(col);
+
+    if(isChecked) {
+      this.columns = this.columns.filter(c => {
+        return c.name !== col.name;
+      });
+    } else {
+      this.columns = [...this.columns, col];
+    }
+  }
+
+  isChecked(col) {
+    return this.columns.find(c => {
+      return c.name === col.name;
+    });
   }
 
 }
