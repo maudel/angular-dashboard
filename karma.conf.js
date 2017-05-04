@@ -11,7 +11,8 @@ module.exports = function (config) {
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
       require('@angular/cli/plugins/karma'),
-      require("karma-spec-reporter")
+      require("karma-spec-reporter"),
+      require("karma-phantomjs-launcher")
     ],
     client:{
       clearContext: false // leave Jasmine Spec Runner output visible in browser
@@ -33,13 +34,13 @@ module.exports = function (config) {
       environment: 'dev'
     },
     reporters: config.angularCli && config.angularCli.codeCoverage
-              ? ['spec', 'coverage-istanbul', ]
-              : ['spec', 'kjhtml'],
+      ? ['spec', 'coverage-istanbul', ]
+      : ['spec', 'kjhtml'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
     singleRun: false
   });
 };

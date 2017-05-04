@@ -3,7 +3,7 @@
     <md-card-title>
       Inventory Mode Generator
     </md-card-title>
-    <form #form="ngForm" (ngSubmit)="dialogRef.close(form.value)">
+    <form #form="ngForm" >
       <div fxLayout="column" fxLayoutGap="8px">
         <md-input-container>
           <input mdInput ngModel name="name" placeholder="Name" required>
@@ -30,7 +30,7 @@
     <md-card-title>
       Inventory Mode Assignments
     </md-card-title>
-    <form #form="ngForm" (ngSubmit)="dialogRef.close(form.value)">
+    <form #form="ngForm" >
       <div fxLayout="column" fxLayoutGap="8px">
 
         <md-input-container>

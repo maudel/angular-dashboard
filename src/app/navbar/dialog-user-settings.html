@@ -12,7 +12,7 @@
 <!--<md-input-container>-->
   <!--<input type="password" mdInput placeholder="Confirm New Password" value="edison">-->
 <!--</md-input-container>-->
-<form fxFlex="500px" fxFlex.gt-xs="500px" fxFlex.xs="285px" #form="ngForm" (ngSubmit)="dialogRef.close(form.value)" ngNativeValidate>
+<form fxFlex="500px" fxFlex.gt-xs="500px" fxFlex.xs="285px" #form="ngForm"  ngNativeValidate>
 
   <div fxLayout="column" fxLayoutGap="24px">
     <h1 md-dialog-title>General</h1>
@@ -35,7 +35,7 @@
     </md-input-container>
   </div>
   <md-dialog-actions align="end">
-    <button md-button type="button" (click)="dialogRef.close()">Cancel</button>
+    <button md-button type="button">Cancel</button>
     <button md-button color="accent">Save User</button>
   </md-dialog-actions>
 </form>

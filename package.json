@@ -14,8 +14,8 @@
     "deploy": "ng build --aot -sm -ec -bh /repo name/ & ngh --silent=false",
     "test:coverage": "ng test --single-run --code-coverage",
     "test:once": "ng test --watch=false",
-    "ci": "npm run test:once && npm run e2e && npm run build:prod:github",
-    "build:prod:github": "ng build --prod --base-href 'https://maudel.github.io/angular_mcon'"
+    "ci": "npm run test:once && npm run build:prod:jenkins",
+    "build:prod:jenkins": "ng build --prod --base-href 'https://192.168.12.65'"
   },
   "private": true,
   "dependencies": {
@@ -39,6 +39,8 @@
     "core-js": "^2.4.1",
     "firebase": "^3.7.1",
     "hammerjs": "^2.0.8",
+    "intl": "^1.2.5",
+    "phantomjs": "^2.1.7",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
@@ -56,6 +58,7 @@
     "karma-coverage-istanbul-reporter": "^0.2.0",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-phantomjs-launcher": "^1.0.4",
     "karma-spec-reporter": "0.0.31",
     "protractor": "~5.1.0",
     "ts-node": "~2.0.0",
