@@ -64,7 +64,7 @@
               <executable>yarn</executable>
               <arguments>
                 <argument>run</argument>
-                <argument>build</argument>
+                <argument>ci</argument>
               </arguments>
             </configuration>
             <goals>
