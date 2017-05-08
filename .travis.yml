@@ -18,7 +18,7 @@ before_script:
 install:
   - npm i -g angular-cli-ghpages
   - npm install
-  - cd functions && npm install
+  - npm run postinstall
 script:
   - npm run ci
   - firebase deploy --token 1/oAJAFTfrGVpFbgic6QeanBSIe_UzjNRnnrrfOXrm7O8

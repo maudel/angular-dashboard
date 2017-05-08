@@ -16,7 +16,8 @@
     "test:once": "ng test --watch=false",
     "ci": "npm run test:once && npm run build:prod:jenkins",
     "build:prod:jenkins": "ng build --prod --base-href 'https://192.168.12.65'",
-    "deploy:firebase": "firebase deploy --token 1/oAJAFTfrGVpFbgic6QeanBSIe_UzjNRnnrrfOXrm7O8"
+    "deploy:firebase": "firebase deploy --token 1/oAJAFTfrGVpFbgic6QeanBSIe_UzjNRnnrrfOXrm7O8",
+    "postinstall": "cd functions && npm install"
   },
   "private": true,
   "dependencies": {
