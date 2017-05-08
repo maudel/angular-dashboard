@@ -1,0 +1,132 @@
+<!-- follows: https://maven.apache.org/developers/conventions/code.html -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <url>http://192.168.78.194:9090/view/CI/job/CI-Angular-MCON/</url>
+
+
+  <parent>
+    <groupId>mojix</groupId>
+    <artifactId>mojix-parent</artifactId>
+    <version>3.0-FINAL</version>
+  </parent>
+
+  <name>Angular Mcon</name>
+  <artifactId>angular-mcon</artifactId>
+  <version>0.1.0</version>
+
+
+  <build>
+    <finalName>angular-mcon</finalName>
+
+    <plugins>
+
+      <!-- ############################## -->
+      <!-- npm scripts                    -->
+      <!-- ############################## -->
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>exec-yarn-install</id>
+            <phase>generate-sources</phase>
+            <configuration>
+              <executable>npm</executable>
+              <arguments>
+                <argument>install</argument>
+                <argument>--global</argument>
+                <argument>yarn</argument>
+              </arguments>
+            </configuration>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>exec-project-dependencies-install</id>
+            <phase>generate-sources</phase>
+            <configuration>
+              <executable>yarn</executable>
+            </configuration>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+
+          <!-- run `ng build -prod -aot` -->
+          <!-- * clean dist/ before generating distribution files -->
+          <execution>
+            <id>exec-compile</id>
+            <phase>generate-sources</phase>
+            <configuration>
+              <executable>yarn</executable>
+              <arguments>
+                <argument>run</argument>
+                <argument>build</argument>
+              </arguments>
+            </configuration>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- generate zip -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <descriptors>
+            <descriptor>src/assembly/static.xml</descriptor>
+          </descriptors>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+       <!--generate zip -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <descriptors>
+            <descriptor>src/assembly/static.xml</descriptor>
+          </descriptors>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <!--<plugin>-->
+        <!--<groupId>org.apache.maven.plugins</groupId>-->
+        <!--<artifactId>maven-war-plugin</artifactId>-->
+        <!--<version>2.6</version>-->
+        <!--<configuration>-->
+          <!--<webResources>-->
+            <!--<resource>-->
+              <!--&lt;!&ndash; this is relative to the pom.xml directory &ndash;&gt;-->
+              <!--<directory>../target</directory>-->
+            <!--</resource>-->
+          <!--</webResources>-->
+        <!--</configuration>-->
+      <!--</plugin>-->
+    </plugins>
+  </build>
+</project>

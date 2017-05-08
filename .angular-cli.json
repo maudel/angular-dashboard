@@ -6,6 +6,8 @@
   "apps": [
     {
       "root": "src",
+      "deployUrl": "http://localhost:8080/angular-mcon-static/",
+      "outputDir": "http://localhost:8080/angular-mcon-static/",
       "outDir": "dist",
       "assets": [
         "assets",

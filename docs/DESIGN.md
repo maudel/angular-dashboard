@@ -14,3 +14,12 @@ TODO
 - https://github.com/timjacobi/angular2-education
 
 
+## Deployment 
+Theory
+- https://kosbr.github.io/2016/10/09/angular-build.html
+
+Issues 
+- https://github.com/angular/angular-cli/issues/4517
+- https://github.com/angular/angular-cli/pull/4090
+
+

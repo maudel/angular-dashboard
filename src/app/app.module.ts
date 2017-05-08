@@ -2,7 +2,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import 'hammerjs';
 import { FlexLayoutModule } from '@angular/flex-layout';
-// import { AngularFireModule } from 'angularfire2';
+import { AngularFireModule } from 'angularfire2';
 import { ReadersComponent } from './readers/readers.component';
 
 // modules
@@ -41,13 +41,13 @@ import { InventoryWizardComponent } from './inventory-wizard/inventory-wizard.co
 // Login Dialog
 
 // Must export the config
-// export const firebaseConfig = {
-//   apiKey: "AIzaSyAW6_gady9XHegVN94Cs8oTpOzM978BJ04",
-//   authDomain: "angularmcon.firebaseapp.com",
-//   databaseURL: "https://angularmcon.firebaseio.com",
-//   storageBucket: "angularmcon.appspot.com",
-//   messagingSenderId: "850875400239"
-// };
+export const firebaseConfig = {
+  apiKey: "AIzaSyAW6_gady9XHegVN94Cs8oTpOzM978BJ04",
+  authDomain: "angularmcon.firebaseapp.com",
+  databaseURL: "https://angularmcon.firebaseio.com",
+  storageBucket: "angularmcon.appspot.com",
+  messagingSenderId: "850875400239"
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,7 +71,7 @@ import { InventoryWizardComponent } from './inventory-wizard/inventory-wizard.co
     MaterialModule.forRoot(),
     FlexLayoutModule,
 
-    // AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(firebaseConfig),
     CoreModule,
     SharedModule,
     NgxDatatableModule,

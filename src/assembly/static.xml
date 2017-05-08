@@ -1,0 +1,17 @@
+<assembly>
+    <id>static</id>
+    <formats>
+        <format>war</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>dist</directory>
+            <outputDirectory>.</outputDirectory>
+            <excludes>
+              <exclude>*.map</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+</assembly>
+
