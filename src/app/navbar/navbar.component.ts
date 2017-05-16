@@ -11,6 +11,8 @@ import {MdDialog, MdDialogRef} from '@angular/material';
 export class NavbarComponent implements OnInit {
   @Output() toggleSidenav = new EventEmitter<void>();
   selectedOption: string;
+  isDarkTheme = false;
+  @Output() isDarkThemeSelected: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   constructor(public dialog: MdDialog) { }
 
@@ -22,6 +24,10 @@ export class NavbarComponent implements OnInit {
 
   openDialog() {
     this.dialog.open(DialogOverviewExampleDialog);
+  }
+  public pickTheme(isDarkTheme: boolean){
+    this.isDarkTheme = !this.isDarkTheme;
+    this.isDarkThemeSelected.emit(this.isDarkTheme);
   }
 
 }

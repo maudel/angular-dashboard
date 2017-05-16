@@ -14,6 +14,7 @@ TODO
 - https://github.com/timjacobi/angular2-education
 
 
+
 ## Deployment 
 Theory
 - https://kosbr.github.io/2016/10/09/angular-build.html
@@ -21,5 +22,20 @@ Theory
 Issues 
 - https://github.com/angular/angular-cli/issues/4517
 - https://github.com/angular/angular-cli/pull/4090
+
+
+
+
+
+## Continous Delivery 
+
+Theory
+
+- https://www.cloudbees.com/blog/need-jenkins-pipeline
+
+## Analysis 
+- http://angularjs.blogspot.com/2017/04/official-languages-at-google.html
+
+
 
 

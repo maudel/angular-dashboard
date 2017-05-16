@@ -29,26 +29,29 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <executions>
+          <!--<execution>-->
+            <!--<id>exec-yarn-install</id>-->
+            <!--<phase>generate-sources</phase>-->
+            <!--<configuration>-->
+              <!--<executable>npm</executable>-->
+              <!--<arguments>-->
+                <!--<argument>install</argument>-->
+                <!--<argument>&#45;&#45;global</argument>-->
+                <!--<argument>yarn</argument>-->
+              <!--</arguments>-->
+            <!--</configuration>-->
+            <!--<goals>-->
+              <!--<goal>exec</goal>-->
+            <!--</goals>-->
+          <!--</execution>-->
           <execution>
-            <id>exec-yarn-install</id>
+            <id>exec-project-dependencies-install</id>
             <phase>generate-sources</phase>
             <configuration>
               <executable>npm</executable>
               <arguments>
                 <argument>install</argument>
-                <argument>--global</argument>
-                <argument>yarn</argument>
               </arguments>
-            </configuration>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>exec-project-dependencies-install</id>
-            <phase>generate-sources</phase>
-            <configuration>
-              <executable>yarn</executable>
             </configuration>
             <goals>
               <goal>exec</goal>
@@ -61,7 +64,7 @@
             <id>exec-compile</id>
             <phase>generate-sources</phase>
             <configuration>
-              <executable>yarn</executable>
+              <executable>npm</executable>
               <arguments>
                 <argument>run</argument>
                 <argument>ci</argument>

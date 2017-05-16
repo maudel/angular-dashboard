@@ -7,7 +7,7 @@
     "start": "ng serve",
     "dev:remote": "ng serve --proxy proxy.conf.json --host 0.0.0.0",
     "dev:local": "ng serve --proxy proxy-local.conf.json --host 0.0.0.0",
-    "build": "ng build --prod  --deploy-url http://localhost:8080/angular-mcon-static/ --base-href '.' --proxy-config proxy-config.json",
+    "build": "ng build -prod --deploy-url http://38.107.160.180:8080/angular-mcon-static/ --base-href '/' --proxy-config proxy-config.json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -15,7 +15,7 @@
     "test:coverage": "ng test --single-run --code-coverage",
     "test:once": "ng test --watch=false",
     "ci": "npm run test:once && npm run build:prod:jenkins",
-    "build:prod:jenkins": "ng build --prod --base-href 'https://192.168.12.65'",
+    "build:prod:jenkins": "ng build --prod --base-href 'http://38.107.160.180:8080/angular-mcon-static/'",
     "deploy:firebase": "firebase deploy --token 1/oAJAFTfrGVpFbgic6QeanBSIe_UzjNRnnrrfOXrm7O8",
     "postinstall": "cd functions && npm install"
   },

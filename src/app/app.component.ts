@@ -8,6 +8,9 @@ import './rxjs-operators';
 })
 export class AppComponent {
   title = 'app works!';
-
+  isDarkTheme = false;
+  public changeTheme (event){
+    this.isDarkTheme = event;
+  }
 }
 
