@@ -1,11 +1,10 @@
-<md-sidenav-container fullscreen class="sidenav-container">
+<app-dashboard-navbar></app-dashboard-navbar>
+<md-sidenav-container fullscreen class="sidenav-container" style="top: 64px !important;">
   <md-sidenav  #sidenav
                [opened]="!isScreenSmall()"
-               [mode]="'over' "
+               [mode]="isScreenSmall() ? 'over' : 'side'"
                class="sidenav">
-    <md-toolbar color="accent">
-      Menu
-    </md-toolbar>
+
     <nav *ngFor="let elem of sideElems">
       <h3>{{elem.name}}</h3>
       <ul>
@@ -21,7 +20,6 @@
   </md-sidenav>
 
   <div class="sidenav-content">
-    <app-dashboard-navbar></app-dashboard-navbar>
     <nav md-tab-nav-bar aria-label="weather navigation links">
       <a md-tab-link
          *ngFor="let tabLink of tabLinks; let i = index"

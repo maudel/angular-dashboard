@@ -1,17 +1,16 @@
-<md-toolbar color="primary" >
-  <a md-button class="docs-button" routerLink="/" aria-label="Angular Material">
+<md-toolbar color="primary">
+  <a md-button  routerLink="/" aria-label="Angular Material">
     <img class="docs-angular-logo"
          src="../../assets/angular-white-transparent.svg"
          alt="Angular">
     <span>MCON</span>
   </a>
-  <a md-button class="docs-button" routerLink="dashboard">Dashboard</a>
-  <span class="fill-space"></span>
+  <a md-button routerLink="dashboard">Dashboard</a>
+  <span fxFlex></span>
   <button md-icon-button [mdMenuTriggerFor]="menu">
     <md-icon>more_vert</md-icon>
   </button>
 </md-toolbar>
-
 <md-menu #menu="mdMenu">
   <button md-menu-item (click)="openDialog()">
     <md-icon>settings</md-icon>

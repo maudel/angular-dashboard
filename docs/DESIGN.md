@@ -1,8 +1,17 @@
-# Application design
+## Application design
+
+- Continous Delivery 
+- Server 2 push
+- Language Support
+- Themming
+- Angular Universal
+- PWA
+
 
 ## Application state
 
-TODO
+
+
 
 ## Reading list
 
