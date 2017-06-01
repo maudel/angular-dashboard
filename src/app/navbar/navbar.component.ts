@@ -1,4 +1,4 @@
-import { Component, OnInit, Output ,EventEmitter } from '@angular/core';
+import { Component, OnInit, Output , EventEmitter } from '@angular/core';
 const SMALL_WIDTH_BREAKPOINT = 840;
 import {MdDialog, MdDialogRef} from '@angular/material';
 
@@ -36,4 +36,11 @@ export class NavbarComponent implements OnInit {
   templateUrl: './dialog-user-settings.html',
 })
 export class DialogOverviewExampleDialog {
+}
+
+@Component({
+  selector: 'app-dialog',
+  templateUrl: './login-dialog.html',
+})
+export class LoginDialog {
 }

@@ -1,0 +1,47 @@
+<form fxFlex="500px" fxFlex.gt-xs="500px" fxFlex.xs="285px" #form="ngForm"  ngNativeValidate>
+
+  <div fxLayout="column" fxLayoutGap="24px">
+    <h1 md-dialog-title>General</h1>
+    <div fxLayout="row" >
+      <md-input-container >
+        <input mdInput placeholder="Enter your Email" value="edison@gmail.com">
+      </md-input-container>
+    </div>
+    <md-input-container>
+      <input type="password" mdInput placeholder="New Password" value="edison@gmail.com">
+    </md-input-container>
+  </div>
+  <md-dialog-actions align="end">
+    <button md-button type="button">Cancel</button>
+    <button md-button color="accent">Save User</button>
+  </md-dialog-actions>
+</form>
+    import { Component } from '@angular/core';
+    import { Observable } from 'rxjs/Observable';
+    import { AngularFireAuth } from 'angularfire2/auth';
+    import * as firebase from 'firebase/app';
+
+    @Component({
+    selector: 'app-root',
+    template: `
+    <div> {{ (user | async)?.uid }} </div>
+    <button (click)="login()">Login</button>
+    <button (click)="logout()">Logout</button>
+    `,
+    })
+    export class AppComponent {
+
+    user: Observable<firebase.User>;
+
+      constructor(public afAuth: AngularFireAuth) {
+      this.user = afAuth.authState;
+      }
+
+      login() {
+      this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+      }
+
+      logout() {
+      this.afAuth.auth.signOut();
+      }
+      }
