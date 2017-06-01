@@ -13,11 +13,9 @@ export class SidenavComponent implements OnInit {
   activeTabIndex = 0;
   addTabPosition = 0;
   tabLinks = [
-    {label: 'Readers', link: 'configuration/readers'},
+    {label: 'Attendants', link: 'configuration/attendants'},
     {label: 'Zones', link: 'configuration/zones'},
-    {label: 'Io Devices', link: 'configuration/io-devices'},
-    {label: 'Antennas', link: 'configuration/antennas'},
-    {label: 'Inventory Wizard', link: 'configuration/inventory-wizard'}
+
   ];
   activeLinkIndex = 0;
 

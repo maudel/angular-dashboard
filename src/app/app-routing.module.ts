@@ -16,11 +16,11 @@ const APP_ROUTES: Routes = [
     component: SidenavComponent,
     children: [{
       path: '',
-      redirectTo: 'configuration/readers',
+      redirectTo: 'configuration/attendants',
       pathMatch: 'full'
     }
       , {
-        path: 'configuration/readers',
+        path: 'configuration/attendants',
         component: ReadersComponent
       }, {
         path: 'configuration/zones',

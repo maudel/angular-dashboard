@@ -1,6 +1,6 @@
 import { AngularMconPage } from './app.po';
 
-describe('angular-mcon App', () => {
+describe('tracker-ui App', () => {
   let page: AngularMconPage;
 
   beforeEach(() => {

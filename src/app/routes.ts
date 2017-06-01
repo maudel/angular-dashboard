@@ -17,7 +17,7 @@ const ANGULAR_MCON_ROUTES: Routes = [
         component: ComponentNavbarComponent
      },{
       path: '',
-      redirectTo: 'configuration/readers',
+      redirectTo: 'configuration/zones',
       pathMatch: 'full'
     }, {
       path: '**',
