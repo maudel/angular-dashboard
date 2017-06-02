@@ -1,55 +1,5 @@
-<!--<md-card>-->
-    <!--<div *ngFor='let col of allColumns'>-->
-      <!--<md-checkbox-->
-        <!--type='checkbox'-->
-        <!--[id]="col.name"-->
-        <!--(click)='toggle(col)'-->
-        <!--[checked]='isChecked(col)'-->
-      <!--&gt;</md-checkbox>-->
-      <!--<label [attr.for]="col.name">{{col.name}}</label>-->
-    <!--</div>-->
-
-<!--</md-card>-->
 <div class="margin-left-right-50">
-
-  <ngx-datatable
-    class="material"
-    [rows]="rows"
-    [columnMode]="'force'"
-    [headerHeight]="50"
-    [footerHeight]="50"
-    [rowHeight]="50"
-    [scrollbarV]="true"
-
-    [scrollbarH]="true">
-    <ngx-datatable-column prop="aiaName" name="Name" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column prop="aiaDottedIP" name="IP" [width]="50" >
-      <ng-template let-value="value" ngx-datatable-cell-template>
-        <a href="value">{{value}}</a>
-      </ng-template>
-    </ngx-datatable-column>
-    <ngx-datatable-column prop="runningState" name="&nbsp;" [width]="20">
-      <ng-template let-value="value" ngx-datatable-cell-template>
-        <md-slide-toggle
-          class="example-margin"
-          [color]="color"
-          [checked]="value"
-          [disabled]="disabled">
-        </md-slide-toggle>
-      </ng-template>
-    </ngx-datatable-column>
-    <ngx-datatable-column prop="macAddress" name="MAC" [width]="85"></ngx-datatable-column>
-    <ngx-datatable-column prop="starType" name="Type" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column prop="posXFt" name="X (m)" [width]="15"></ngx-datatable-column>
-    <ngx-datatable-column prop="posYFt" name="Y (m)"[width]="15"></ngx-datatable-column>
-    <ngx-datatable-column prop="posZFt" name="Z (m)"[width]="15"></ngx-datatable-column>
-    <ngx-datatable-column prop="boresightCoazDeg" name="Coaz" [width]="15"></ngx-datatable-column>
-    <ngx-datatable-column prop="boresightElevDeg" name="Elev" [width]="15"></ngx-datatable-column>
-    <ngx-datatable-column prop="boresightRollDeg" name="Roll"[width]="15"></ngx-datatable-column>
-    <ngx-datatable-column prop="tsMod" name="Last Saved Date" [width]="60"></ngx-datatable-column>
-    <ngx-datatable-column prop="used" name="Use"[width]="50" ></ngx-datatable-column>
-    <ngx-datatable-column prop="delete" [checkboxable]="true" [sortable]="false" name="Delete"[width]="50"></ngx-datatable-column>
-  </ngx-datatable>
+  <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
 </div>
 
 

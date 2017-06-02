@@ -13,8 +13,7 @@ const APP_ROUTES: Routes = [
       path: '',
       redirectTo: 'configuration/attendants',
       pathMatch: 'full'
-    }
-      , {
+    }, {
         path: 'configuration/attendants',
         component: ReadersComponent
       }, {

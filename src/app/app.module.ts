@@ -22,7 +22,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { NavbarComponent, DialogOverviewExampleDialog } from './navbar/navbar.component';
-import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ZonesComponent } from './zones/zones.component';
 
@@ -50,7 +49,6 @@ export const firebaseConfig = {
     ReadersComponent,
     SidenavComponent,
     NavbarComponent,
-    ComponentNavbarComponent,
     HomepageComponent,
     DialogOverviewExampleDialog,
     ZonesComponent,

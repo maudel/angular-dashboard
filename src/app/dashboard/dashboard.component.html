@@ -1,29 +1,5 @@
 <div class="margin-left-right-50">
-
-  <ngx-datatable
-    class="material"
-    [rows]="rows"
-    [columnMode]="'force'"
-    [headerHeight]="50"
-    [footerHeight]="50"
-    [rowHeight]="50"
-    [scrollbarV]="true"
-
-    [scrollbarH]="true">
-    <ngx-datatable-column name="aiaName" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="aiaDottedIP" [width]="50" ></ngx-datatable-column>
-    <ngx-datatable-column name="runningState" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="macAddress" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="starType" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="posXFt" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="posYFt" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="posZFt" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="boresightCoazDeg" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="boresightElevDeg"[width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="boresightRollDeg" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="tsMod" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column name="used" [width]="50"></ngx-datatable-column>
-  </ngx-datatable>
+  <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
 </div>
 
 
