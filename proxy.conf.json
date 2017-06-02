@@ -1,7 +1,7 @@
 [
   {
     "context": "/",
-    "target": "http://38.107.160.180:8080/angular-mcon-static/",
+    "target": "localhost:4001",
     "secure": false
   }
 ]

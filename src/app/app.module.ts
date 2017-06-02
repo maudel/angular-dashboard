@@ -2,7 +2,6 @@ import { AppComponent } from './app.component';
 import 'hammerjs';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularFireModule } from 'angularfire2';
-import { ReadersComponent } from './readers/readers.component';
 
 // modules
 
@@ -21,6 +20,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { NavbarComponent, DialogOverviewExampleDialog } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ZonesComponent } from './zones/zones.component';
+import { ReaderConfigurationComponent } from './reader-configuration/reader-configuration.component';
+import { ItemComponent } from './item/item.component';
+import { AttendantComponent } from './attendant/attendant.component';
 
 
 
@@ -42,12 +44,14 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    ReadersComponent,
     SidenavComponent,
     NavbarComponent,
     HomepageComponent,
     DialogOverviewExampleDialog,
     ZonesComponent,
+    ReaderConfigurationComponent,
+    ItemComponent,
+    AttendantComponent,
   ],
   imports: [
     BrowserModule,

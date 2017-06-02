@@ -6,6 +6,27 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./zones.component.scss']
 })
 export class ZonesComponent implements OnInit {
+  settings = {
+    columns: {
+      nombre: {
+        title: 'Nombre'
+      },
+      edi: {
+        title: 'Edificio'
+      },
+      piso: {
+        title: 'Piso'
+      }
+    }
+  };
+  data = [
+    {
+      nombre: "Coderoad SRL",
+      edi: "Calacoto Business Center",
+      piso: "6"
+
+    }
+  ];
   constructor() {
   }
   ngOnInit() {

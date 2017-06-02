@@ -14,6 +14,8 @@ export class SidenavComponent implements OnInit {
   tabLinks = [
     {label: 'Attendants', link: 'configuration/attendants'},
     {label: 'Zones', link: 'configuration/zones'},
+    {label: 'Readers-Configuration', link: 'configuration/readers-configuration'},
+    {label: 'Items', link: 'configuration/items'},
 
   ];
   constructor() { }
