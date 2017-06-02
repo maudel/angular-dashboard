@@ -1,5 +1,4 @@
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import 'hammerjs';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularFireModule } from 'angularfire2';
@@ -8,7 +7,7 @@ import { ReadersComponent } from './readers/readers.component';
 // modules
 
 import { CoreModule } from './core/core.module';
-import { SharedModule } from  './shared/shared.module';
+import { SharedModule } from   './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -16,8 +15,6 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule , MdDialog  } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
 // 3rd Party
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -45,7 +42,6 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
     ReadersComponent,
     SidenavComponent,
     NavbarComponent,
