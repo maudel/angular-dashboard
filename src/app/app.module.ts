@@ -8,7 +8,7 @@ import { ReadersComponent } from './readers/readers.component';
 // modules
 
 import { CoreModule } from './core/core.module';
-import { SharedModule } from  './shared/shared.module'
+import { SharedModule } from  './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -19,17 +19,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 // 3rd Party
-
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { NavbarComponent, DialogOverviewExampleDialog } from './navbar/navbar.component';
-import { GenericFormComponent } from './generic-form/generic-form.component';
 import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ZonesComponent } from './zones/zones.component';
-import { IoDevicesComponent } from './io-devices/io-devices.component';
-import { AntennasComponent } from './antennas/antennas.component';
-import { InventoryWizardComponent } from './inventory-wizard/inventory-wizard.component';
 
 
 
@@ -55,14 +50,10 @@ export const firebaseConfig = {
     ReadersComponent,
     SidenavComponent,
     NavbarComponent,
-    GenericFormComponent,
     ComponentNavbarComponent,
     HomepageComponent,
     DialogOverviewExampleDialog,
     ZonesComponent,
-    IoDevicesComponent,
-    AntennasComponent,
-    InventoryWizardComponent
   ],
   imports: [
     BrowserModule,
@@ -70,17 +61,12 @@ export const firebaseConfig = {
     HttpModule,
     MaterialModule.forRoot(),
     FlexLayoutModule,
-
     AngularFireModule.initializeApp(firebaseConfig),
     CoreModule,
     SharedModule,
-    NgxDatatableModule,
-    // routing module
-
     AppRoutingModule,
-
-
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    Ng2SmartTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -90,8 +76,5 @@ export const firebaseConfig = {
 })
 export class AppModule {
   constructor(public dialog: MdDialog){
-
   }
-
-
 }
