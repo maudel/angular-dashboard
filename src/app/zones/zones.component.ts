@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { ServerDataSource } from '../../../node_modules/ng2-smart-table/' ;
 
 @Component({
   selector: 'app-zones',

@@ -4,9 +4,12 @@ import { AngularFireModule } from 'angularfire2';
 
 // services
 
-import { AiaConfigService} from './services/aia-config.service';
 import { AuthService} from './services/auth.service'
+import { AttendantService } from './services/attendant.service'
+import { ItemsService } from './services/items.service'
 import { GenericService } from './services/generic.service'
+import { ZonesService } from './services/zones.service'
+import { ReadersConfigurationService } from './services/readers-configuration.service'
 // http related
 
 import { HttpModule, RequestOptions } from '@angular/http';
@@ -31,8 +34,12 @@ export const firebaseConfig = {
 
   ],
   providers: [
-    AiaConfigService,
-    GenericService
+    GenericService,
+    ReadersConfigurationService,
+    ZonesService,
+    ItemsService,
+    AttendantService,
+    AuthService
   ]
 })
 export class CoreModule { }
