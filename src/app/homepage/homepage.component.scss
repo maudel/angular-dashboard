@@ -2,7 +2,9 @@
 $margin-promotion-sections: 60px;
 
 
-
+md-card-content,md-card{
+  height: 500px;
+}
 .docs-header-section {
   text-align: center;
   padding-top: 100px;
