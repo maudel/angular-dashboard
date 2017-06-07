@@ -70,7 +70,6 @@ export const firebaseConfig = {
     HttpModule,
     MaterialModule.forRoot(),
     FlexLayoutModule,
-
     AngularFireModule.initializeApp(firebaseConfig),
     CoreModule,
     SharedModule,

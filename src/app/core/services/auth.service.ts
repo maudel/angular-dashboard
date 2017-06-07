@@ -11,13 +11,22 @@ export class AuthService {
   constructor(public afAuth: AngularFireAuth) {
     this.user = afAuth.authState;
   }
-
-  login() {
+  signUp(email: string, password: string) {
+    // this.afAuth.auth.createUserWithEmailAndPassword(email, password)
+    //   .then(value => {
+    //     console.log('Success!', value);
+    //   })
+    //   .catch(err => {
+    //     console.log('Something went wrong:',err.message);
+    //   });
+  }
+  signIn(email: string, password: string) {
     this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }
 
   logout() {
     this.afAuth.auth.signOut();
   }
+
 
 }

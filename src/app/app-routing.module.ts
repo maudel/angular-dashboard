@@ -10,10 +10,14 @@ import {IoDevicesComponent} from './io-devices/io-devices.component'
 import {ZonesComponent} from './zones/zones.component'
 import {AntennasComponent} from './antennas/antennas.component'
 import {InventoryWizardComponent} from './inventory-wizard/inventory-wizard.component'
+
+import { AuthGuard } from './core/guards/auth.guard';
+
 const APP_ROUTES: Routes = [
   {
     path: 'dashboard',
     component: SidenavComponent,
+    canActivateChild: [AuthGuard],
     children: [{
       path: '',
       redirectTo: 'configuration/readers',
@@ -51,7 +55,7 @@ const appRouting = RouterModule.forRoot(APP_ROUTES, {
 @NgModule({
   imports: [appRouting],
   exports: [RouterModule],
-  providers: []
+  providers: [AuthGuard]
 })
 export class AppRoutingModule {
 }
