@@ -1,16 +1,15 @@
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import 'hammerjs';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularFireModule } from 'angularfire2';
 import { ReadersComponent } from './readers/readers.component';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 // modules
 
 import { CoreModule } from './core/core.module';
 import { SharedModule } from  './shared/shared.module'
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule , MdDialog  } from '@angular/material';
@@ -18,11 +17,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
-// 3rd Party
-
+// components
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { NavbarComponent, DialogOverviewExampleDialog } from './navbar/navbar.component';
+import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
 import { GenericFormComponent } from './generic-form/generic-form.component';
 import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -58,7 +57,7 @@ export const firebaseConfig = {
     GenericFormComponent,
     ComponentNavbarComponent,
     HomepageComponent,
-    DialogOverviewExampleDialog,
+    UserSettingsDialog,
     ZonesComponent,
     IoDevicesComponent,
     AntennasComponent,
@@ -84,7 +83,7 @@ export const firebaseConfig = {
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [
-    DialogOverviewExampleDialog
+    UserSettingsDialog
   ]
 })
 export class AppModule {

@@ -23,7 +23,7 @@ export class NavbarComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(DialogOverviewExampleDialog);
+    this.dialog.open(UserSettingsDialog);
   }
   public pickTheme(isDarkTheme: boolean){
     this.isDarkTheme = !this.isDarkTheme;
@@ -32,8 +32,8 @@ export class NavbarComponent implements OnInit {
 
 }
 @Component({
-  selector: 'dialog-result-example-dialog',
-  templateUrl: './dialog-user-settings.html',
+  selector: 'user-settings-dialog',
+  templateUrl: './user-settings-dialog.html',
 })
-export class DialogOverviewExampleDialog {
+export class UserSettingsDialog {
 }
