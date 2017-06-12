@@ -1,0 +1,45 @@
+<md-card>
+  <h3>Social login</h3>
+  <form (ngSubmit)="onSignInGoogle(g)" #g="ngForm">
+    <md-card-actions class="button">
+      <!-- md-raised-button class="primary" -->
+      <button class="btn btn-block btn-social btn-google" type="submit" [disabled]="!g.valid"><span class="fa fa-google"></span> Login with your Google Account</button>
+    </md-card-actions>
+  </form>
+  <form (ngSubmit)="onSignInFacebook(fb)" #fb="ngForm">
+
+    <md-card-actions class="button">
+      <button class="btn btn-block btn-social btn-facebook" type="submit" [disabled]="!fb.valid"><span class="fa fa-facebook"></span> Login with your Facebook Account</button>
+    </md-card-actions>
+  </form>
+  <form (ngSubmit)="onSignInGithub(gh)" #gh="ngForm">
+    <md-card-actions class="button">
+      <button class="btn btn-block btn-social btn-github" type="submit" [disabled]="!gh.valid"><span class="fa fa-github"></span> Login with your Github Account</button>
+    </md-card-actions>
+  </form>
+
+  <hr />
+
+  <h3>Login</h3>
+  <form (ngSubmit)="onSignin(f)" #f="ngForm">
+    <md-input-container class="full-width">
+      <!--<label for ="email">Mail</label>-->
+      <input mdInput placeholder="Email" type="email" id="email" name="email" ngModel>
+    </md-input-container>
+    <md-input-container class="form-group">
+      <!--<label for ="password">Password</label>-->
+      <input mdInput placeholder="Password" type="password" id="password" name="password" ngModel>
+    </md-input-container>
+    <md-card-actions class="button">
+      <button md-raised-button class="primary" type="submit" [disabled]="!f.valid">Login</button>
+    </md-card-actions>
+  </form>
+
+  <hr />
+
+  <h3>Anonymous login</h3>
+
+  <md-card-actions class="button">
+    <button md-raised-button class="primary" (click)="onSigninAnonymous()">Login anonymously</button>
+  </md-card-actions>
+</md-card>
