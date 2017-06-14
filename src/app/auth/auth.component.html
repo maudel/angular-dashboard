@@ -1,0 +1,26 @@
+<div class="login-container"
+     fxLayout="column"
+     fxLayoutAlign="center center">
+  <md-card>
+    <nav md-tab-nav-bar>
+      <a md-tab-link
+         routerLink="/signIn/signIn"
+         routerLinkActive
+         [routerLinkActiveOptions]="{ exact: true }"
+         #rlaLogin="routerLinkActive"
+         [active]="rlaLogin.isActive">
+        Login
+      </a>
+      <a md-tab-link
+         routerLink="SignUp"
+         routerLinkActive
+         [routerLinkActiveOptions]="{ exact: true }"
+         #rlaRegister="routerLinkActive"
+         [active]="rlaRegister.isActive"
+      >
+        Register
+      </a>
+    </nav>
+    <router-outlet></router-outlet>
+  </md-card>
+</div>
