@@ -10,7 +10,7 @@
 
     "dev:remote": "ng serve --proxy proxy.conf.json --host 0.0.0.0",
     "dev:local": "ng serve --proxy proxy-local.conf.json --host 0.0.0.0",
-    "build": "ng build -prod --deploy-url http://38.107.160.180:8080/angular-mcon-static/ --base-href '/' --proxy-config proxy-config.json",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
