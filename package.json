@@ -5,6 +5,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build:closure": "ngc -p src && yarn run closure && ./size_report.sh",
+    "serve": "lite-server -c test/browser.config.json",
+
     "dev:remote": "ng serve --proxy proxy.conf.json --host 0.0.0.0",
     "dev:local": "ng serve --proxy proxy-local.conf.json --host 0.0.0.0",
     "build": "ng build -prod --deploy-url http://38.107.160.180:8080/angular-mcon-static/ --base-href '/' --proxy-config proxy-config.json",
@@ -14,10 +17,19 @@
     "deploy": "ng build --aot -sm -ec -bh /repo name/ & ngh --silent=false",
     "test:coverage": "ng test --single-run --code-coverage",
     "test:once": "ng test --watch=false",
-    "ci": "npm run test:once && npm run build:prod:jenkins",
-    "build:prod:jenkins": "ng build --prod --base-href 'http://38.107.160.180:8080/angular-mcon-static/'",
+    "ci": "npm run build:prod:jenkins",
+    "build:prod:jenkins": "ng build --prod --output-path=dist/angular-mcon-static/ --base-href 'http://38.107.160.180:8080/angular-mcon-static/' --deploy-url 'http://38.107.160.180:8080/angular-mcon-static/'",
     "deploy:firebase": "firebase deploy --token 1/oAJAFTfrGVpFbgic6QeanBSIe_UzjNRnnrrfOXrm7O8",
-    "postinstall": "cd functions && npm install"
+    "postinstall": "cd functions && npm install",
+    "postinstall:closure": "webdriver-manager update",
+    "format": "clang-format --glob='{{src,test}/**/,}*.{js,ts}' -i",
+    "format:enforce": "clang-format --glob='{{src,test}/**/,}*.{js,ts}' -output-replacements-xml | grep -c offset | grep 0",
+    "closure": "java -jar node_modules/google-closure-compiler/compiler.jar --flagfile closure.conf",
+    "closure-debug": "java -jar node_modules/google-closure-compiler/compiler.jar --flagfile closure.conf --debug --formatting PRETTY_PRINT",
+    "serve:closure": "lite-server -c test/browser.config.json",
+    "explore": "source-map-explorer dist/bundle.js dist/bundle.js.map",
+    "pretest": "tsc -p test",
+    "test:closure": "concurrently \"yarn run serve\" protractor --kill-others --success first"
   },
   "private": true,
   "dependencies": {
@@ -49,6 +61,8 @@
   },
   "devDependencies": {
     "@angular/cli": "^1.1.1",
+    "google-closure-compiler": "20170409.0.0",
+    "lite-server": "2.3.0",
     "@angular/compiler-cli": "^4.0.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",

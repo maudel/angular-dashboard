@@ -25,7 +25,7 @@ export class NavbarComponent implements OnInit {
   openDialog() {
     this.dialog.open(UserSettingsDialog);
   }
-  public pickTheme(isDarkTheme: boolean){
+  pickTheme(){
     this.isDarkTheme = !this.isDarkTheme;
     this.isDarkThemeSelected.emit(this.isDarkTheme);
   }
