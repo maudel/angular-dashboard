@@ -11,7 +11,6 @@ import { GenericService } from './services/generic.service'
 // http related
 
 import { HttpModule, RequestOptions } from '@angular/http';
-
 import { StoreModule } from '@ngrx/store';
 
 // Must export the config
@@ -30,7 +29,6 @@ export const firebaseConfig = {
     AngularFireAuthModule
   ],
   declarations: [
-
   ],
   providers: [
     AiaConfigService,

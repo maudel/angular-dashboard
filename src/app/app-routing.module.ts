@@ -17,7 +17,7 @@ const APP_ROUTES: Routes = [
   {
     path: 'dashboard',
     component: SidenavComponent,
-    canActivateChild: [AuthGuard],
+    // canActivateChild: [AuthGuard],
     children: [{
       path: '',
       redirectTo: 'configuration/readers',
@@ -41,7 +41,12 @@ const APP_ROUTES: Routes = [
       }]
   }, {
     path: '',
+    runGuardsAndResolvers: 'always',
+    canActivate: [AuthGuard],
     component: HomepageComponent
+  }, {
+    path: 'signIn',
+    loadChildren: 'app/auth/auth.module#AuthModule'
   }
 ];
 

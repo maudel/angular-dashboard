@@ -1,7 +1,15 @@
-<div class="login-container"
+<md-card class="login-container"
      fxLayout="column"
-     fxLayoutAlign="center center">
-  <md-card>
+     fxLayoutAlign="center center"
+     >
+  <md-card >
+    <div fxLayout="row"
+         fxLayoutAlign="center center">
+      <img  md-card-image style="align-content: center; width: 200px; margin: 10px" src="/src/assets/xd.png">
+      <img   md-card-image style="align-content: center; width: 120px;margin: 10px;" src="/src/assets/Picture1.png">
+    </div>
+
+
     <nav md-tab-nav-bar>
       <a md-tab-link
          routerLink="/signIn/signIn"
@@ -12,7 +20,7 @@
         Login
       </a>
       <a md-tab-link
-         routerLink="SignUp"
+         routerLink="/signIn/signUp"
          routerLinkActive
          [routerLinkActiveOptions]="{ exact: true }"
          #rlaRegister="routerLinkActive"
@@ -23,4 +31,4 @@
     </nav>
     <router-outlet></router-outlet>
   </md-card>
-</div>
+</md-card>

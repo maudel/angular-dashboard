@@ -8,7 +8,8 @@ import { NgModule } from '@angular/core';
 // modules
 
 import { CoreModule } from './core/core.module';
-import { SharedModule } from  './shared/shared.module'
+import { SharedModule } from  './shared/shared.module';
+import { AuthModule } from './auth/auth.module';
 
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -72,6 +73,7 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     CoreModule,
     SharedModule,
+    AuthModule,
     NgxDatatableModule,
     // routing module
 
