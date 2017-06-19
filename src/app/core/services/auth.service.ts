@@ -44,8 +44,9 @@ export class AuthService {
   openAuthDialog (){
     // authDialog.openAuthDialog();
   }
-  logout() {
-    this.afAuth.auth.signOut();
+  signOut() {
+    this.isAuth = false;
+    this.rout.navigate(['auth/signIn'])
   }
   isAuthenticated() {
     return  this.isAuth;

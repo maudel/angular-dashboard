@@ -1,4 +1,22 @@
 <form fxLayout="column">
+  <md-input-container fxFlex="100">
+    <input mdInput
+           name="email"
+           type="email"
+           required
+           validEmail
+           placeholder="Email">
+    <md-error>Email is invalid</md-error>
+  </md-input-container>
+  <md-input-container fxFlex="100">
+    <input mdInput
+           name="password"
+           type="password"
+           required
+           minlength="8"
+           placeholder="Password">
+    <md-error>Needs to be at least 8 characters</md-error>
+  </md-input-container>
   <div fxFlex="33" fxFlexAlign="end">
     <button md-raised-button (click)="RegisterUser()">Register</button>
   </div>

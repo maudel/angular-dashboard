@@ -8,7 +8,7 @@ import {Routes, RouterModule} from '@angular/router';
 
 const APP_ROUTES: Routes = [
   {
-  path: 'signIn',
+  path: 'auth',
   component: AuthComponent,
   children: [
   {

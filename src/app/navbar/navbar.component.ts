@@ -1,7 +1,7 @@
 import { Component, OnInit, Output ,EventEmitter } from '@angular/core';
 const SMALL_WIDTH_BREAKPOINT = 840;
 import {MdDialog, MdDialogRef} from '@angular/material';
-
+import {AuthService} from '../core/services/auth.service'
 
 @Component({
   selector: 'app-navbar',
@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
   isDarkTheme = false;
   @Output() isDarkThemeSelected: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  constructor(public dialog: MdDialog) { }
+  constructor(public dialog: MdDialog, private  authService: AuthService) { }
 
   ngOnInit() {
   }
@@ -28,6 +28,9 @@ export class NavbarComponent implements OnInit {
   pickTheme(){
     this.isDarkTheme = !this.isDarkTheme;
     this.isDarkThemeSelected.emit(this.isDarkTheme);
+  }
+  logout(){
+    this.authService.signOut()
   }
 
 }
