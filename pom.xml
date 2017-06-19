@@ -67,7 +67,7 @@
               <executable>npm</executable>
               <arguments>
                 <argument>run</argument>
-                <argument>ci</argument>
+                <argument>build:prod</argument>
               </arguments>
             </configuration>
             <goals>
