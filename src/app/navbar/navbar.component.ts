@@ -21,7 +21,6 @@ export class NavbarComponent implements OnInit {
   isScreenSmall(): boolean {
     return window.matchMedia(`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`).matches;
   }
-
   openDialog() {
     this.dialog.open(UserSettingsDialog);
   }

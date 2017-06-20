@@ -10,6 +10,7 @@ import { NgModule } from '@angular/core';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from  './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
+import { HomeModule } from './home/home.module'
 
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -19,13 +20,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 // components
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
 import { GenericFormComponent } from './generic-form/generic-form.component';
 import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
-import { HomepageComponent } from './homepage/homepage.component';
 import { ZonesComponent } from './zones/zones.component';
 import { IoDevicesComponent } from './io-devices/io-devices.component';
 import { AntennasComponent } from './antennas/antennas.component';
@@ -51,13 +50,11 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
     ReadersComponent,
     SidenavComponent,
     NavbarComponent,
     GenericFormComponent,
     ComponentNavbarComponent,
-    HomepageComponent,
     UserSettingsDialog,
     ZonesComponent,
     IoDevicesComponent,

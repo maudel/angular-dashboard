@@ -1,10 +1,6 @@
 import {ModuleWithProviders, NgModule} from '@angular/core';
-import {DashboardComponent} from './dashboard/dashboard.component';
-import {GenericFormComponent} from './generic-form/generic-form.component'
 import {SidenavComponent} from './sidenav/sidenav.component';
 import {Routes, RouterModule} from '@angular/router';
-import {ComponentNavbarComponent} from './component-navbar/component-navbar.component'
-import {HomepageComponent} from './homepage/homepage.component'
 import {ReadersComponent} from './readers/readers.component'
 import {IoDevicesComponent} from './io-devices/io-devices.component'
 import {ZonesComponent} from './zones/zones.component'
@@ -43,7 +39,7 @@ const APP_ROUTES: Routes = [
     path: '',
     runGuardsAndResolvers: 'always',
     canActivate: [AuthGuard],
-    component: HomepageComponent
+    loadChildren: 'app/home/home.module#HomeModule'
   }, {
     path: 'auth',
     loadChildren: 'app/auth/auth.module#AuthModule'

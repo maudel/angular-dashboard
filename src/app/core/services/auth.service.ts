@@ -6,8 +6,9 @@ import * as firebase from 'firebase/app';
 import { Router } from '@angular/router'
 @Injectable()
 export class AuthService {
-  user: Observable<firebase.User>;
   isAuth: boolean;
+  user: Observable<firebase.User>;
+
   rout: any;
   constructor(public afAuth: AngularFireAuth, public router: Router) {
     this.user = afAuth.authState;
@@ -36,6 +37,7 @@ export class AuthService {
     //   });
   }
   signIn() {
+
     this.isAuth = true;
     this.rout.navigate([''])
     // this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
