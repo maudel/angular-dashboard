@@ -1,5 +1,5 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
-import { AiaConfigService } from '../core/services/aia-config.service'
+import { AiaConfigService } from '../../core/services/aia-config.service'
 const SMALL_WIDTH_BREAKPOINT = 840;
 import { DatatableComponent } from "@swimlane/ngx-datatable";
 @Component({

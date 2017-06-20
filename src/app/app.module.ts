@@ -2,7 +2,6 @@ import { AppComponent } from './app.component';
 import 'hammerjs';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularFireModule } from 'angularfire2';
-import { ReadersComponent } from './readers/readers.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // modules
@@ -11,6 +10,7 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from  './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
 import { HomeModule } from './home/home.module'
+import { DashboardModule } from './dashboard/dashboard.module'
 
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -20,15 +20,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 // components
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
-import { GenericFormComponent } from './generic-form/generic-form.component';
 import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
-import { ZonesComponent } from './zones/zones.component';
-import { IoDevicesComponent } from './io-devices/io-devices.component';
-import { AntennasComponent } from './antennas/antennas.component';
-import { InventoryWizardComponent } from './inventory-wizard/inventory-wizard.component';
+
 
 
 
@@ -50,16 +44,10 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    ReadersComponent,
-    SidenavComponent,
+
     NavbarComponent,
-    GenericFormComponent,
     ComponentNavbarComponent,
     UserSettingsDialog,
-    ZonesComponent,
-    IoDevicesComponent,
-    AntennasComponent,
-    InventoryWizardComponent
   ],
   imports: [
     BrowserModule,
@@ -71,7 +59,6 @@ export const firebaseConfig = {
     CoreModule,
     SharedModule,
     AuthModule,
-    NgxDatatableModule,
     // routing module
 
     AppRoutingModule,
