@@ -18,7 +18,6 @@ import { AuthComponent } from './auth.component';
     MaterialModule.forRoot(),
     FormsModule,
     FlexLayoutModule
-
   ],
 
   declarations: [
