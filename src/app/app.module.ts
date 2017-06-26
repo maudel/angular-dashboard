@@ -22,6 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // components
 import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
 import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
+import { StarflexUpgradeComponent } from './starflex-upgrade/starflex-upgrade.component';
+import { SaveRestoreComponent } from './save-restore/save-restore.component';
 
 
 
@@ -48,6 +50,8 @@ export const firebaseConfig = {
     NavbarComponent,
     ComponentNavbarComponent,
     UserSettingsDialog,
+    StarflexUpgradeComponent,
+    SaveRestoreComponent,
   ],
   imports: [
     BrowserModule,

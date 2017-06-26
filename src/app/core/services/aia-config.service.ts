@@ -10,7 +10,7 @@ export class AiaConfigService {
     private $genericservice: GenericService,
   ) { }
 
-  getInfoNew(): Promise<any> {
+  getReadersData(): Promise<any> {
     const url = 'aiaConfig';
 
     const request = {

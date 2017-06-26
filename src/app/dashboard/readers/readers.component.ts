@@ -12,13 +12,6 @@ export class ReadersComponent implements OnInit {
   rows = [];
   temp = [];
   sideElems = [];
-  @ViewChild(DatatableComponent) table: DatatableComponent;
-  ngAfterViewInit() {
-    this.table.bodyHeight = 400;
-  }
-  constructor( private $aiaconfigservice: AiaConfigService) {
-
-  }
   columns = [
     { name: 'aiaName' },
     { name: 'aiaDottedIP' },
@@ -31,6 +24,14 @@ export class ReadersComponent implements OnInit {
     { name: 'macAddress' },
     { name: 'aiaDottedIP' }
   ];
+  @ViewChild(DatatableComponent) table: DatatableComponent;
+  ngAfterViewInit() {
+    this.table.bodyHeight = 400;
+  }
+  constructor( private $aiaconfigservice: AiaConfigService) {
+
+  }
+
   ngOnInit() {
     this.fetch((data) => {
       this.rows = data;
