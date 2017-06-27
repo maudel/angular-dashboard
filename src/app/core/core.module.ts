@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-
+import {AuthModule} from '../auth/auth.module'
 // services
 
 import { AiaConfigService} from './services/aia-config.service';
@@ -26,7 +26,8 @@ export const firebaseConfig = {
   imports: [
     CommonModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AuthModule
   ],
   declarations: [
   ],

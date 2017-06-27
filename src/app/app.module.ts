@@ -2,7 +2,6 @@ import { AppComponent } from './app.component';
 import 'hammerjs';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularFireModule } from 'angularfire2';
-import { ReadersComponent } from './readers/readers.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // modules
@@ -10,26 +9,22 @@ import { NgModule } from '@angular/core';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from  './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
+import { HomeModule } from './home/home.module'
+import { DashboardModule } from './dashboard/dashboard.module'
 
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MaterialModule , MdDialog  } from '@angular/material';
+// import { MaterialModule , MdDialog  } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MdDialogModule, MdMenuModule,MdDialog, MdToolbarModule,MdButtonModule, MdCardModule, MdInputModule,MdTabsModule, MdIconModule} from '@angular/material';
 
 
 // components
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
-import { GenericFormComponent } from './generic-form/generic-form.component';
-import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { ZonesComponent } from './zones/zones.component';
-import { IoDevicesComponent } from './io-devices/io-devices.component';
-import { AntennasComponent } from './antennas/antennas.component';
-import { InventoryWizardComponent } from './inventory-wizard/inventory-wizard.component';
+import { StarflexUpgradeComponent } from './starflex-upgrade/starflex-upgrade.component';
+import { SaveRestoreComponent } from './save-restore/save-restore.component';
+
 
 
 
@@ -51,30 +46,26 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    ReadersComponent,
-    SidenavComponent,
+
     NavbarComponent,
-    GenericFormComponent,
-    ComponentNavbarComponent,
-    HomepageComponent,
     UserSettingsDialog,
-    ZonesComponent,
-    IoDevicesComponent,
-    AntennasComponent,
-    InventoryWizardComponent
+    StarflexUpgradeComponent,
+    SaveRestoreComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot(),
+    MdToolbarModule,
+    MdMenuModule,
+    MdInputModule,
+    MdDialogModule,
+    MdButtonModule,
+    MdIconModule,
     FlexLayoutModule,
     AngularFireModule.initializeApp(firebaseConfig),
     CoreModule,
     SharedModule,
-    AuthModule,
-    NgxDatatableModule,
     // routing module
 
     AppRoutingModule,

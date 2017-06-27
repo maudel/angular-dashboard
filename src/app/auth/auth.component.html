@@ -1,18 +1,18 @@
-<div class="login-container"
+<md-card class="login-container"
      fxLayout="column"
      fxLayoutAlign="center center"
      >
   <md-card >
     <div fxLayout="row"
          fxLayoutAlign="center center">
-      <img  md-card-image style="align-content: center; width: 200px; margin: 10px" src="../../assets/xd.png">
+      <img  md-card-image style="align-content: center; width: 200px; margin: 10px" src="../../assets/logo.png">
       <img   md-card-image style="align-content: center; width: 120px;margin: 10px;" src="../../assets/Picture1.png">
     </div>
 
 
     <nav md-tab-nav-bar>
       <a md-tab-link
-         routerLink="/signIn/signIn"
+         routerLink="/auth/signIn"
          routerLinkActive
          [routerLinkActiveOptions]="{ exact: true }"
          #rlaLogin="routerLinkActive"
@@ -20,15 +20,14 @@
         Login
       </a>
       <a md-tab-link
-         routerLink="/signIn/signUp"
+         routerLink="/auth/signUp"
          routerLinkActive
          [routerLinkActiveOptions]="{ exact: true }"
          #rlaRegister="routerLinkActive"
-         [active]="rlaRegister.isActive"
-      >
+         [active]="rlaRegister.isActive">
         Register
       </a>
     </nav>
     <router-outlet></router-outlet>
   </md-card>
-</div>
+</md-card>

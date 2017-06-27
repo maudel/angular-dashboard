@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MaterialModule , MdDialog  } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MdDialogModule, MdMenuModule,MdDialog, MdToolbarModule,MdButtonModule, MdCardModule, MdInputModule,MdTabsModule} from '@angular/material';
+// import { MaterialModule  } from '@angular/material';
 
 // Components
 
@@ -13,11 +14,14 @@ import { AuthComponent } from './auth.component';
 
 @NgModule({
   imports: [
-    CommonModule,
     AppRoutingModule,
-    MaterialModule.forRoot(),
+
+    CommonModule,
     FormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MdCardModule,
+    MdInputModule,
+    MdTabsModule,
 
   ],
 

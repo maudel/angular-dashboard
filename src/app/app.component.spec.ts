@@ -13,7 +13,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule , MdDialog  } from '@angular/material';
-import { routing } from './routes';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {APP_BASE_HREF} from '@angular/common';
