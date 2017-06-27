@@ -14,14 +14,14 @@ import { DashboardModule } from './dashboard/dashboard.module'
 
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MaterialModule , MdDialog  } from '@angular/material';
+// import { MaterialModule , MdDialog  } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MdDialogModule, MdMenuModule,MdDialog, MdToolbarModule,MdButtonModule, MdCardModule, MdInputModule,MdTabsModule, MdIconModule} from '@angular/material';
 
 
 // components
 import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
-import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
 import { StarflexUpgradeComponent } from './starflex-upgrade/starflex-upgrade.component';
 import { SaveRestoreComponent } from './save-restore/save-restore.component';
 
@@ -48,7 +48,6 @@ export const firebaseConfig = {
     AppComponent,
 
     NavbarComponent,
-    ComponentNavbarComponent,
     UserSettingsDialog,
     StarflexUpgradeComponent,
     SaveRestoreComponent,
@@ -57,12 +56,16 @@ export const firebaseConfig = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot(),
+    MdToolbarModule,
+    MdMenuModule,
+    MdInputModule,
+    MdDialogModule,
+    MdButtonModule,
+    MdIconModule,
     FlexLayoutModule,
     AngularFireModule.initializeApp(firebaseConfig),
     CoreModule,
     SharedModule,
-    AuthModule,
     // routing module
 
     AppRoutingModule,

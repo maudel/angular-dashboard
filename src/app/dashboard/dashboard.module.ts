@@ -8,7 +8,9 @@ import { InventoryWizardComponent } from './inventory-wizard/inventory-wizard.co
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ReadersComponent } from './readers/readers.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { MaterialModule , MdDialog  } from '@angular/material';
+// import { MaterialModule , MdDialog  } from '@angular/material';
+import {MdDialogModule, MdMenuModule,MdDialog, MdToolbarModule,MdButtonModule, MdCardModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule, MdSidenavModule} from '@angular/material';
+
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from  '../shared/shared.module';
 
@@ -17,9 +19,17 @@ import { SharedModule } from  '../shared/shared.module';
     CommonModule,
     DashboardRoutingModule,
     NgxDatatableModule,
-    MaterialModule.forRoot(),
+    // MaterialModule.forRoot(),
+    MdToolbarModule,
+    MdButtonModule,
+    MdIconModule,
+    MdSidenavModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    MdTabsModule,
+    MdSliderModule,
+    MdSlideToggleModule,
+    MdInputModule
   ],
   declarations: [
     ZonesComponent,
