@@ -18,19 +18,19 @@ export class ItemComponent implements OnInit {
         title: 'Modelo'
       },
       serie: {
-        title: 'Serie'
+        title: 'Serial'
       },
       dimension: {
-        title: 'Dimension'
+        title: 'Descripcion'
       },
       capacidad: {
-        title: 'Capacidad'
+        title: 'Color'
       },
       accesorios: {
-        title: 'Accesorios'
+        title: 'Talla'
       },
       titulo: {
-        title: 'Titulo'
+        title: 'Precio'
       }
 
     }

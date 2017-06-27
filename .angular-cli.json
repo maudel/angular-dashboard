@@ -6,8 +6,6 @@
   "apps": [
     {
       "root": "src",
-      "deployUrl": "http://38.107.160.180:8080/angular-mcon-static/",
-      "outputDir": "http://38.107.160.180:8080/angular-mcon-static/",
       "outDir": "dist",
       "assets": [
         "assets",
