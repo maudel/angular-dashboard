@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireAuthModule } from 'angularfire2/auth';
+// import { AngularFireModule } from 'angularfire2';
+// import { AngularFireAuthModule } from 'angularfire2/auth';
 import {AuthModule} from '../auth/auth.module'
 // services
 
@@ -25,8 +25,8 @@ export const firebaseConfig = {
 @NgModule({
   imports: [
     CommonModule,
-    AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule,
+    // AngularFireModule.initializeApp(firebaseConfig),
+    // AngularFireAuthModule,
     AuthModule
   ],
   declarations: [

@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
   isDarkTheme = false;
   @Output() isDarkThemeSelected: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  constructor(public dialog: MdDialog, private  authService: AuthService) { }
+  constructor(public dialog: MdDialog, public  authService: AuthService) { }
 
   ngOnInit() {
   }

@@ -2,32 +2,21 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 // import * as firebase from 'firebase';
 
-import { AngularFireAuth,  } from 'angularfire2/auth';
-import * as firebase from 'firebase/app';
+// import { AngularFireAuth,  } from 'angularfire2/auth';
+// import * as firebase from 'firebase/app';
 import { Router } from '@angular/router'
 @Injectable()
 export class AuthService {
   isAuth: boolean;
-  user: Observable<firebase.User>;
+  user: any;
 
   rout: any;
-  constructor(public afAuth: AngularFireAuth, public router: Router) {
-    this.user = afAuth.authState;
+  constructor( public router: Router) {
+    this.user = null;
     this.isAuth = false;
     this.rout = router;
   }
-  loginGoogle() {
-    this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
-      .catch(function (error){
-        alert('${error.message} Please try again')
-      })
-  }
-  loginFacebook() {
-    this.afAuth.auth.signInWithPopup(new firebase.auth.FacebookAuthProvider())
-      .catch(function (error){
-        alert('${error.message} Please try again')
-      })
-  }
+
   signUp(email: string, password: string) {
     // this.afAuth.auth.createUserWithEmailAndPassword(email, password)
     //   .then(value => {

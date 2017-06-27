@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {MdDialogModule, MdMenuModule,MdDialog, MdToolbarModule,MdButtonModule, MdCardModule, MdInputModule,MdTabsModule} from '@angular/material';
+import { MdCardModule, MdInputModule,MdTabsModule} from '@angular/material';
 // import { MaterialModule  } from '@angular/material';
 
 // Components

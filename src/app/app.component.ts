@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import './rxjs-operators';
+// import './rxjs-operators';
 
 @Component({
   selector: 'app-root',
