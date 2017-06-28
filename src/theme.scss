@@ -12,8 +12,30 @@ $theme: mat-light-theme($primary, $accent);
 .dark-theme {
   $dark-primary: mat-palette($mat-light-blue);
   $dark-accent: mat-palette($mat-green);
-
   $dark-theme: mat-dark-theme($dark-primary, $dark-accent);
-
   @include angular-material-theme($dark-theme);
+}
+.purple-green-theme{
+  $primary: mat-palette($mat-purple);
+  $accent:  mat-palette($mat-green, A200, A100, A400);
+  $purple-green-theme: mat-dark-theme($primary, $accent);
+  @include angular-material-theme($purple-green-theme);
+}
+.pink-blue-gray-theme{
+  $primary: mat-palette($mat-pink);
+  $accent:  mat-palette($mat-blue-grey, A200, A100, A400);
+  $pink-blue-gray-theme: mat-dark-theme($primary, $accent);
+  @include angular-material-theme($pink-blue-gray-theme);
+}
+.deep-purple-amber-theme{
+  $primary: mat-palette($mat-deep-purple);
+  $accent:  mat-palette($mat-amber, A200, A100, A400);
+  $purple-green-theme: mat-dark-theme($primary, $accent);
+  @include angular-material-theme($purple-green-theme);
+}
+.indigo-pink-theme{
+  $primary: mat-palette($mat-indigo);
+  $accent:  mat-palette($mat-pink, A200, A100, A400);
+  $indigo-pink-theme: mat-dark-theme($primary, $accent);
+  @include angular-material-theme($indigo-pink-theme);
 }

@@ -9,7 +9,7 @@
       <h3>{{elem.name}}</h3>
       <ul>
         <li *ngFor="let component of elem.items">
-          <a [routerLink]="['/', component.id]"
+          <a [routerLink]="component.id"
              routerLinkActive="docs-component-viewer-sidenav-item-selected">
             {{component.name}}
           </a>

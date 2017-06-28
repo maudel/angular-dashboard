@@ -10,13 +10,9 @@ import { FormsModule } from '@angular/forms';
 // import { MaterialModule , MdDialog  } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MdDialogModule, MdMenuModule,MdDialog, MdToolbarModule,MdButtonModule, MdInputModule, MdIconModule} from '@angular/material';
+import {MdDialogModule, MdMenuModule, MdDialog, MdToolbarModule, MdButtonModule, MdInputModule, MdIconModule} from '@angular/material';
 // components
 import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
-
-
-
-
 // feature/shared modules
 // NOTE: lazy loaded modules MUST NOT be imported
 // they must be referenced through the router, see `app-routing.module.ts`
@@ -24,14 +20,14 @@ import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
 
 // Login Dialog
 
-// Must export the config
-export const firebaseConfig = {
-  apiKey: "AIzaSyAW6_gady9XHegVN94Cs8oTpOzM978BJ04",
-  authDomain: "angularmcon.firebaseapp.com",
-  databaseURL: "https://angularmcon.firebaseio.com",
-  storageBucket: "angularmcon.appspot.com",
-  messagingSenderId: "850875400239"
-};
+// // Must export the config
+// export const firebaseConfig = {
+//   apiKey: "AIzaSyAW6_gady9XHegVN94Cs8oTpOzM978BJ04",
+//   authDomain: "angularmcon.firebaseapp.com",
+//   databaseURL: "https://angularmcon.firebaseio.com",
+//   storageBucket: "angularmcon.appspot.com",
+//   messagingSenderId: "850875400239"
+// };
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,4 +64,4 @@ export class AppModule {
 
 
 }
-4
+
