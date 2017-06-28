@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 import { GenericService } from './generic.service'
 import { Headers, RequestMethod, URLSearchParams } from '@angular/http';
 // import { stringify } from 'query-string';
-import {Aiaconfig} from  '../models/aiaconfig'
+import {Aiaconfig} from  '../models/aiaconfig';
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/operator/toPromise';
+import { Http} from '@angular/http';
 @Injectable()
 export class AiaConfigService {
-
   constructor(
-    private $genericservice: GenericService,
+    private $genericservice: GenericService, private $http: Http
   ) { }
 
   getReadersData(): Promise<any> {
@@ -23,6 +25,6 @@ export class AiaConfigService {
     };
 
     return this.$genericservice.request(request)
-      .toPromise().then(res => new Aiaconfig(res));
+      .toPromise();
   }
 }

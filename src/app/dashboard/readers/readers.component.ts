@@ -1,7 +1,7 @@
-import { Component, OnInit,ViewChild } from '@angular/core';
-import { AiaConfigService } from '../../core/services/aia-config.service'
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AiaConfigService } from '../../core/services/aia-config.service';
 const SMALL_WIDTH_BREAKPOINT = 840;
-import { DatatableComponent } from "@swimlane/ngx-datatable";
+import { DatatableComponent } from '@swimlane/ngx-datatable';
 @Component({
   selector: 'app-readers',
   templateUrl: './readers.component.html',
@@ -11,6 +11,7 @@ export class ReadersComponent implements OnInit {
 
   rows = [];
   temp = [];
+  readers = [];
   sideElems = [];
   columns = [
     { name: 'aiaName' },
@@ -33,12 +34,15 @@ export class ReadersComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.fetch((data) => {
-      this.rows = data;
-      this.temp = [...data];
-      console.log(this.temp);
+    this.$aiaconfigservice.getReadersData().then(
+       response => {
+         this.rows = response;
+         console.log(this.rows);
+       }
+    ).catch(
 
-    });
+    );
+
     this.sideElems = [
       {
         id: 'config',
