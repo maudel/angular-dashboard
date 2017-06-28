@@ -1,25 +1,19 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import { AiaConfigService } from '../../core/services/aia-config.service';
 const SMALL_WIDTH_BREAKPOINT = 840;
 import { DatatableComponent } from '@swimlane/ngx-datatable';
+import { Aiaconfig } from './../../core/models/aiaconfig';
+
 @Component({
   selector: 'app-readers',
   templateUrl: './readers.component.html',
   styleUrls: ['./readers.component.scss']
 })
-export class ReadersComponent implements OnInit {
-
-  rows = [];
+export class ReadersComponent implements OnInit, AfterViewInit{
+  rows: Aiaconfig[] ;
   temp = [];
-  readers = [];
   sideElems = [];
   columns = [
-    { name: 'aiaName' },
-    { name: 'aiaDottedIP' },
-    { name: 'macAddress' },
-    { name: 'aiaDottedIP' }
-  ];
-  allColumns = [
     { name: 'aiaName' },
     { name: 'aiaDottedIP' },
     { name: 'macAddress' },
@@ -32,12 +26,10 @@ export class ReadersComponent implements OnInit {
   constructor( private $aiaconfigservice: AiaConfigService) {
 
   }
-
   ngOnInit() {
     this.$aiaconfigservice.getReadersData().then(
        response => {
          this.rows = response;
-         console.log(this.rows);
        }
     ).catch(
 
@@ -107,16 +99,6 @@ export class ReadersComponent implements OnInit {
       'age-is-ten': (row.age % 10) === 0
     };
   }
-  fetch(cb) {
-    const req = new XMLHttpRequest();
-    req.open('GET', `assets/aiaConfig.json`);
-
-    req.onload = () => {
-      cb(JSON.parse(req.response));
-    };
-
-    req.send();
-  }
   updateFilter(event) {
     const val = event.target.value;
 
@@ -141,7 +123,6 @@ export class ReadersComponent implements OnInit {
       this.columns = [...this.columns, col];
     }
   }
-
   isChecked(col) {
     return this.columns.find(c => {
       return c.name === col.name;

@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
 import { GenericService } from './generic.service'
 import { Headers, RequestMethod, URLSearchParams } from '@angular/http';
-// import { stringify } from 'query-string';
-import {Aiaconfig} from  '../models/aiaconfig';
-import {Observable} from 'rxjs/Observable';
+import {Aiaconfig} from '../models/aiaconfig';
 import 'rxjs/add/operator/toPromise';
 import { Http} from '@angular/http';
+import 'rxjs/add/operator/map';
 @Injectable()
 export class AiaConfigService {
   constructor(
-    private $genericservice: GenericService, private $http: Http
+    private $genericservice: GenericService
   ) { }
 
-  getReadersData(): Promise<any> {
+  getReadersData(): Promise<Aiaconfig[]> {
     const url = 'aiaConfig';
 
     const request = {
@@ -25,6 +24,7 @@ export class AiaConfigService {
     };
 
     return this.$genericservice.request(request)
-      .toPromise();
+      .toPromise().then(response => response as Aiaconfig);
   }
+
 }
