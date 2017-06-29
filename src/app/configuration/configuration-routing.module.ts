@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'system',
-    loadChildren: 'app/home/system.module#SystemModule'
+    loadChildren: 'app/system/system.module#SystemModule'
   },
   {
     path: 'administration',
