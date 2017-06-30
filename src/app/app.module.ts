@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MdDialogModule, MdMenuModule, MdDialog, MdToolbarModule, MdButtonModule, MdInputModule, MdIconModule} from '@angular/material';
 // components
 import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
+import { StartStopDirective } from './start-stop.directive';
 // feature/shared modules
 // NOTE: lazy loaded modules MUST NOT be imported
 // they must be referenced through the router, see `app-routing.module.ts`

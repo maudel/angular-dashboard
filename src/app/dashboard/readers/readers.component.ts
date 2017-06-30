@@ -59,7 +59,7 @@ export class ReadersComponent implements OnInit, AfterViewInit{
         name: 'Status',
         summary: 'See Status',
         items: [
-          {id: 'statusList', name: 'ALE Report Statistics', examples: ['list-sections']},
+          {id: 'reader-statistics', name: 'Reader Statistics ', examples: ['list-sections']},
         ]
       },
       {

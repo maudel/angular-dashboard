@@ -10,28 +10,6 @@ export class SidenavComponent implements OnInit {
   sideElems = [];
 
   constructor() { }
-  activeTabIndex = 0;
-  addTabPosition = 0;
-  tabLinks = [
-    {label: 'Readers', link: 'configuration/readers'},
-    {label: 'Zones', link: 'configuration/zones'},
-    {label: 'Io Devices', link: 'configuration/io-devices'},
-    {label: 'Antennas', link: 'configuration/antennas'},
-    {label: 'Inventory Wizard', link: 'configuration/inventory-wizard'}
-  ];
-  tabLinks1 = [
-    {label: 'Redundancy', link: 'configuration/redundancy'},
-    {label: 'Reports', link: 'configuration/reports'},
-    {label: 'Rules Engine', link: 'configuration/rules-engine'}
-  ];
-  tabLinks2 = [
-    {label: 'General', link: 'configuration/general'},
-    {label: 'Network', link: 'configuration/network'},
-    {label: 'Email', link: 'configuration/email'},
-    {label: 'Security', link: 'configuration/security'},
-    {label: 'Scheduler', link: 'configuration/scheduler'}
-  ];
-  activeLinkIndex = 0;
 
   ngOnInit() {
     this.sideElems = [
@@ -58,7 +36,7 @@ export class SidenavComponent implements OnInit {
         name: 'Status',
         summary: 'See Status',
         items: [
-          {id: 'statusList', name: 'ALE Report Statistics', examples: ['list-sections']},
+          {id: 'status/reader-statistics', name: 'Reader Statistics ', examples: ['list-sections']},
         ]
       },
       {
