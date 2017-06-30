@@ -49,9 +49,10 @@
     "@angular/router": "^4.2.4",
     "@angular/service-worker": "^1.0.0-beta.16",
     "@ngrx/core": "^1.2.0",
-    "@ngrx/store": "^2.2.1",
+    "@ngrx/store": "^2.2.2",
     "@ngrx/store-devtools": "~3.2.3",
-    "@swimlane/ngx-datatable": "^7.1.0",
+    "@swimlane/ngx-datatable": "^7.3.0",
+    "@types/node": "^6.0.78",
     "angular2-universal": "^2.1.0-rc.1",
     "angularfire2": "^4.0.0-rc0",
     "body-parser": "^1.17.2",
@@ -62,7 +63,9 @@
     "intl": "^1.2.5",
     "phantomjs": "^2.1.7",
     "preboot": "^5.0.0-rc.11",
-    "rxjs": "^5.0.0-beta.12",
+    "protractor": "^5.1.2",
+    "rxjs": "^5.4.1",
+    "typescript": "^2.2.2",
     "zone.js": "^0.6.21"
   },
   "devDependencies": {

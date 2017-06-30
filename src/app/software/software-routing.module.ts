@@ -1,7 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-const routes: Routes = [];
+import { RedundancyComponent } from './redundancy/redundancy.component';
+import { ReportsComponent } from './reports/reports.component';
+import { RulesEngineComponent } from './rules-engine/rules-engine.component';
+const routes: Routes = [{
+  path: '',
+  redirectTo: 'redundancy',
+},
+  {
+    path: 'redundancy',
+    component: RedundancyComponent
+  }, {
+    path: 'reports',
+    component: ReportsComponent
+  }, {
+    path: 'rules-engine',
+    component: RulesEngineComponent
+  }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

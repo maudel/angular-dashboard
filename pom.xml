@@ -67,7 +67,7 @@
               <executable>npm</executable>
               <arguments>
                 <argument>run</argument>
-                <argument>build:prod</argument>
+                <argument>build:local</argument>
               </arguments>
             </configuration>
             <goals>

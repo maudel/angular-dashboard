@@ -19,6 +19,18 @@ export class SidenavComponent implements OnInit {
     {label: 'Antennas', link: 'configuration/antennas'},
     {label: 'Inventory Wizard', link: 'configuration/inventory-wizard'}
   ];
+  tabLinks1 = [
+    {label: 'Redundancy', link: 'configuration/redundancy'},
+    {label: 'Reports', link: 'configuration/reports'},
+    {label: 'Rules Engine', link: 'configuration/rules-engine'}
+  ];
+  tabLinks2 = [
+    {label: 'General', link: 'configuration/general'},
+    {label: 'Network', link: 'configuration/network'},
+    {label: 'Email', link: 'configuration/email'},
+    {label: 'Security', link: 'configuration/security'},
+    {label: 'Scheduler', link: 'configuration/scheduler'}
+  ];
   activeLinkIndex = 0;
 
   ngOnInit() {

@@ -8,6 +8,7 @@ import {InventoryWizardComponent} from '../dashboard/inventory-wizard/inventory-
 
 const routes: Routes = [{
   path: '',
+  component: ReadersComponent,
   redirectTo: 'readers',
   },
   {
