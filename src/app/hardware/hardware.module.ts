@@ -10,6 +10,7 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { FormsModule } from '@angular/forms';
 
 import {MdToolbarModule,MdButtonModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule, MdSidenavModule} from '@angular/material';
+import { HardwareComponent } from './hardware.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,14 @@ import {MdToolbarModule,MdButtonModule, MdInputModule, MdSliderModule, MdSlideTo
     MdSlideToggleModule,
     MdInputModule,
     FormsModule,
+    MdToolbarModule,
+    MdButtonModule,
+    MdIconModule,
+    MdSidenavModule,
+    MdTabsModule,
+    MdSliderModule,
+    MdSlideToggleModule,
+    MdInputModule
 
 
   ],
@@ -33,7 +42,8 @@ import {MdToolbarModule,MdButtonModule, MdInputModule, MdSliderModule, MdSlideTo
     ZonesComponent,
     InventoryWizardComponent,
     AntennasComponent,
-    ReadersComponent
+    ReadersComponent,
+    HardwareComponent
   ]
 })
 export class HardwareModule { }
