@@ -9,8 +9,9 @@ import { ReaderStatisticsComponent } from './reader-statistics/reader-statistics
   imports: [
     CommonModule,
     StatusRoutingModule,
-    ReaderStatisticsComponent
+
   ],
-  declarations: [StatusComponent]
+  declarations: [StatusComponent,
+    ReaderStatisticsComponent]
 })
 export class StatusModule { }

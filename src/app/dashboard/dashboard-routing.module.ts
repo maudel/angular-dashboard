@@ -23,7 +23,7 @@ const APP_ROUTES: Routes = [
         loadChildren: 'app/view/view.module#ViewModule'
       }, {
         path: '',
-        loadChildren: 'app/save-restore/save-restore.module#'
+        loadChildren: 'app/save-restore/save-restore.module#SaveRestoreModule'
       }]
   }
 ];
