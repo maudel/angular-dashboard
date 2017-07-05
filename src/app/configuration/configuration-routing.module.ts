@@ -19,7 +19,7 @@ const routes: Routes = [
     loadChildren: 'app/system/system.module#SystemModule'
   },
   {
-    path: 'administration',
+    path: 'admin',
     loadChildren: 'app/admin/admin.module#AdminModule'
   }];
 // const appRouting = RouterModule.forChild(APP_ROUTES);

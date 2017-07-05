@@ -20,7 +20,8 @@ export class SidenavComponent implements OnInit {
         items: [
           {id: 'configuration/hardware', name: 'Hardware', examples: ['autocomplete-overview']},
           {id: 'configuration/software', name: 'Software', examples: ['checkbox-configurable']},
-          {id: 'configuration/system', name: 'System', examples: ['input-form']}
+          {id: 'configuration/system', name: 'System', examples: ['input-form']},
+          {id: 'configuration/admin', name: 'Admin', examples: ['input-form']},
         ]
       },
       {

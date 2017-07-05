@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-const routes: Routes = [];
+import { AdminComponent} from './admin.component'
+const routes: Routes = [{
+  path:'',
+  redirectTo: 'admin'
+},{
+  path: 'admin',
+  component: AdminComponent
+}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
