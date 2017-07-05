@@ -16,6 +16,8 @@ import { StarflexUpgradeComponent } from './starflex-upgrade/starflex-upgrade.co
 import { SaveRestoreComponent } from './save-restore/save-restore.component';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from  '../shared/shared.module';
+import { DashboardNavbarComponent } from './dashboard-navbar/dashboard-navbar.component'
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
@@ -32,7 +34,9 @@ import { SharedModule } from  '../shared/shared.module';
     MdTabsModule,
     MdSliderModule,
     MdSlideToggleModule,
-    MdInputModule
+    MdInputModule,
+    FlexLayoutModule
+
   ],
   declarations: [
     // ZonesComponent,
@@ -42,7 +46,8 @@ import { SharedModule } from  '../shared/shared.module';
     SidenavComponent,
     // ReadersComponent,
     StarflexUpgradeComponent,
-    SaveRestoreComponent
+    SaveRestoreComponent,
+    DashboardNavbarComponent
   ]
 })
 export class DashboardModule { }

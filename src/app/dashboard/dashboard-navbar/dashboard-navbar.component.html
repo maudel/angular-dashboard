@@ -1,0 +1,30 @@
+<md-toolbar color="accent">
+  <!--<div *ngIf="isScreenSmall()">-->
+    <!--<a md-button routerLink="/">-->
+  <!--<md-icon class="back-button">chevron_left-->
+  <!--</md-icon>-->
+  <!--</a>-->
+  <!--<span> Dashboard-->
+  <!--</span>-->
+  <!--</div>-->
+  <a md-button  routerLink="/" aria-label="Angular Material">
+    <img class="docs-angular-logo"
+         src="../../assets/angular-white-transparent.svg"
+         alt="Angular">
+    <span>MCON</span>
+  </a>
+
+
+  <button  md-button (click)="toggleSidenav.emit()">
+    <md-icon>menu</md-icon>
+  </button>
+  <span fxFlex></span>
+
+  <button  md-button >
+    <md-icon>play_arrow</md-icon>
+  </button>
+  <!--<div *ngIf="!isScreenSmall()">-->
+    <!--Desktop-->
+  <!--</div>-->
+</md-toolbar>
+
