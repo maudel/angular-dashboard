@@ -11,6 +11,7 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MdDialogModule, MdMenuModule, MdDialog, MdToolbarModule, MdButtonModule, MdInputModule, MdIconModule} from '@angular/material';
+
 // components
 // import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
 // import { StartStopDirective } from './start-stop.directive';

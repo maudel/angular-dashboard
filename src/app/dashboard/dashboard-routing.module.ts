@@ -24,6 +24,9 @@ const APP_ROUTES: Routes = [
       }, {
         path: '',
         loadChildren: 'app/save-restore/save-restore.module#SaveRestoreModule'
+      },{
+        path: 'help',
+        loadChildren: 'app/help/help.module#HelpModule'
       }]
   }
 ];
