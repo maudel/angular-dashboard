@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MdCardModule, MdInputModule,MdTabsModule} from '@angular/material';
-// import { MaterialModule  } from '@angular/material';
+import { SharedModule  } from './../shared/shared.module';
 
 // Components
 
@@ -22,6 +22,7 @@ import { AuthComponent } from './auth.component';
     MdCardModule,
     MdInputModule,
     MdTabsModule,
+    SharedModule
 
   ],
 

@@ -1,4 +1,4 @@
-<app-dashboard-navbar></app-dashboard-navbar>
+<app-dashboard-navbar (toggleSidenav)="sidenav.toggle()" ></app-dashboard-navbar>
 <md-sidenav-container fullscreen class="sidenav-container" style="top: 64px !important;">
   <md-sidenav  #sidenav
                [opened]="!isScreenSmall()"

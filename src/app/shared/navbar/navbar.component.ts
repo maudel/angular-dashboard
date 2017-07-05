@@ -1,7 +1,7 @@
 import { Component, OnInit, Output ,EventEmitter } from '@angular/core';
 const SMALL_WIDTH_BREAKPOINT = 840;
 import {MdDialog, MdDialogRef} from '@angular/material';
-import {AuthService} from '../core/services/auth.service'
+import {AuthService} from '../../core/services/auth.service'
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +9,6 @@ import {AuthService} from '../core/services/auth.service'
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  @Output() toggleSidenav = new EventEmitter<void>();
   selectedOption: string;
   isDarkTheme = false;
   @Output() isDarkThemeSelected: EventEmitter<boolean> = new EventEmitter<boolean>();

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output ,EventEmitter  } from '@angular/core';
 const SMALL_WIDTH_BREAKPOINT = 840;
 
 
@@ -8,6 +8,7 @@ const SMALL_WIDTH_BREAKPOINT = 840;
   styleUrls: ['./dashboard-navbar.component.scss']
 })
 export class DashboardNavbarComponent implements OnInit {
+  @Output() toggleSidenav : EventEmitter<void> = new EventEmitter<void>();
 
   constructor() { }
 

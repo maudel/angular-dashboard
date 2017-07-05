@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MdDialogModule, MdMenuModule, MdDialog, MdToolbarModule, MdButtonModule, MdInputModule, MdIconModule} from '@angular/material';
 // components
-import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
+// import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
 // import { StartStopDirective } from './start-stop.directive';
 // feature/shared modules
 // NOTE: lazy loaded modules MUST NOT be imported
@@ -32,8 +32,8 @@ import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    UserSettingsDialog
+    // NavbarComponent,
+    // UserSettingsDialog
   ],
   imports: [
     BrowserModule,
@@ -55,7 +55,7 @@ import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [
-    UserSettingsDialog
+    // UserSettingsDialog
   ]
 })
 export class AppModule {
