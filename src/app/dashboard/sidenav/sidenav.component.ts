@@ -45,7 +45,7 @@ export class SidenavComponent implements OnInit {
         name: 'Save/Restore',
         summary: 'Buttons, button toggles, icons, progress spinners, progress bars',
         items: [
-          {id: 'save-restore', name: 'Button', examples: ['button-types']},
+          {id: 'save-restore', name: 'MCON save/restore', examples: ['button-types']},
         ]
       }, {
         id: 'help',

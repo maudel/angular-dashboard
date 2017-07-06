@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SaveRestoreService } from '../core/services/save-restore.service';
+import { Backup} from './../models/backup'
 
 @Component({
   selector: 'app-save-restore',
@@ -6,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./save-restore.component.scss']
 })
 export class SaveRestoreComponent implements OnInit {
+  rows: Backup[] ;
+  constructor( private $saveRestoreService: SaveRestoreService) {
 
-  constructor() { }
+  }
 
   ngOnInit() {
+    this.$saveRestoreService.getBackups().then(
+      response => {
+        this.rows = response;
+      }
+    ).catch(
+
+    );
   }
 
 }

@@ -11,7 +11,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 // import { ReadersComponent } from './readers/readers.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 // import { MaterialModule , MdDialog  } from '@angular/material';
-import {MdToolbarModule,MdButtonModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule, MdSidenavModule} from '@angular/material';
+import {MdToolbarModule,MdButtonModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule, MdSidenavModule, MdMenuModule} from '@angular/material';
 import { StarflexUpgradeComponent } from './starflex-upgrade/starflex-upgrade.component';
 import { SaveRestoreComponent } from './save-restore/save-restore.component';
 import { FormsModule } from '@angular/forms';
@@ -35,7 +35,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MdSliderModule,
     MdSlideToggleModule,
     MdInputModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MdMenuModule
 
   ],
   declarations: [

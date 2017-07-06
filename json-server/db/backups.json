@@ -1,0 +1,48 @@
+{
+  "data":{
+    "backups":[
+      {
+        "ts":"2017-06-02 12:49:40",
+        "name":"backup060217"
+      },
+      {
+        "ts":"2017-06-16 14:47:09",
+        "name":"mojixUpgradeBackup-20170616-1447-1497624428"
+      },
+      {
+        "ts":"2017-05-08 15:25:21",
+        "name":"kalua01"
+      },
+      {
+        "ts":"2017-05-17 17:33:37",
+        "name":"new_backup4"
+      },
+      {
+        "ts":"2017-05-08 15:31:17",
+        "name":"kalua02"
+      },
+      {
+        "ts":"2017-05-17 17:30:26",
+        "name":"new_backup"
+      },
+      {
+        "ts":"2017-05-08 16:53:31",
+        "name":"kalua03"
+      },
+      {
+        "ts":"2017-05-05 21:17:07",
+        "name":"theBackup12"
+      },
+      {
+        "ts":"2016-12-15 21:39:38",
+        "name":"Initial"
+      },
+      {
+        "ts":"2017-05-17 17:33:31",
+        "name":"new_backup3"
+      }
+    ]
+  },
+  "summary":"Current listing of all available backups",
+  "detail":"SUCCESS"
+}
