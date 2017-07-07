@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SaveRestoreService } from '../core/services/save-restore.service';
-import { Backup} from './../models/backup'
+import { Backup} from '../core/models/backup';
 
 @Component({
   selector: 'app-save-restore',
