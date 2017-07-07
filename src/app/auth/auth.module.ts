@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MdCardModule, MdInputModule,MdTabsModule} from '@angular/material';
+import { MdCardModule, MdInputModule, MdTabsModule , MdButtonModule } from '@angular/material';
 import { SharedModule  } from './../shared/shared.module';
 
 // Components
@@ -15,7 +15,7 @@ import { AuthComponent } from './auth.component';
 @NgModule({
   imports: [
     AppRoutingModule,
-
+    MdButtonModule,
     CommonModule,
     FormsModule,
     FlexLayoutModule,
