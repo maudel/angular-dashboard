@@ -9,6 +9,7 @@ import { AiaConfigService} from './services/aia-config.service';
 import { AuthService} from './services/auth.service';
 import { GenericService } from './services/generic.service';
 import { ZoneService } from './services/zone.service';
+import { SaveRestoreService} from './services/save-restore.service';
 // http related
 
 import { HttpModule, RequestOptions } from '@angular/http';
@@ -36,7 +37,8 @@ export const firebaseConfig = {
     AiaConfigService,
     GenericService,
     AuthService,
-    ZoneService
+    ZoneService,
+    SaveRestoreService
   ]
 })
 export class CoreModule { }

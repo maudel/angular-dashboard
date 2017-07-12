@@ -11,7 +11,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 // import { ReadersComponent } from './readers/readers.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 // import { MaterialModule , MdDialog  } from '@angular/material';
-import {MdToolbarModule, MdButtonModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule,
+import {MdToolbarModule, MdButtonModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule, MdExpansionModule,
   MdSidenavModule, MdMenuModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from  '../shared/shared.module';
@@ -35,8 +35,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MdSlideToggleModule,
     MdInputModule,
     FlexLayoutModule,
-    MdMenuModule
-
+    MdMenuModule,
+    MdExpansionModule,
   ],
   declarations: [
     SidenavComponent,
