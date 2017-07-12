@@ -6,8 +6,9 @@ import {AuthModule} from '../auth/auth.module'
 // services
 
 import { AiaConfigService} from './services/aia-config.service';
-import { AuthService} from './services/auth.service'
-import { GenericService } from './services/generic.service'
+import { AuthService} from './services/auth.service';
+import { GenericService } from './services/generic.service';
+import { ZoneService } from './services/zone.service';
 // http related
 
 import { HttpModule, RequestOptions } from '@angular/http';
@@ -34,7 +35,8 @@ export const firebaseConfig = {
   providers: [
     AiaConfigService,
     GenericService,
-    AuthService
+    AuthService,
+    ZoneService
   ]
 })
 export class CoreModule { }

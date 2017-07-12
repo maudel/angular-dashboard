@@ -4,7 +4,9 @@ module.exports = {
   },
   '/backups': {
     get: 'backups.json'
+  },
+  '/zones': {
+    get: 'zones.json'
   }
-
 };
 

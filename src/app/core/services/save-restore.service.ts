@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { GenericService } from './generic.service'
-import { Backup} from './../models/backup'
+import { GenericService } from './generic.service';
+import { Backup} from '../models/backup';
 import { Headers, RequestMethod, URLSearchParams } from '@angular/http';
 
 @Injectable()
@@ -21,7 +21,7 @@ export class SaveRestoreService {
     };
 
     return this.$genericservice.request(request)
-      .toPromise().then(response => response as Backup);
+      .toPromise().then(response => response as Backup[]);
   }
 
 

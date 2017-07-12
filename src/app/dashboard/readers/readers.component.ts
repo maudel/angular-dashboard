@@ -2,7 +2,7 @@ import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import { AiaConfigService } from '../../core/services/aia-config.service';
 const SMALL_WIDTH_BREAKPOINT = 840;
 import { DatatableComponent } from '@swimlane/ngx-datatable';
-import { Aiaconfig } from './../../core/models/aiaconfig';
+import { Aiaconfig } from '../../core/models/aiaconfig';
 
 @Component({
   selector: 'app-readers',

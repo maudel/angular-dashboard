@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { GenericService } from './generic.service'
 import { Headers, RequestMethod, URLSearchParams } from '@angular/http';
-import {Aiaconfig} from '../models/aiaconfig';
+import { Aiaconfig } from '../models/aiaconfig';
 import 'rxjs/add/operator/toPromise';
-import { Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 @Injectable()
 export class AiaConfigService {
@@ -24,7 +23,7 @@ export class AiaConfigService {
     };
 
     return this.$genericservice.request(request)
-      .toPromise().then(response => response as Aiaconfig);
+      .toPromise().then(response => response as Aiaconfig[]);
   }
 
 }

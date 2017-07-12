@@ -8,8 +8,8 @@ import {InventoryWizardComponent} from '../dashboard/inventory-wizard/inventory-
 import { HardwareRoutingModule } from './hardware-routing.module';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { FormsModule } from '@angular/forms';
-
-import {MdToolbarModule,MdButtonModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule, MdSidenavModule} from '@angular/material';
+import {DataSource} from '@angular/cdk';
+import {MdToolbarModule, MdTableModule, MdButtonModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule, MdSidenavModule} from '@angular/material';
 import { HardwareComponent } from './hardware.component';
 
 @NgModule({
@@ -33,7 +33,8 @@ import { HardwareComponent } from './hardware.component';
     MdTabsModule,
     MdSliderModule,
     MdSlideToggleModule,
-    MdInputModule
+    MdInputModule,
+    MdTableModule
 
 
   ],
