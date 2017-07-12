@@ -1,10 +1,10 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {ReadersComponent} from '../dashboard/readers/readers.component';
-import {IoDevicesComponent} from '../dashboard/io-devices/io-devices.component';
-import {ZonesComponent} from '../dashboard/zones/zones.component';
-import {AntennasComponent} from '../dashboard/antennas/antennas.component';
-import {InventoryWizardComponent} from '../dashboard/inventory-wizard/inventory-wizard.component';
+import {ReadersComponent} from './readers/readers.component';
+import {IoDevicesComponent} from './io-devices/io-devices.component';
+import {ZonesComponent} from './zones/zones.component';
+import {AntennasComponent} from './antennas/antennas.component';
+import {InventoryWizardComponent} from './inventory-wizard/inventory-wizard.component';
 import {HardwareComponent} from './hardware.component'
 const routes: Routes = [{
   path: '',
