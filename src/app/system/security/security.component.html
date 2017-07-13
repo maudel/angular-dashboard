@@ -1,3 +1,37 @@
-<p>
-  security works!
-</p>
+<div class="security-container" fxLayout="column" fxLayoutAlign="start start">
+  <div fxLayout="row" fxLayoutAlign="start start">
+    <md-card class="example-card">
+      <md-toolbar color="primary">
+        <span>Security</span>
+      </md-toolbar>
+      <md-card-content>
+        <form class="example-form" fxLayout="column" fxFlex="300px">
+          <md-input-container class="example-full-width">
+            <input mdInput placeholder="Description" value="">
+          </md-input-container>
+          <md-radio-group fxLayout="column">
+            <md-radio-button value="1">Option 1</md-radio-button>
+            <md-radio-button value="2">Option 2</md-radio-button>
+          </md-radio-group>
+          <md-input-container class="example-full-width">
+            <input mdInput placeholder="Longitude" value="">
+          </md-input-container>
+          <md-input-container class="example-full-width">
+            <input mdInput placeholder="Latitude" value="">
+          </md-input-container>
+          <md-input-container class="example-full-width">
+            <input mdInput placeholder="Elevation" value="">
+          </md-input-container>
+          <md-input-container class="example-full-width">
+            <input mdInput placeholder="Declination" value="">
+          </md-input-container>
+        </form>
+      </md-card-content>
+      <md-card-actions>
+        <button md-button>SAVE</button>
+      </md-card-actions>
+    </md-card>
+  </div>
+
+</div>
+

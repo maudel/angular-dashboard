@@ -12,3 +12,7 @@ html, body {
   margin: 0;
  //// height: 100%;
 }
+md-card > md-toolbar {
+  margin: -24px 0 24px -24px;
+  width: calc(100% + 48px);
+}

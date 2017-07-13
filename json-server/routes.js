@@ -7,6 +7,9 @@ module.exports = {
   },
   '/zones': {
     get: 'zones.json'
+  },
+  '/antennas': {
+    get: 'exciters.json'
   }
 };
 

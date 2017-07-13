@@ -9,7 +9,8 @@ import { SecurityComponent } from './security/security.component';
 import { SchedulerComponent } from './scheduler/scheduler.component';
 import { NetworkComponent } from './network/network.component';
 import { SystemComponent } from './system.component';
-import {MdToolbarModule,MdButtonModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule, MdSidenavModule} from '@angular/material';
+import {MdToolbarModule, MdButtonModule, MdCardModule, MdRadioModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule, MdSidenavModule} from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
@@ -22,7 +23,10 @@ import {MdToolbarModule,MdButtonModule, MdInputModule, MdSliderModule, MdSlideTo
     MdTabsModule,
     MdSliderModule,
     MdSlideToggleModule,
-    MdInputModule
+    MdInputModule,
+    MdCardModule,
+    FlexLayoutModule,
+    MdRadioModule
 
   ],
   declarations: [
