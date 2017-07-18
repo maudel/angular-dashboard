@@ -1,4 +1,4 @@
-import { Component, OnInit, Output ,EventEmitter } from '@angular/core';
+import { Component, OnInit, Output , EventEmitter } from '@angular/core';
 const SMALL_WIDTH_BREAKPOINT = 840;
 import {MdDialog, MdDialogRef} from '@angular/material';
 import {AuthService} from '../../core/services/auth.service'
@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
     return window.matchMedia(`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`).matches;
   }
   openDialog() {
-    this.dialog.open(UserSettingsDialog);
+    this.dialog.open(UserSettingsDialogComponent);
   }
   pickTheme(){
     this.isDarkTheme = !this.isDarkTheme;
@@ -33,8 +33,8 @@ export class NavbarComponent implements OnInit {
 
 }
 @Component({
-  selector: 'user-settings-dialog',
+  selector: 'app-user-settings-dialog',
   templateUrl: './user-settings-dialog.html',
 })
-export class UserSettingsDialog {
+export class UserSettingsDialogComponent {
 }
