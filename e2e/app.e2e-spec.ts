@@ -9,6 +9,6 @@ describe('angular-mcon App', () => {
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(true).toBe(true)
+    expect(true).toBe(true);
   });
 });

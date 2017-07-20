@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AdminComponent} from './admin.component'
+import { AdminComponent} from './admin.component';
 const routes: Routes = [{
-  path:'',
+  path: '',
   redirectTo: 'admin'
-},{
+}, {
   path: 'admin',
   component: AdminComponent
 }];

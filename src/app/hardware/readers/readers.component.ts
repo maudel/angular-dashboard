@@ -78,7 +78,7 @@ export class ReadersComponent implements OnInit, AfterViewInit{
           {id: 'check', name: 'Check', examples: ['dialog-result']},
           {id: 'startStopHandler', name: 'Stop', examples: ['dialog-result']},
         ]
-      },{
+      }, {
         id: 'help',
         name: 'Help',
         summary: 'Dialogs, tooltips, snackbars',
@@ -115,7 +115,7 @@ export class ReadersComponent implements OnInit, AfterViewInit{
   toggle(col) {
     const isChecked = this.isChecked(col);
 
-    if(isChecked) {
+    if (isChecked) {
       this.columns = this.columns.filter(c => {
         return c.name !== col.name;
       });

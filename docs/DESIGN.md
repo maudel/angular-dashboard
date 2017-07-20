@@ -10,7 +10,7 @@
 
 ## Application state
 
-
+This Project is in active development, 
 
 
 ## Reading list

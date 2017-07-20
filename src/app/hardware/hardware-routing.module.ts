@@ -5,7 +5,7 @@ import {IoDevicesComponent} from './io-devices/io-devices.component';
 import {ZonesComponent} from './zones/zones.component';
 import {AntennasComponent} from './antennas/antennas.component';
 import {InventoryWizardComponent} from './inventory-wizard/inventory-wizard.component';
-import {HardwareComponent} from './hardware.component'
+import {HardwareComponent} from './hardware.component';
 const routes: Routes = [{
   path: '',
   component: HardwareComponent,

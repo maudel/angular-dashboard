@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 // import { AngularFireModule } from 'angularfire2';
 // import { AngularFireAuthModule } from 'angularfire2/auth';
-import {AuthModule} from '../auth/auth.module'
+import {AuthModule} from '../auth/auth.module';
 // services
 
 import { AiaConfigService} from './services/aia-config.service';
@@ -17,11 +17,11 @@ import { StoreModule } from '@ngrx/store';
 
 // Must export the config
 export const firebaseConfig = {
-  apiKey: "AIzaSyAW6_gady9XHegVN94Cs8oTpOzM978BJ04",
-  authDomain: "angularmcon.firebaseapp.com",
-  databaseURL: "https://angularmcon.firebaseio.com",
-  storageBucket: "angularmcon.appspot.com",
-  messagingSenderId: "850875400239"
+  apiKey: 'AIzaSyAW6_gady9XHegVN94Cs8oTpOzM978BJ04',
+  authDomain: 'angularmcon.firebaseapp.com',
+  databaseURL: 'https://angularmcon.firebaseio.com',
+  storageBucket: 'angularmcon.appspot.com',
+  messagingSenderId: '850875400239'
 };
 
 @NgModule({

@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { RedundancyComponent } from './redundancy/redundancy.component';
 import { ReportsComponent } from './reports/reports.component';
 import { RulesEngineComponent } from './rules-engine/rules-engine.component';
-import {SoftwareComponent} from './software.component'
+import {SoftwareComponent} from './software.component';
 const routes: Routes = [{
   path: '',
   component: SoftwareComponent,

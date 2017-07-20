@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { GenericService } from './generic.service'
+import { GenericService } from './generic.service';
 import { Headers, RequestMethod, URLSearchParams } from '@angular/http';
 import { Aiaconfig } from '../models/aiaconfig';
 import 'rxjs/add/operator/toPromise';

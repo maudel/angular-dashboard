@@ -15,7 +15,7 @@ import {MdToolbarModule, MdButtonModule, MdInputModule, MdSliderModule, MdSlideT
   MdSidenavModule, MdMenuModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from  '../shared/shared.module';
-import { DashboardNavbarComponent } from './dashboard-navbar/dashboard-navbar.component'
+import { DashboardNavbarComponent } from './dashboard-navbar/dashboard-navbar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({

@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 
 // import { AngularFireAuth,  } from 'angularfire2/auth';
 // import * as firebase from 'firebase/app';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 @Injectable()
 export class AuthService {
   isAuth: boolean;
@@ -29,7 +29,7 @@ export class AuthService {
   signIn() {
 
     this.isAuth = true;
-    this.rout.navigate([''])
+    this.rout.navigate(['']);
     // this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }
 
@@ -58,7 +58,7 @@ export class AuthService {
   }
   signOut() {
     this.isAuth = false;
-    this.rout.navigate(['auth/signIn'])
+    this.rout.navigate(['auth/signIn']);
   }
   isAuthenticated() {
     return  this.isAuth;

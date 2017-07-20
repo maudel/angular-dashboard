@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SaveRestoreComponent} from './save-restore.component'
+import { SaveRestoreComponent} from './save-restore.component';
 
 const routes: Routes = [{
   path: '',
