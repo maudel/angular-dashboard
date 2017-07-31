@@ -1,4 +1,4 @@
 <div [class.dark-theme]="isDarkTheme" >
   <!--<app-navbar (toggleSidenav)="sidenav.toggle()"(isDarkThemeSelected)="changeTheme($event)" ></app-navbar>-->
-  <router-outlet></router-outlet>
+  <router-outlet (isDarkThemeSelected1)="changeTheme($event)"></router-outlet>
 </div>

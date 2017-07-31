@@ -4,6 +4,7 @@ import {AboutComponent} from './about/about.component';
 import {Star3000UpgradeComponent} from './star-3000-upgrade/star-3000-upgrade.component';
 import {StarflexUpgradeComponent} from './starflex-upgrade/starflex-upgrade.component';
 import {MconUpgradeComponent} from './mcon-upgrade/mcon-upgrade.component';
+
 import {HelpComponent} from './help.component';
 
 const routes: Routes = [{

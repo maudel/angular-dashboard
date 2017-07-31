@@ -9,7 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
   isDarkTheme = false;
-  public changeTheme (event) {
+  public changeTheme (event){
+    console.log(event)
     this.isDarkTheme = event;
   }
 }

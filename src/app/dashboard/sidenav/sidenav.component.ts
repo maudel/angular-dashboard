@@ -38,6 +38,9 @@ export class SidenavComponent implements OnInit {
         summary: 'See Status',
         items: [
           {id: 'status/reader-statistics', name: 'Reader Statistics ', examples: ['list-sections']},
+          {id: 'status/eNodes-component', name: 'eNode Statistics ', examples: ['list-sections']},
+          {id: 'status/sensors-statistics', name: 'Sensor Statistics ', examples: ['list-sections']},
+          {id: 'status/ale-statistics', name: 'ale Statistics ', examples: ['list-sections']},
         ]
       },
       {

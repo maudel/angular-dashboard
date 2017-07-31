@@ -9,8 +9,8 @@ export class StatusComponent implements OnInit {
   activeTabIndex = 0;
   addTabPosition = 0;
   tabLinks = [
-    {label: 'Readers', link: 'readers'},
-    {label: 'eNodes', link: 'zones'},
+    {label: 'Readers', link: 'readers-statistics'},
+    {label: 'eNodes', link: 'eNodes-statistics'},
     {label: 'Sensors', link: 'io-devices'},
     {label: 'ALE', link: 'antennas'},
   ];
