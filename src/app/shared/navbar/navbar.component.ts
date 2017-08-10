@@ -20,16 +20,7 @@ export class NavbarComponent implements OnInit {
   isScreenSmall(): boolean {
     return window.matchMedia(`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`).matches;
   }
-  openDialog() {
-    this.dialog.open(UserSettingsDialogComponent);
-  }
-  pickTheme() {
-    this.isDarkTheme = !this.isDarkTheme;
-    this.isDarkThemeSelected.emit(this.isDarkTheme);
-  }
-  logout(){
-    this.authService.signOut();
-  }
+
 
 }
 @Component({
