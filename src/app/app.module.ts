@@ -11,7 +11,6 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MdDialogModule, MdMenuModule, MdDialog, MdToolbarModule, MdButtonModule, MdInputModule, MdIconModule} from '@angular/material';
-import { InterfaceComponent } from './interface/interface.component';
 
 
 // components
@@ -35,7 +34,6 @@ import { InterfaceComponent } from './interface/interface.component';
 @NgModule({
   declarations: [
     AppComponent,
-    InterfaceComponent,
     // NavbarComponent,
     // UserSettingsDialog
   ],
