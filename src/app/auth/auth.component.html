@@ -1,23 +1,25 @@
-<app-navbar (isDarkThemeSelected)="changeTheme($event)"></app-navbar>
+<!--<app-navbar (isDarkThemeSelected)="changeTheme($event)"></app-navbar>-->
 <div class="login-container"
      fxLayout="column"
      fxLayoutAlign="center center"
      >
-  <md-card >
+  <md-card  >
     <div fxLayout="row"
          fxLayoutAlign="center center">
-      <img  md-card-image style="align-content: center; width: 200px; margin: 10px" src="../../assets/logo.png">
-      <img   md-card-image style="align-content: center; width: 120px;margin: 10px;" src="../../assets/Picture1.png">
+      <img  md-card-image style="align-content: center; width: 150px; margin: 10px" src="../../assets/logo.png">
+      <img   md-card-image style="align-content: center; width: 80px;margin: 10px;" src="../../assets/Picture1.png">
     </div>
 
 
-    <nav md-tab-nav-bar>
+    <nav md-tab-nav-bar fxLayout="row"
+         fxLayoutAlign="center center">
       <a md-tab-link
          routerLink="/auth/signIn"
          routerLinkActive
          [routerLinkActiveOptions]="{ exact: true }"
          #rlaLogin="routerLinkActive"
-         [active]="rlaLogin.isActive">
+         [active]="rlaLogin.isActive"
+         fxFlex="50">
         Login
       </a>
       <a md-tab-link
@@ -25,7 +27,8 @@
          routerLinkActive
          [routerLinkActiveOptions]="{ exact: true }"
          #rlaRegister="routerLinkActive"
-         [active]="rlaRegister.isActive">
+         [active]="rlaRegister.isActive"
+         fxFlex="50">
         Register
       </a>
     </nav>

@@ -13,7 +13,6 @@
     "build:local": "ng build -prod --base-href . --deploy-url='/angular-mcon-static/' ",
     "build:prod": "ng build --prod --output-path=dist/angular-mcon-static/ --base-href 'http://38.107.160.180:8080/angular-mcon-static/' --deploy-url 'http://38.107.160.180:8080/angular-mcon-static/'",
     "build:experimental": "ng build --aot --prod --build-optimizer",
-
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -66,7 +65,7 @@
     "rxjs": "^5.4.2"
   },
   "devDependencies": {
-    "@angular/cli": "^1.3.0",
+    "@angular/cli": "^1.4.4",
     "@angular/compiler-cli": "^4.3.2",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.85",

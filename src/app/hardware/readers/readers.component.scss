@@ -19,3 +19,19 @@ md-sidenav {
 md-card{
   margin: 50px;
 }
+@media screen and (max-width: 800px) {
+  .desktop-hidden {
+    display: initial;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .desktop-hidden {
+    display: none;
+  }
+  .mobile-hidden {
+    display: initial;
+  }
+}

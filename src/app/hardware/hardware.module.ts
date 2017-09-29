@@ -8,7 +8,6 @@ import {InventoryWizardComponent} from './inventory-wizard/inventory-wizard.comp
 import { HardwareRoutingModule } from './hardware-routing.module';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { FormsModule } from '@angular/forms';
-import {DataSource} from '@angular/cdk';
 import {MdToolbarModule, MdTableModule, MdButtonModule, MdInputModule, MdSliderModule, MdSlideToggleModule,
   MdTabsModule, MdIconModule, MdSidenavModule} from '@angular/material';
 import { HardwareComponent } from './hardware.component';

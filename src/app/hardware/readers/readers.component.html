@@ -27,6 +27,16 @@
       <ng-template let-value="value" ngx-datatable-cell-template>
         <a href="value">{{value}}</a>
       </ng-template>
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="#"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+          class="desktop-hidden">
+        </a>
+      </ng-template>
     </ngx-datatable-column>
     <ngx-datatable-column prop="runningState" name="&nbsp;" [width]="20">
       <ng-template let-value="value" ngx-datatable-cell-template>
@@ -37,18 +47,145 @@
           [disabled]="disabled">
         </md-slide-toggle>
       </ng-template>
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="#"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+          class="desktop-hidden">
+        </a>
+      </ng-template>
     </ngx-datatable-column>
-    <ngx-datatable-column prop="macAddress" name="MAC" [width]="85"></ngx-datatable-column>
-    <ngx-datatable-column prop="starType" name="Type" [width]="50"></ngx-datatable-column>
-    <ngx-datatable-column prop="posXFt" name="X (m)" [width]="15"></ngx-datatable-column>
-    <ngx-datatable-column prop="posYFt" name="Y (m)"[width]="15"></ngx-datatable-column>
-    <ngx-datatable-column prop="posZFt" name="Z (m)"[width]="15"></ngx-datatable-column>
-    <ngx-datatable-column prop="boresightCoazDeg" name="Coaz" [width]="15"></ngx-datatable-column>
-    <ngx-datatable-column prop="boresightElevDeg" name="Elev" [width]="15"></ngx-datatable-column>
-    <ngx-datatable-column prop="boresightRollDeg" name="Roll"[width]="15"></ngx-datatable-column>
-    <ngx-datatable-column prop="tsMod" name="Last Saved Date" [width]="60"></ngx-datatable-column>
-    <ngx-datatable-column prop="used" name="Use"[width]="50" ></ngx-datatable-column>
-    <ngx-datatable-column prop="delete" [checkboxable]="true" [sortable]="false" name="Delete"[width]="50"></ngx-datatable-column>
+    <ngx-datatable-column
+      prop="macAddress" name="MAC" [width]="85"
+
+    >
+
+    </ngx-datatable-column>
+    <ngx-datatable-column prop="starType" name="Type" [width]="50">
+
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="#"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+          class="desktop-hidden">
+        </a>
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column prop="posXFt" name="X (m)" [width]="15">
+
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="#"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+          class="desktop-hidden">
+        </a>
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column prop="posYFt" name="Y (m)"[width]="15">
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="#"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+          class="desktop-hidden">
+        </a>
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column prop="posZFt" name="Z (m)"[width]="15">
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="#"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+          class="desktop-hidden">
+        </a>
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column prop="boresightCoazDeg" name="Coaz" [width]="15">
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="#"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+          class="desktop-hidden">
+        </a>
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column prop="boresightElevDeg" name="Elev" [width]="15">
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="#"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+          class="desktop-hidden">
+        </a>
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column prop="boresightRollDeg" name="Roll"[width]="15">
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="#"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+          class="desktop-hidden">
+        </a>
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column prop="tsMod" name="Last Saved Date" [width]="60">
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="#"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+          class="desktop-hidden">
+        </a>
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column prop="used" name="Use"[width]="50" >
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="#"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+          class="desktop-hidden">
+        </a>
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column prop="delete" [checkboxable]="true" [sortable]="false" name="Delete"[width]="50">
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="#"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+          class="desktop-hidden">
+        </a>
+      </ng-template>
+    </ngx-datatable-column>
   </ngx-datatable>
 </div>
 
