@@ -29,7 +29,7 @@ export class AuthService {
   signIn() {
 
     this.isAuth = true;
-    this.rout.navigate(['']);
+    this.rout.navigate(['dashboard']);
     // this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }
 

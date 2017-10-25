@@ -4,7 +4,7 @@
            type="text"
            required
 
-           placeholder="Email">
+           placeholder="Username">
     <md-error>Email is invalid</md-error>
   </md-input-container>
   <md-input-container fxFlex="100">
@@ -15,14 +15,14 @@
            placeholder="Password">
     <md-error>Needs to be at least 8 characters</md-error>
   </md-input-container>
+
+    <!--<md-select placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">-->
+      <!--<md-option *ngFor="let language of languages" [value]="language.value">-->
+        <!--{{language.value}}-->
+      <!--</md-option>-->
+    <!--</md-select>-->
   <div fxFlex="33" fxFlexAlign="end">
     <button md-raised-button (click)="loginUser()">Login</button>
   </div>
 </form>
-<h3>Social login</h3>
-<md-card-actions class="button">
-  <button md-raised-button (click)="onSignInGoogle()">Google</button>
-  <button md-raised-button (click)="onSignInGoogle()">Twitter</button>
-  <button md-raised-button (click)="onSignInGoogle()">Github</button>
-  <button md-raised-button (click)="onSignInGoogle()">Facebook</button>
-</md-card-actions>
+

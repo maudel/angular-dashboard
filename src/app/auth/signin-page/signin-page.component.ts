@@ -13,6 +13,13 @@ export class SigninPageComponent implements OnInit {
     this.authService = $authService;
   }
   ngOnInit() {
+    const languages = [{
+      value: 'English'
+    },{
+      value: 'Deutsch'
+    },{
+      value: 'Chinese'
+    }]
   }
   loginUser(){
     this.authService.signIn();
