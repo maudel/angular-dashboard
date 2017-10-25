@@ -12,15 +12,23 @@ export class NavbarComponent implements OnInit {
   selectedOption: string;
   isDarkTheme = false;
   @Output() isDarkThemeSelected: EventEmitter<boolean> = new EventEmitter<boolean>();
-
-  constructor(public dialog: MdDialog, public  authService: AuthService) { }
-
+  constructor(public dialog: MdDialog, public  authService: AuthService) {
+  }
   ngOnInit() {
   }
   isScreenSmall(): boolean {
     return window.matchMedia(`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`).matches;
   }
-
+  openDialog() {
+    this.dialog.open(UserSettingsDialogComponent);
+  }
+  pickTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
+    this.isDarkThemeSelected.emit(this.isDarkTheme);
+  }
+  logout(){
+    this.authService.signOut();
+  }
 
 }
 @Component({

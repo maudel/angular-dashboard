@@ -11,6 +11,8 @@ import { Aiaconfig } from '../../core/models/aiaconfig';
 })
 export class ReadersComponent implements OnInit, AfterViewInit{
   rows: Aiaconfig[] ;
+  expanded: any = {};
+
   temp = [];
   sideElems = [];
   columns = [
@@ -27,6 +29,7 @@ export class ReadersComponent implements OnInit, AfterViewInit{
 
   }
   ngOnInit() {
+
     this.$aiaconfigservice.getReadersData().then(
        response => {
          this.rows = response;
@@ -127,6 +130,15 @@ export class ReadersComponent implements OnInit, AfterViewInit{
     return this.columns.find(c => {
       return c.name === col.name;
     });
+  }
+
+  toggleExpandRow(row) {
+    console.log('Toggled Expand Row!', row);
+    this.table.rowDetail.toggleExpandRow(row);
+  }
+
+  onDetailToggle(event) {
+    console.log('Detail Toggled', event);
   }
 
 }
