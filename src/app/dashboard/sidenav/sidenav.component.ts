@@ -15,7 +15,7 @@ export class SidenavComponent implements OnInit {
     this.sideElems = [
       {
         id: 'config',
-        name: 'Configuration',
+        name: 'CN',
         summary: 'See Configuration pages ',
         items: [
           {id: 'configuration/hardware', name: 'Hardware', examples: ['autocomplete-overview']},
@@ -26,41 +26,12 @@ export class SidenavComponent implements OnInit {
       },
       {
         id: 'view',
-        name: 'View',
+        name: 'Germany',
         summary: 'See views',
         items: [
           {id: 'view/tag-viewer', name: 'Tag Viewer', examples: ['menu-icons']},
           {id: 'view/report-viewer', name: 'Report Viewer', examples: ['sidenav-fab']}]
-      },
-      {
-        id: 'status',
-        name: 'Status',
-        summary: 'See Status',
-        items: [
-          {id: 'status/reader-statistics', name: 'Reader Statistics ', examples: ['list-sections']},
-          {id: 'status/eNodes-component', name: 'eNode Statistics ', examples: ['list-sections']},
-          {id: 'status/sensors-statistics', name: 'Sensor Statistics ', examples: ['list-sections']},
-          {id: 'status/ale-statistics', name: 'ale Statistics ', examples: ['list-sections']},
-        ]
-      },
-      {
-        id: 'saveRestore',
-        name: 'Save/Restore',
-        summary: 'Buttons, button toggles, icons, progress spinners, progress bars',
-        items: [
-          {id: 'save-restore', name: 'MCON save/restore', examples: ['button-types']},
-        ]
-      }, {
-        id: 'help',
-        name: 'Help',
-        summary: 'Dialogs, tooltips, snackbars',
-        items: [
-          {id: 'help/about', name: 'About', examples: ['dialog-result']},
-          {id: 'help/star-3000-upgrade', name: 'STAR 3000 Upgrade', examples: ['tooltip-position']},
-          {id: 'help/starflex-upgrade', name: 'StarFlex Upgrade', examples: ['snack-bar-component']},
-          {id: 'help/mcon-upgrade', name: 'MCON Upgrade', examples: ['snack-bar-component']},
-        ]
-      },
+      }
     ];
   }
   isScreenSmall(): boolean {
