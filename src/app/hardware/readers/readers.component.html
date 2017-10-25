@@ -1,15 +1,15 @@
-<!--<md-card>-->
+<!--<mat-card>-->
     <!--<div *ngFor='let col of allColumns'>-->
-      <!--<md-checkbox-->
+      <!--<mat-checkbox-->
         <!--type='checkbox'-->
         <!--[id]="col.name"-->
         <!--(click)='toggle(col)'-->
         <!--[checked]='isChecked(col)'-->
-      <!--&gt;</md-checkbox>-->
+      <!--&gt;</mat-checkbox>-->
       <!--<label [attr.for]="col.name">{{col.name}}</label>-->
     <!--</div>-->
 
-<!--</md-card>-->
+<!--</mat-card>-->
 <div class="margin-left-right-50">
 
   <ngx-datatable
@@ -65,12 +65,12 @@
     </ngx-datatable-column>
     <ngx-datatable-column prop="runningState" name="&nbsp;" [width]="20" [flexGrow]="1" >
       <ng-template let-value="value" ngx-datatable-cell-template>
-        <md-slide-toggle
+        <mat-slide-toggle
           class="example-margin"
           [color]="color"
           [checked]="value"
           [disabled]="disabled">
-        </md-slide-toggle>
+        </mat-slide-toggle>
       </ng-template>
       <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
         <a

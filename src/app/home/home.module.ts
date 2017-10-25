@@ -6,7 +6,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import {SharedModule} from './../shared/shared.module';
 // import { MaterialModule , MdDialog  } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {MdDialogModule, MdMenuModule, MdDialog, MdToolbarModule, MdButtonModule, MdCardModule} from '@angular/material';
+import {MatDialogModule, MatMenuModule, MatDialog, MatToolbarModule, MatButtonModule, MatCardModule} from '@angular/material';
 
 
 @NgModule({
@@ -16,9 +16,9 @@ import {MdDialogModule, MdMenuModule, MdDialog, MdToolbarModule, MdButtonModule,
     HomeRoutingModule,
     // MaterialModule.forRoot(),
     FlexLayoutModule,
-    MdDialogModule,
-    MdToolbarModule,
-    MdCardModule,
+    MatDialogModule,
+    MatToolbarModule,
+    MatCardModule,
     SharedModule
 
   ],

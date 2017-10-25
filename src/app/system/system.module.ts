@@ -9,24 +9,24 @@ import { SecurityComponent } from './security/security.component';
 import { SchedulerComponent } from './scheduler/scheduler.component';
 import { NetworkComponent } from './network/network.component';
 import { SystemComponent } from './system.component';
-import {MdToolbarModule, MdButtonModule, MdCardModule, MdRadioModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule, MdSidenavModule} from '@angular/material';
+import {MatToolbarModule, MatButtonModule, MatCardModule, MatRadioModule, MatInputModule, MatSliderModule, MatSlideToggleModule, MatTabsModule, MatIconModule, MatSidenavModule} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
     CommonModule,
     SystemRoutingModule,
-    MdToolbarModule,
-    MdButtonModule,
-    MdIconModule,
-    MdSidenavModule,
-    MdTabsModule,
-    MdSliderModule,
-    MdSlideToggleModule,
-    MdInputModule,
-    MdCardModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatTabsModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatInputModule,
+    MatCardModule,
     FlexLayoutModule,
-    MdRadioModule
+    MatRadioModule
 
   ],
   declarations: [

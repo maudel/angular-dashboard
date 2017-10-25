@@ -7,28 +7,28 @@ import { ReaderStatisticsComponent } from './reader-statistics/reader-statistics
 import { ENodesStatisticsComponent } from './e-nodes-statistics/e-nodes-statistics.component';
 import { AleStatisticsComponent } from './ale-statistics/ale-statistics.component';
 import { SensorsStatisticsComponent } from './sensors-statistics/sensors-statistics.component';
-import {MdToolbarModule, MdTableModule, MdButtonModule, MdInputModule, MdSliderModule, MdSlideToggleModule,
-  MdTabsModule, MdIconModule, MdSidenavModule} from '@angular/material';
+import {MatToolbarModule, MatTableModule, MatButtonModule, MatInputModule, MatSliderModule, MatSlideToggleModule,
+  MatTabsModule, MatIconModule, MatSidenavModule} from '@angular/material';
 @NgModule({
   imports: [
     CommonModule,
     StatusRoutingModule,
-    MdToolbarModule,
-    MdButtonModule,
-    MdIconModule,
-    MdSidenavModule,
-    MdTabsModule,
-    MdSliderModule,
-    MdSlideToggleModule,
-    MdInputModule,
-    MdToolbarModule,
-    MdButtonModule,
-    MdIconModule,
-    MdSidenavModule,
-    MdSliderModule,
-    MdSlideToggleModule,
-    MdInputModule,
-    MdTableModule
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatTabsModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatInputModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatInputModule,
+    MatTableModule
 
   ],
   declarations: [

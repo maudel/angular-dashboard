@@ -1,64 +1,64 @@
 <div class="content"  fxLayoutGap="16px">
-  <md-card fxFlex="40">
-    <md-card-title>
+  <mat-card fxFlex="40">
+    <mat-card-title>
       Inventory Mode Generator
-    </md-card-title>
+    </mat-card-title>
     <form #form="ngForm" >
       <div fxLayout="column" fxLayoutGap="8px">
-        <md-input-container>
-          <input mdInput ngModel name="name" placeholder="Name" required>
-        </md-input-container>
-        <md-input-container>
-          <input mdInput ngModel name="ntags" placeholder="Estimated # of tags" required>
-        </md-input-container>
+        <mat-form-field>
+          <input matInput ngModel name="name" placeholder="Name" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput ngModel name="ntags" placeholder="Estimated # of tags" required>
+        </mat-form-field>
 
-        <md-input-container>
-          <input mdInput ngModel name="nantennas" placeholder="Total # of antennas" required>
-        </md-input-container>
-        <md-input-container>
-          <input mdInput ngModel name="refreshRate" placeholder="Refresh Rate (minutes)" required>
-        </md-input-container>
+        <mat-form-field>
+          <input matInput ngModel name="nantennas" placeholder="Total # of antennas" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput ngModel name="refreshRate" placeholder="Refresh Rate (minutes)" required>
+        </mat-form-field>
 
       </div>
 
     </form>
 
-  </md-card>
+  </mat-card>
 
 
-  <md-card fxFlex="40"  fxLayoutGap="14px">
-    <md-card-title>
+  <mat-card fxFlex="40"  fxLayoutGap="14px">
+    <mat-card-title>
       Inventory Mode Assignments
-    </md-card-title>
+    </mat-card-title>
     <form #form="ngForm" >
       <div fxLayout="column" fxLayoutGap="8px">
 
-        <md-input-container>
-          <input mdInput ngModel name="name" placeholder="Full name" required>
-        </md-input-container>
+        <mat-form-field>
+          <input matInput ngModel name="name" placeholder="Full name" required>
+        </mat-form-field>
 
-        <md-input-container>
-          <textarea mdInput ngModel name="details" placeholder="Details" rows="15" cols="60" required></textarea>
-        </md-input-container>
+        <mat-form-field>
+          <textarea matInput ngModel name="details" placeholder="Details" rows="15" cols="60" required></textarea>
+        </mat-form-field>
 
         <div fxLayout="row" fxLayoutGap="24px">
-          <md-checkbox ngModel name="isAdmin">Is Admin?</md-checkbox>
-          <md-checkbox ngModel name="isCool">Is Cool?</md-checkbox>
+          <mat-checkbox ngModel name="isAdmin">Is Admin?</mat-checkbox>
+          <mat-checkbox ngModel name="isCool">Is Cool?</mat-checkbox>
         </div>
       </div>
 
     </form>
-  </md-card>
+  </mat-card>
 
 
-  <!--<md-card fxFlex="80">-->
-    <!--<md-icon svgIcon="avatars:{{selectedUser.avatar}}" class="avatar"></md-icon>-->
+  <!--<mat-card fxFlex="80">-->
+    <!--<mat-icon svgIcon="avatars:{{selectedUser.avatar}}" class="avatar"></mat-icon>-->
     <!--<h2>{{selectedUser.name}}</h2>-->
     <!--<p>{{selectedUser.details}}</p>-->
-  <!--</md-card>-->
+  <!--</mat-card>-->
 
-  <!--<md-card fxFlex fxLayout="column" fxLayoutGap="14px">-->
-    <!--<md-slide-toggle [(ngModel)]="selectedUser.isAdmin">Is Admin?</md-slide-toggle>-->
-    <!--<md-slide-toggle [(ngModel)]="selectedUser.isCool">Is Cool?</md-slide-toggle>-->
-  <!--</md-card>-->
+  <!--<mat-card fxFlex fxLayout="column" fxLayoutGap="14px">-->
+    <!--<mat-slide-toggle [(ngModel)]="selectedUser.isAdmin">Is Admin?</mat-slide-toggle>-->
+    <!--<mat-slide-toggle [(ngModel)]="selectedUser.isCool">Is Cool?</mat-slide-toggle>-->
+  <!--</mat-card>-->
 </div>

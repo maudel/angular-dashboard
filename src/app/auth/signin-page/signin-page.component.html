@@ -1,28 +1,28 @@
 <form fxLayout="column">
-  <md-input-container >
-    <input mdInput
+  <mat-form-field >
+    <input matInput
            type="text"
            required
 
            placeholder="Username">
-    <md-error>Email is invalid</md-error>
-  </md-input-container>
-  <md-input-container fxFlex="100">
-    <input mdInput
+    <mat-error>Email is invalid</mat-error>
+  </mat-form-field>
+  <mat-form-field fxFlex="100">
+    <input matInput
            type="text"
            required
            minlength="8"
            placeholder="Password">
-    <md-error>Needs to be at least 8 characters</md-error>
-  </md-input-container>
+    <mat-error>Needs to be at least 8 characters</mat-error>
+  </mat-form-field>
 
-    <!--<md-select placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">-->
-      <!--<md-option *ngFor="let language of languages" [value]="language.value">-->
+    <!--<mat-select placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">-->
+      <!--<mat-option *ngFor="let language of languages" [value]="language.value">-->
         <!--{{language.value}}-->
-      <!--</md-option>-->
-    <!--</md-select>-->
+      <!--</mat-option>-->
+    <!--</mat-select>-->
   <div fxFlex="33" fxFlexAlign="end">
-    <button md-raised-button (click)="loginUser()">Login</button>
+    <button mat-raised-button (click)="loginUser()">Login</button>
   </div>
 </form>
 

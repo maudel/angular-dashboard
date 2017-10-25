@@ -3,18 +3,18 @@
      fxLayout="column"
      fxLayoutAlign="center center"
      >
-  <md-card fxFlex="50" >
-    <md-card-subtitle><strong>Technical Data Center</strong></md-card-subtitle>
+  <mat-card fxFlex="50" >
+    <mat-card-subtitle><strong>Technical Data Center</strong></mat-card-subtitle>
     <div fxLayout="row"
          fxLayoutAlign="center center">
-      <img  md-card-image style="align-content: center; width: 150px; margin: 10px" src="../../assets/logo.png">
-      <img   md-card-image style="align-content: center; width: 80px;margin: 10px;" src="../../assets/Picture1.png">
+      <img  mat-card-image style="align-content: center; width: 150px; margin: 10px" src="../../assets/logo.png">
+      <img   mat-card-image style="align-content: center; width: 80px;margin: 10px;" src="../../assets/Picture1.png">
     </div>
 
 
-    <nav md-tab-nav-bar fxLayout="row"
+    <nav mat-tab-nav-bar fxLayout="row"
          fxLayoutAlign="center center">
-      <a md-tab-link
+      <a mat-tab-link
          routerLink="/auth/signIn"
          routerLinkActive
          [routerLinkActiveOptions]="{ exact: true }"
@@ -23,7 +23,7 @@
          fxFlex="50">
         Login
       </a>
-      <a md-tab-link
+      <a mat-tab-link
          routerLink="/auth/signUp"
          routerLinkActive
          [routerLinkActiveOptions]="{ exact: true }"
@@ -34,5 +34,5 @@
       </a>
     </nav>
     <router-outlet></router-outlet>
-  </md-card>
+  </mat-card>
 </div>

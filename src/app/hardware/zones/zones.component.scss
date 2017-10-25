@@ -5,10 +5,10 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-md-sidenav {
+mat-sidenav {
   width: 200px;
 }
-.mat-input-container {
+.mat-form-field {
   .mat-input-underline{
     position: relative !important;
     width: 10px;
@@ -16,6 +16,6 @@ md-sidenav {
 
 }
 
-md-card{
+mat-card{
   margin: 50px;
 }

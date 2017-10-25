@@ -11,8 +11,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 // import { ReadersComponent } from './readers/readers.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 // import { MaterialModule , MdDialog  } from '@angular/material';
-import {MdToolbarModule, MdButtonModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule, MdExpansionModule,
-  MdSidenavModule, MdMenuModule} from '@angular/material';
+import {MatToolbarModule, MatButtonModule, MatInputModule, MatSliderModule, MatSlideToggleModule, MatTabsModule, MatIconModule, MatExpansionModule,
+  MatSidenavModule, MatMenuModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from  '../shared/shared.module';
 import { DashboardNavbarComponent } from './dashboard-navbar/dashboard-navbar.component';
@@ -24,19 +24,19 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     DashboardRoutingModule,
     NgxDatatableModule,
     // MaterialModule.forRoot(),
-    MdToolbarModule,
-    MdButtonModule,
-    MdIconModule,
-    MdSidenavModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
     FormsModule,
     SharedModule,
-    MdTabsModule,
-    MdSliderModule,
-    MdSlideToggleModule,
-    MdInputModule,
+    MatTabsModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatInputModule,
     FlexLayoutModule,
-    MdMenuModule,
-    MdExpansionModule,
+    MatMenuModule,
+    MatExpansionModule,
   ],
   declarations: [
     SidenavComponent,

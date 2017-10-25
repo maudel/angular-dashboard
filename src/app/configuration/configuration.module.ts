@@ -3,21 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { ConfigurationRoutingModule } from './configuration-routing.module';
 import { ConfigurationComponent } from './configuration.component';
-import {MdToolbarModule, MdButtonModule, MdTableModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdTabsModule, MdIconModule, MdSidenavModule} from '@angular/material';
+import {MatToolbarModule, MatButtonModule, MatTableModule, MatInputModule, MatSliderModule, MatSlideToggleModule, MatTabsModule, MatIconModule, MatSidenavModule} from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
     ConfigurationRoutingModule,
-    MdToolbarModule,
-    MdButtonModule,
-    MdIconModule,
-    MdSidenavModule,
-    MdTabsModule,
-    MdSliderModule,
-    MdSlideToggleModule,
-    MdInputModule,
-    MdTableModule
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatTabsModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatInputModule,
+    MatTableModule
   ],
   declarations: [ConfigurationComponent]
 })
