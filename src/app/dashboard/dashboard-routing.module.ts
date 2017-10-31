@@ -15,18 +15,6 @@ const APP_ROUTES: Routes = [
       , {
         path: 'configuration',
         loadChildren: 'app/configuration/configuration.module#ConfigurationModule'
-      }, {
-        path: 'status',
-        loadChildren: 'app/status/status.module#StatusModule'
-      }, {
-        path: 'view',
-        loadChildren: 'app/view/view.module#ViewModule'
-      }, {
-        path: '',
-        loadChildren: 'app/save-restore/save-restore.module#SaveRestoreModule'
-      }, {
-        path: 'help',
-        loadChildren: 'app/help/help.module#HelpModule'
       }]
   }
 ];

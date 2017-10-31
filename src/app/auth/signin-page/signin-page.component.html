@@ -3,7 +3,6 @@
     <input matInput
            type="text"
            required
-
            placeholder="Username">
     <mat-error>Email is invalid</mat-error>
   </mat-form-field>
@@ -16,17 +15,12 @@
     <mat-error>Needs to be at least 8 characters</mat-error>
   </mat-form-field>
   <mat-form-field>
-    <mat-select placeholder="Select your Language" [(ngModel)]="selectedValue" name="food">
+    <mat-select placeholder="Select your Language" [(ngModel)]="selectedValue" name="language">
       <mat-option *ngFor="let language of languages" [value]="language.value">
         {{language.viewValue}}
       </mat-option>
     </mat-select>
   </mat-form-field>
-    <!--<mat-select placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">-->
-      <!--<mat-option *ngFor="let language of languages" [value]="language.value">-->
-        <!--{{language.value}}-->
-      <!--</mat-option>-->
-    <!--</mat-select>-->
   <div fxFlex="33" fxFlexAlign="end">
     <button mat-raised-button (click)="loginUser()">Login</button>
   </div>

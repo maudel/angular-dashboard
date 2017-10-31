@@ -8,6 +8,7 @@ import { AuthService } from '../../core/services/auth.service';
 })
 export class SigninPageComponent implements OnInit {
   public authService: any;
+  public selectedValue: any;
   languages = [
     {value: 'english', viewValue: 'English'},
     {value: 'deutsch', viewValue: 'Deutsch'},
@@ -15,10 +16,12 @@ export class SigninPageComponent implements OnInit {
   ];
   constructor($authService: AuthService) {
     this.authService = $authService;
+    this.selectedValue = this.languages[0];
   }
   ngOnInit() {
 
   }
+
   loginUser(){
     this.authService.signIn();
   }

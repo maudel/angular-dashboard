@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 // import './rxjs-operators';
-import { InitializationService } from './core/services/initialization.service';
+import {InitializationService} from './core/services/initialization.service';
+declare var PdMeta: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,12 +10,16 @@ import { InitializationService } from './core/services/initialization.service';
 export class AppComponent {
   title = 'app works!';
   isDarkTheme = false;
-  public changeTheme (event){
+
+  public changeTheme(event) {
     console.log(event)
     this.isDarkTheme = event;
   }
-  constructor ( private $initializationservice: InitializationService){
+
+  constructor(private $initializationservice: InitializationService) {
     this.$initializationservice.load();
   }
+
+
 }
 

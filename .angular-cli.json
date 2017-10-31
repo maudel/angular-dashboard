@@ -24,6 +24,12 @@
         "theme.scss"
       ],
       "scripts": [
+        "../src/assets/base.js",
+        "../src/assets/adapterJQuery.js",
+        "../src/assets/PDClasses.js",
+        "../src/assets/base.js",
+        "../src/assets/uiapplication.js",
+        "../node_modules/jquery/dist/jquery.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

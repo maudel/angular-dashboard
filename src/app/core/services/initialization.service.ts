@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AiaConfigService } from './aia-config.service';
+import "jquery";
 @Injectable()
 export class InitializationService {
 

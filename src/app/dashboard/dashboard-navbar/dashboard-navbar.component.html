@@ -20,20 +20,23 @@
     <mat-icon>menu</mat-icon>
   </button>
   <span fxFlex></span>
-
-  <button mat-button>
-    <mat-icon>play_arrow</mat-icon>
-  </button>
-  <button mat-button>
-    <mat-icon>notifications</mat-icon>
-  </button>
-  <button mat-mini-fab class="accent" >
+  <button mat-mini-fab class="accent" [matMenuTriggerFor]="menu" >
     <mat-icon>person</mat-icon>
   </button>
 
 
-  <!--<div *ngIf="!isScreenSmall()">-->
-    <!--Desktop-->
-  <!--</div>-->
 </mat-toolbar>
 
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="openDialog()">
+    <mat-icon>settings</mat-icon>
+    <span>User Settings</span>
+  </button>
+  <button mat-menu-item (click)="pickTheme()">
+    <span>Toggle Theme</span>
+  </button>
+  <button mat-menu-item (click)="logout()">
+    <mat-icon>exit_to_app</mat-icon>
+    <span>Log Out</span>
+  </button>
+</mat-menu>

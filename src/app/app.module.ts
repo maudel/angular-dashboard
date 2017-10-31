@@ -12,7 +12,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule, MatMenuModule, MatDialog, MatToolbarModule, MatButtonModule, MatInputModule, MatIconModule,
   MatProgressSpinnerModule } from '@angular/material';
-import { SpinnerComponent } from './spinner/spinner.component';
 
 // components
 // import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
@@ -35,7 +34,6 @@ import { SpinnerComponent } from './spinner/spinner.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SpinnerComponent,
     // NavbarComponent,
     // UserSettingsDialog
   ],
