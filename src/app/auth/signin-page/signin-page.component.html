@@ -15,7 +15,13 @@
            placeholder="Password">
     <mat-error>Needs to be at least 8 characters</mat-error>
   </mat-form-field>
-
+  <mat-form-field>
+    <mat-select placeholder="Select your Language" [(ngModel)]="selectedValue" name="food">
+      <mat-option *ngFor="let language of languages" [value]="language.value">
+        {{language.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
     <!--<mat-select placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">-->
       <!--<mat-option *ngFor="let language of languages" [value]="language.value">-->
         <!--{{language.value}}-->

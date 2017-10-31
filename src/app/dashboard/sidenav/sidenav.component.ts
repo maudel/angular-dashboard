@@ -18,10 +18,10 @@ export class SidenavComponent implements OnInit {
         name: 'CN',
         summary: 'See Configuration pages ',
         items: [
-          {id: 'configuration/hardware', name: 'Hardware', examples: ['autocomplete-overview']},
-          {id: 'configuration/software', name: 'Software', examples: ['checkbox-configurable']},
-          {id: 'configuration/system', name: 'System', examples: ['input-form']},
-          {id: 'configuration/admin', name: 'Admin', examples: ['input-form']},
+          {id: 'configuration/hardware', name: 'Germany', examples: ['autocomplete-overview']},
+          {id: 'configuration/software', name: 'RegionA', examples: ['checkbox-configurable']},
+          {id: 'configuration/system', name: 'RegionB', examples: ['input-form']},
+          {id: 'configuration/admin', name: 'RegionC', examples: ['input-form']},
         ]
       },
       {
@@ -29,8 +29,8 @@ export class SidenavComponent implements OnInit {
         name: 'Germany',
         summary: 'See views',
         items: [
-          {id: 'view/tag-viewer', name: 'Tag Viewer', examples: ['menu-icons']},
-          {id: 'view/report-viewer', name: 'Report Viewer', examples: ['sidenav-fab']}]
+          {id: 'view/tag-viewer', name: 'Ulm', examples: ['menu-icons']},
+          {id: 'view/report-viewer', name: 'Test City', examples: ['sidenav-fab']}]
       }
     ];
   }

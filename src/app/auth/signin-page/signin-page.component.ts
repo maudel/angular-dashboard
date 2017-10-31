@@ -8,18 +8,16 @@ import { AuthService } from '../../core/services/auth.service';
 })
 export class SigninPageComponent implements OnInit {
   public authService: any;
-
+  languages = [
+    {value: 'english', viewValue: 'English'},
+    {value: 'deutsch', viewValue: 'Deutsch'},
+    {value: 'español', viewValue: 'Español'}
+  ];
   constructor($authService: AuthService) {
     this.authService = $authService;
   }
   ngOnInit() {
-    const languages = [{
-      value: 'English'
-    },{
-      value: 'Deutsch'
-    },{
-      value: 'Chinese'
-    }]
+
   }
   loginUser(){
     this.authService.signIn();

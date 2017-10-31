@@ -1,38 +1,42 @@
 <!--<app-navbar (isDarkThemeSelected)="changeTheme($event)"></app-navbar>-->
+
 <div class="login-container"
-     fxLayout="column"
-     fxLayoutAlign="center center"
-     >
-  <mat-card fxFlex="50" >
-    <mat-card-subtitle><strong>Technical Data Center</strong></mat-card-subtitle>
-    <div fxLayout="row"
-         fxLayoutAlign="center center">
-      <img  mat-card-image style="align-content: center; width: 150px; margin: 10px" src="../../assets/logo.png">
-      <img   mat-card-image style="align-content: center; width: 80px;margin: 10px;" src="../../assets/Picture1.png">
-    </div>
+     fxLayout="row" fxLayout.xs="column"
+     fxLayoutAlign="center none">
+  <div fxFlex.xs="100"  fxFlex.gt-xs="380px"
+       fxLayout="column" fxLayout.xs="row"
+       fxLayoutAlign="center none">
+    <mat-card fxFlex.xs="100" fxFlex.gt-xs="55">
+      <mat-card-subtitle><strong>Technical Data Center</strong></mat-card-subtitle>
+      <div fxLayout="row"
+           fxLayoutAlign="center center">
+        <img  mat-card-image style="align-content: center; width: 150px; margin: 10px" src="../../assets/logo.png">
+        <img   mat-card-image style="align-content: center; width: 80px;margin: 10px;" src="../../assets/Picture1.png">
+      </div>
 
+      <!--<nav mat-tab-nav-bar fxLayout="row"-->
+           <!--fxLayoutAlign="center center">-->
+        <!--<a mat-tab-link-->
+           <!--routerLink="/auth/signIn"-->
+           <!--routerLinkActive-->
+           <!--[routerLinkActiveOptions]="{ exact: true }"-->
+           <!--#rlaLogin="routerLinkActive"-->
+           <!--[active]="rlaLogin.isActive"-->
+           <!--fxFlex="50">-->
+          <!--Login-->
+        <!--</a>-->
+        <!--<a mat-tab-link-->
+           <!--routerLink="/auth/signUp"-->
+           <!--routerLinkActive-->
+           <!--[routerLinkActiveOptions]="{ exact: true }"-->
+           <!--#rlaRegister="routerLinkActive"-->
+           <!--[active]="rlaRegister.isActive"-->
+           <!--fxFlex="50">-->
+          <!--Register-->
+        <!--</a>-->
+      <!--</nav>-->
+      <router-outlet></router-outlet>
+    </mat-card>
+  </div>
 
-    <nav mat-tab-nav-bar fxLayout="row"
-         fxLayoutAlign="center center">
-      <a mat-tab-link
-         routerLink="/auth/signIn"
-         routerLinkActive
-         [routerLinkActiveOptions]="{ exact: true }"
-         #rlaLogin="routerLinkActive"
-         [active]="rlaLogin.isActive"
-         fxFlex="50">
-        Login
-      </a>
-      <a mat-tab-link
-         routerLink="/auth/signUp"
-         routerLinkActive
-         [routerLinkActiveOptions]="{ exact: true }"
-         #rlaRegister="routerLinkActive"
-         [active]="rlaRegister.isActive"
-         fxFlex="50">
-        Register
-      </a>
-    </nav>
-    <router-outlet></router-outlet>
-  </mat-card>
 </div>

@@ -4,11 +4,14 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "dev:remote": "ng serve --proxy proxy.conf.json --host 0.0.0.0",
+    "dev:local": "ng serve --proxy proxy-local.conf.json --host 0.0.0.0",
+
+
     "start": "ng serve --proxy-config proxy-local.conf.json",
     "build:closure": "ngc -p src && yarn run closure && ./size_report.sh",
     "serve": "lite-server -c test/browser.config.json",
-    "dev:remote": "ng serve --proxy proxy.conf.json --host 0.0.0.0",
-    "dev:local": "ng serve --proxy proxy-local.conf.json --host 0.0.0.0",
+
     "build": "npm run build:local",
     "build:local": "ng build -prod --base-href . --deploy-url='/angular-mcon-static/' ",
     "build:prod": "ng build --prod --output-path=dist/angular-mcon-static/ --base-href 'http://38.107.160.180:8080/angular-mcon-static/' --deploy-url 'http://38.107.160.180:8080/angular-mcon-static/'",
@@ -65,7 +68,7 @@
     "rxjs": "^5.4.2"
   },
   "devDependencies": {
-    "@angular/cli": "^1.4.4",
+    "@angular/cli": "^1.4.9",
     "@angular/compiler-cli": "^4.3.2",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.85",

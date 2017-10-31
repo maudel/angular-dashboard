@@ -10,8 +10,9 @@ import { HttpModule } from '@angular/http';
 // import { MaterialModule , MdDialog  } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatDialogModule, MatMenuModule, MatDialog, MatToolbarModule, MatButtonModule, MatInputModule, MatIconModule} from '@angular/material';
-
+import {MatDialogModule, MatMenuModule, MatDialog, MatToolbarModule, MatButtonModule, MatInputModule, MatIconModule,
+  MatProgressSpinnerModule } from '@angular/material';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 // components
 // import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
@@ -34,6 +35,7 @@ import {MatDialogModule, MatMenuModule, MatDialog, MatToolbarModule, MatButtonMo
 @NgModule({
   declarations: [
     AppComponent,
+    SpinnerComponent,
     // NavbarComponent,
     // UserSettingsDialog
   ],
@@ -48,6 +50,7 @@ import {MatDialogModule, MatMenuModule, MatDialog, MatToolbarModule, MatButtonMo
     MatButtonModule,
     MatIconModule,
     FlexLayoutModule,
+    MatProgressSpinnerModule,
     CoreModule,
     // SharedModule,
     // routing module

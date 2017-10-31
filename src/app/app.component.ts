@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 // import './rxjs-operators';
-
+import { InitializationService } from './core/services/initialization.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,6 +12,9 @@ export class AppComponent {
   public changeTheme (event){
     console.log(event)
     this.isDarkTheme = event;
+  }
+  constructor ( private $initializationservice: InitializationService){
+    this.$initializationservice.load();
   }
 }
 

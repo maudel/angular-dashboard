@@ -16,8 +16,8 @@ export class ReadersComponent implements OnInit, AfterViewInit{
   temp = [];
   sideElems = [];
   columns = [
-    { name: 'aiaName' },
-    { name: 'aiaDottedIP' },
+    { name: 'GeneralState' },
+    { name: 'LifeCycle' },
     { name: 'macAddress' },
     { name: 'aiaDottedIP' }
   ];

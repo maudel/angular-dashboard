@@ -1,8 +1,9 @@
 [
   {
     "context": "/",
-    "target": "http://38.107.160.180:8080/angular-mcon-static/",
-    "secure": false
+    "target": "http://tdc-dev.otrisprojects.de:8081/tdcwebapp140",
+    "secure": false,
+    "changeOrigin": true
   }
 ]
 

@@ -6,15 +6,24 @@
                class="sidenav">
 
     <nav *ngFor="let elem of sideElems">
-      <h3>{{elem.name}}</h3>
-      <ul>
-        <li *ngFor="let component of elem.items">
-          <a [routerLink]="component.id"
-             routerLinkActive="docs-component-viewer-sidenav-item-selected">
-            {{component.name}}
-          </a>
-        </li>
-      </ul>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h3>{{elem.name}}</h3>
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <ul>
+          <li *ngFor="let component of elem.items">
+            <a [routerLink]="component.id"
+               routerLinkActive="docs-component-viewer-sidenav-item-selected">
+              {{component.name}}
+            </a>
+          </li>
+        </ul>
+      </mat-expansion-panel>
+
     </nav>
 
   </mat-sidenav>

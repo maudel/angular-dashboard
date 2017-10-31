@@ -10,6 +10,7 @@ import { AuthService} from './services/auth.service';
 import { GenericService } from './services/generic.service';
 import { ZoneService } from './services/zone.service';
 import { SaveRestoreService} from './services/save-restore.service';
+import { InitializationService} from './services/initialization.service';
 // http related
 
 import { HttpModule, RequestOptions } from '@angular/http';
@@ -38,7 +39,8 @@ export const firebaseConfig = {
     GenericService,
     AuthService,
     ZoneService,
-    SaveRestoreService
+    SaveRestoreService,
+    InitializationService
   ]
 })
 export class CoreModule { }

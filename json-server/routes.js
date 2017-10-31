@@ -10,6 +10,12 @@ module.exports = {
   },
   '/antennas': {
     get: 'exciters.json'
+  },
+  '/cn': {
+    get: 'cn.json'
+  },
+  '/languages': {
+    get: 'languages.json'
   }
 };
 

@@ -1,0 +1,23 @@
+name: <%= ENV['PWD'].gsub('.', '@+') %>
+root: ./
+
+windows:
+  - editor:
+      layout: 8b7e,272x73,0,0{173x73,0,0,2,98x73,174,0[98x27,174,0,5,98x45,174,28,7]}
+      panes:
+        - src:
+          - nvim -S
+        -
+        - echo 'npm start'
+  - build:
+      layout: main-vertical
+      panes:
+        - nvim docs/CHANGELOG.md
+        - echo 'npm run track'
+        - # grip --norefresh
+  - dev-server:
+      layout: main-vertical
+      root: ./json-server
+      panes:
+        - npm install && npm start
+
