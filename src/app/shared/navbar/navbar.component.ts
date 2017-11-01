@@ -1,6 +1,6 @@
 import { Component, OnInit, Output , EventEmitter } from '@angular/core';
 const SMALL_WIDTH_BREAKPOINT = 840;
-import {MdDialog, MdDialogRef} from '@angular/material';
+import {MatDialog, MatDialogRef} from '@angular/material';
 import {AuthService} from '../../core/services/auth.service';
 
 @Component({
@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   selectedOption: string;
   isDarkTheme = false;
   @Output() isDarkThemeSelected: EventEmitter<boolean> = new EventEmitter<boolean>();
-  constructor(public dialog: MdDialog, public  authService: AuthService) {
+  constructor(public dialog: MatDialog, public  authService: AuthService) {
   }
   ngOnInit() {
   }

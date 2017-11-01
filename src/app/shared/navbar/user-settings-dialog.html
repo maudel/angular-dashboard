@@ -1,28 +1,28 @@
 <form fxFlex="500px" fxFlex.gt-xs="500px" fxFlex.xs="285px" #form="ngForm"  ngNativeValidate>
   <div fxLayout="column" fxLayoutGap="24px">
-    <h1 md-dialog-title>General</h1>
+    <h1 matDialogTitle>General</h1>
     <div fxLayout="row" >
-      <md-input-container >
-        <input mdInput placeholder="Enter your Email" value="edison@gmail.com">
-      </md-input-container>
+      <mat-form-field >
+        <input matInput placeholder="Enter your Email" value="edison@gmail.com">
+      </mat-form-field>
     </div>
-    <md-input-container>
+    <mat-form-field>
       <div fxLayout="row" fxLayoutAlign="start center">
-        <input mdInput placeholder="Username" value="edison">
+        <input matInput placeholder="Username" value="edison">
       </div>
-    </md-input-container>
-    <h1 md-dialog-title>Change Password</h1>
-    <md-input-container>
-    <input type="password" mdInput placeholder="New Password" value="edison@gmail.com">
-    </md-input-container>
-    <md-input-container>
-    <input type="password" mdInput placeholder="Confirm New Password" value="edison">
-    </md-input-container>
+    </mat-form-field>
+    <h1 matDialogTitle>Change Password</h1>
+    <mat-form-field>
+    <input type="password" matInput placeholder="New Password" value="edison@gmail.com">
+    </mat-form-field>
+    <mat-form-field>
+    <input type="password" matInput placeholder="Confirm New Password" value="edison">
+    </mat-form-field>
   </div>
-  <md-dialog-actions align="end">
-    <button md-button type="button">Cancel</button>
-    <button md-button color="accent">Save User</button>
-  </md-dialog-actions>
+  <mat-dialog-actions align="end">
+    <button mat-button type="button">Cancel</button>
+    <button mat-button color="accent">Save User</button>
+  </mat-dialog-actions>
 </form>
 
 

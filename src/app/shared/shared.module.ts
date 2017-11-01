@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MdToolbarModule, MdMenuModule, MdButtonModule, MdIconModule, MdInputModule, MdDialogModule } from '@angular/material';
+import { MatToolbarModule, MatMenuModule, MatButtonModule, MatIconModule, MatInputModule, MatDialogModule } from '@angular/material';
 import { NavbarComponent, UserSettingsDialogComponent } from './navbar/navbar.component';
 // import { MaterialModule , MdDialog  } from '@angular/material';
 import {RouterModule} from '@angular/router';
@@ -11,14 +11,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     CommonModule,
     // MaterialModule.forRoot(),
-    MdToolbarModule,
+    MatToolbarModule,
     RouterModule,
-    MdMenuModule,
-    MdButtonModule,
-    MdIconModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
     FlexLayoutModule,
-    MdInputModule,
-    MdDialogModule,
+    MatInputModule,
+    MatDialogModule,
     FormsModule
   ],
   declarations: [

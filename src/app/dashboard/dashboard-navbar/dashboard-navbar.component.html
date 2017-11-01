@@ -1,14 +1,14 @@
-<md-toolbar color="primary">
+<mat-toolbar color="primary">
   <!--<div *ngIf="isScreenSmall()">-->
-    <!--<a md-button routerLink="/">-->
-  <!--<md-icon class="back-button">chevron_left-->
-  <!--</md-icon>-->
+    <!--<a mat-button routerLink="/">-->
+  <!--<mat-icon class="back-button">chevron_left-->
+  <!--</mat-icon>-->
   <!--</a>-->
   <!--<span> Dashboard-->
   <!--</span>-->
   <!--</div>-->
 
-  <a md-button  routerLink="/" aria-label="Angular Material">
+  <a mat-button  routerLink="/" aria-label="Angular Material">
     <img class="docs-angular-logo"
          src="../../assets/angular-white-transparent.svg"
          alt="Angular">
@@ -16,24 +16,24 @@
   </a>
 
 
-  <button  md-button (click)="toggleSidenav.emit()">
-    <md-icon>menu</md-icon>
+  <button  mat-button (click)="toggleSidenav.emit()">
+    <mat-icon>menu</mat-icon>
   </button>
   <span fxFlex></span>
 
-  <button md-button>
-    <md-icon>play_arrow</md-icon>
+  <button mat-button>
+    <mat-icon>play_arrow</mat-icon>
   </button>
-  <button md-button>
-    <md-icon>notifications</md-icon>
+  <button mat-button>
+    <mat-icon>notifications</mat-icon>
   </button>
-  <button md-mini-fab class="accent" >
-    <md-icon>person</md-icon>
+  <button mat-mini-fab class="accent" >
+    <mat-icon>person</mat-icon>
   </button>
 
 
   <!--<div *ngIf="!isScreenSmall()">-->
     <!--Desktop-->
   <!--</div>-->
-</md-toolbar>
+</mat-toolbar>
 

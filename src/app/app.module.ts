@@ -10,7 +10,7 @@ import { HttpModule } from '@angular/http';
 // import { MaterialModule , MdDialog  } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MdDialogModule, MdMenuModule, MdDialog, MdToolbarModule, MdButtonModule, MdInputModule, MdIconModule} from '@angular/material';
+import {MatDialogModule, MatMenuModule, MatDialog, MatToolbarModule, MatButtonModule, MatInputModule, MatIconModule} from '@angular/material';
 
 
 // components
@@ -41,12 +41,12 @@ import {MdDialogModule, MdMenuModule, MdDialog, MdToolbarModule, MdButtonModule,
     BrowserModule,
     FormsModule,
     HttpModule,
-    MdToolbarModule,
-    MdMenuModule,
-    MdInputModule,
-    MdDialogModule,
-    MdButtonModule,
-    MdIconModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatInputModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatIconModule,
     FlexLayoutModule,
     CoreModule,
     // SharedModule,
@@ -61,7 +61,7 @@ import {MdDialogModule, MdMenuModule, MdDialog, MdToolbarModule, MdButtonModule,
   ]
 })
 export class AppModule {
-  constructor(public dialog: MdDialog){
+  constructor(public dialog: MatDialog){
 
   }
 
