@@ -13,7 +13,6 @@ import { SaveRestoreService} from './services/save-restore.service';
 // http related
 
 import { HttpModule, RequestOptions } from '@angular/http';
-import { StoreModule } from '@ngrx/store';
 
 // Must export the config
 export const firebaseConfig = {
