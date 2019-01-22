@@ -1,7 +1,7 @@
 import {ModuleWithProviders, NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {SidenavComponent} from './sidenav/sidenav.component';
-
+import { DashboardComponent} from './dashboard.component';
 // import { AuthGuard } from './core/guards/auth.guard';
 
 const APP_ROUTES: Routes = [
@@ -10,12 +10,14 @@ const APP_ROUTES: Routes = [
     component: SidenavComponent,
     children: [{
       path: '',
-      redirectTo: 'configuration',
-    }
-      , {
+      component: DashboardComponent
+    }, {
         path: 'configuration',
         loadChildren: 'app/configuration/configuration.module#ConfigurationModule'
-      }]
+    }, {
+      path: 'users',
+      loadChildren: 'app/users/users.module#UsersModule'
+    }]
   }
 ];
 

@@ -1,36 +1,25 @@
-<mat-toolbar color="primary">
-  <!--<div *ngIf="isScreenSmall()">-->
-    <!--<a mat-button routerLink="/">-->
-  <!--<mat-icon class="back-button">chevron_left-->
-  <!--</mat-icon>-->
-  <!--</a>-->
-  <!--<span> Dashboard-->
-  <!--</span>-->
-  <!--</div>-->
-
-  <a mat-button  routerLink="/" aria-label="Angular Material">
-    <img class="docs-angular-logo"
-         src="../../assets/angular-white-transparent.svg"
-         alt="Angular">
-    <span>MCON</span>
-  </a>
-
-
+<mat-toolbar color="primary" >
   <button  mat-button (click)="toggleSidenav.emit()">
     <mat-icon>menu</mat-icon>
   </button>
+  <a mat-button routerLink="/dashboard" aria-label="Angular Material">
+    <span>SFE - Sistema de Facturacion Electronica</span>
+  </a>
   <span fxFlex></span>
-  <button mat-mini-fab class="accent" [matMenuTriggerFor]="menu" >
-    <mat-icon>person</mat-icon>
+
+
+  <button mat-button [matMenuTriggerFor]="menu" fxLayout="row" fxFlexAlign="space-around" >
+    <mat-icon >arrow_drop_down</mat-icon>
+    <span>Marco Coronado</span>
+    <button mat-mini-fab>
+      <mat-icon>person_rounded</mat-icon>
+    </button>
   </button>
-
-
 </mat-toolbar>
-
 <mat-menu #menu="matMenu">
   <button mat-menu-item (click)="openDialog()">
     <mat-icon>settings</mat-icon>
-    <span>User Settings</span>
+    <span>Perfil de Usuario</span>
   </button>
   <button mat-menu-item (click)="pickTheme()">
     <span>Toggle Theme</span>

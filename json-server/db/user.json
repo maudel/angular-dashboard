@@ -1,0 +1,23 @@
+[
+  {
+    "id" : 1,
+    "nombre" : "Franz Ferdinand",
+    "acciones" : "169.254.1.2",
+    "fecha_creacion" : "YES",
+    "activo" : true,
+  },
+  {
+    "id" : 1,
+    "nombre" : "Marco Antonio Coronado",
+    "acciones" : "169.254.1.2",
+    "fecha_creacion" : "YES",
+    "activo" : true,
+  },
+  {
+    "id" : 1,
+    "nombre" : "Juan Jose Torrez",
+    "acciones" : "169.254.1.2",
+    "fecha_creacion" : "YES",
+    "activo" : false,
+  }
+]

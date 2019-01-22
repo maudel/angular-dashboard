@@ -9,7 +9,7 @@ import { HardwareRoutingModule } from './hardware-routing.module';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { FormsModule } from '@angular/forms';
 import {MatToolbarModule, MatTableModule, MatButtonModule, MatInputModule, MatSliderModule, MatSlideToggleModule,
-  MatTabsModule, MatIconModule, MatSidenavModule} from '@angular/material';
+  MatTabsModule, MatIconModule, MatSidenavModule, MatCardModule , MatCheckboxModule} from '@angular/material';
 import { HardwareComponent } from './hardware.component';
 
 @NgModule({
@@ -33,7 +33,9 @@ import { HardwareComponent } from './hardware.component';
     MatSliderModule,
     MatSlideToggleModule,
     MatInputModule,
-    MatTableModule
+    MatTableModule,
+    MatCardModule,
+    MatCheckboxModule
 
 
   ],

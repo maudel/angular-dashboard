@@ -6,7 +6,7 @@ import { NavbarComponent, UserSettingsDialogComponent } from './navbar/navbar.co
 import {RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { MaterialModule } from './material.module';
 @NgModule({
   imports: [
     CommonModule,
@@ -19,7 +19,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule,
     MatInputModule,
     MatDialogModule,
-    FormsModule
+    FormsModule,
+    MaterialModule
   ],
   declarations: [
     NavbarComponent,
@@ -29,7 +30,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     UserSettingsDialogComponent
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    MaterialModule
   ]
 })
 export class SharedModule { }

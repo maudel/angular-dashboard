@@ -1,4 +1,5 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, ViewChild } from '@angular/core';
+import {MatExpansionPanel} from "@angular/material";
 const SMALL_WIDTH_BREAKPOINT = 840;
 
 @Component({
@@ -8,6 +9,7 @@ const SMALL_WIDTH_BREAKPOINT = 840;
 })
 export class SidenavComponent implements OnInit {
   sideElems = [];
+  @ViewChild('myaccordion') myPanels: MatExpansionPanel;
 
   constructor() { }
 
@@ -15,25 +17,54 @@ export class SidenavComponent implements OnInit {
     this.sideElems = [
       {
         id: 'config',
-        name: 'CN',
+        name: 'Seguridad',
         summary: 'See Configuration pages ',
         items: [
-          {id: 'configuration/hardware', name: 'Germany', examples: ['autocomplete-overview']},
-          {id: 'configuration/software', name: 'RegionA', examples: ['checkbox-configurable']},
-          {id: 'configuration/system', name: 'RegionB', examples: ['input-form']},
-          {id: 'configuration/admin', name: 'RegionC', examples: ['input-form']},
+          {id: 'users', name: 'Usuarios', examples: ['autocomplete-overview']},
+          {id: 'configuration/software', name: 'Grupos', examples: ['checkbox-configurable']},
+          {id: 'configuration/system', name: 'Roles', examples: ['input-form']},
+          {id: 'configuration/admin', name: 'Recursos', examples: ['input-form']},
         ]
       },
       {
         id: 'view',
-        name: 'Germany',
+        name: 'Administracion',
         summary: 'See views',
         items: [
-          {id: 'view/tag-viewer', name: 'Ulm', examples: ['menu-icons']},
-          {id: 'view/report-viewer', name: 'Test City', examples: ['sidenav-fab']}]
+          {id: 'view/tag-viewer', name: 'Empresa', examples: ['menu-icons']},
+          {id: 'view/report-viewer', name: 'Sucursal', examples: ['sidenav-fab']}]
+      },
+      {
+        id: 'view',
+        name: 'Parametros',
+        summary: 'See views',
+        items: [
+          {id: 'view/tag-viewer', name: 'Monitoreo', examples: ['menu-icons']},
+          {id: 'view/report-viewer', name: 'Dominio', examples: ['sidenav-fab']}]
+      },
+      {
+        id: 'view',
+        name: 'Monitoreo',
+        summary: 'See views',
+        items: [
+          {id: 'view/tag-viewer', name: 'Bitacora', examples: ['menu-icons']},
+          {id: 'view/report-viewer', name: 'Conexiones', examples: ['sidenav-fab']},
+          {id: 'view/report-viewer', name: 'Jobs', examples: ['sidenav-fab']}]
+
+      },
+      {
+        id: 'view',
+        name: 'Documentos Fiscales',
+        summary: 'See views',
+        items: [
+          {id: 'view/tag-viewer', name: 'Facturas', examples: ['menu-icons']}]
+
+
       }
+
     ];
   }
+
   isScreenSmall(): boolean {
     return window.matchMedia(`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`).matches;
   }

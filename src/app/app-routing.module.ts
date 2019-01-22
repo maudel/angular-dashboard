@@ -3,7 +3,8 @@ import {Routes, RouterModule} from '@angular/router';
 
 
 import { AuthGuard } from './core/guards/auth.guard';
-
+import {TestDashboradComponent} from './test-dashborad/test-dashborad.component'
+import { TestTableComponent} from './test-table/test-table.component'
 const APP_ROUTES: Routes = [
   {
     path: 'dashboard',
@@ -17,6 +18,14 @@ const APP_ROUTES: Routes = [
   }, {
     path: 'auth',
     loadChildren: 'app/auth/auth.module#AuthModule'
+  },
+  {
+    path: 'test',
+    component: TestDashboradComponent
+  },
+  {
+    path: 'table',
+    component: TestTableComponent
   }
 ];
 

@@ -9,7 +9,7 @@ mat-sidenav {
   width: 200px;
 }
 .mat-form-field {
-  .mat-input-underline{
+  .mat-form-field-underline{
     position: relative !important;
     width: 10px;
   }
@@ -34,4 +34,7 @@ mat-card{
   .mobile-hidden {
     display: initial;
   }
+}
+ngx-datatable{
+  height: 80vh;
 }

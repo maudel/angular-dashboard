@@ -17,7 +17,7 @@ $foreground: map-get($theme, foreground);
 
   .sidenav{
     box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
-    padding-bottom: 72px;
+    //padding-bottom: 72px;
     width: $sidenav-width;
     bottom: 0;
     overflow: auto;

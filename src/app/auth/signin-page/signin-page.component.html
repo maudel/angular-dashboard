@@ -6,20 +6,13 @@
            placeholder="Username">
     <mat-error>Email is invalid</mat-error>
   </mat-form-field>
-  <mat-form-field fxFlex="100">
+  <mat-form-field >
     <input matInput
            type="text"
            required
            minlength="8"
            placeholder="Password">
     <mat-error>Needs to be at least 8 characters</mat-error>
-  </mat-form-field>
-  <mat-form-field>
-    <mat-select placeholder="Select your Language" [(ngModel)]="selectedValue" name="language">
-      <mat-option *ngFor="let language of languages" [value]="language.value">
-        {{language.viewValue}}
-      </mat-option>
-    </mat-select>
   </mat-form-field>
   <div fxFlex="33" fxFlexAlign="end">
     <button mat-raised-button (click)="loginUser()">Login</button>

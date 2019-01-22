@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { FlexLayoutModule } from '@angular/flex-layout';
+// import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule, MatInputModule, MatTabsModule , MatButtonModule,MatSelectModule } from '@angular/material';
 import { SharedModule  } from './../shared/shared.module';
 
@@ -18,7 +18,7 @@ import { AuthComponent } from './auth.component';
     MatButtonModule,
     CommonModule,
     FormsModule,
-    FlexLayoutModule,
+    // FlexLayoutModule,
     MatCardModule,
     MatInputModule,
     MatTabsModule,

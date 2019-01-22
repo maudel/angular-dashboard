@@ -12,11 +12,12 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 // import { MaterialModule , MdDialog  } from '@angular/material';
 import {MatToolbarModule, MatButtonModule, MatInputModule, MatSliderModule, MatSlideToggleModule, MatTabsModule, MatIconModule, MatExpansionModule,
-  MatSidenavModule, MatMenuModule} from '@angular/material';
+  MatSidenavModule, MatMenuModule, MatCardModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from  '../shared/shared.module';
 import { DashboardNavbarComponent } from './dashboard-navbar/dashboard-navbar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DashboardComponent } from './dashboard.component';
 
 @NgModule({
   imports: [
@@ -37,10 +38,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule,
     MatMenuModule,
     MatExpansionModule,
+    MatCardModule
   ],
   declarations: [
     SidenavComponent,
-    DashboardNavbarComponent
+    DashboardNavbarComponent,
+    DashboardComponent
   ]
 })
 export class DashboardModule { }

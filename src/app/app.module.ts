@@ -1,5 +1,5 @@
 import { AppComponent } from './app.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
+// import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // modules
@@ -11,7 +11,10 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule, MatMenuModule, MatDialog, MatToolbarModule, MatButtonModule, MatInputModule, MatIconModule,
-  MatProgressSpinnerModule } from '@angular/material';
+  MatProgressSpinnerModule, MatGridListModule, MatCardModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
+import { TestDashboradComponent } from './test-dashborad/test-dashborad.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { TestTableComponent } from './test-table/test-table.component';
 
 // components
 // import { NavbarComponent, UserSettingsDialog } from './navbar/navbar.component';
@@ -34,6 +37,8 @@ import {MatDialogModule, MatMenuModule, MatDialog, MatToolbarModule, MatButtonMo
 @NgModule({
   declarations: [
     AppComponent,
+    TestDashboradComponent,
+    TestTableComponent,
     // NavbarComponent,
     // UserSettingsDialog
   ],
@@ -47,13 +52,19 @@ import {MatDialogModule, MatMenuModule, MatDialog, MatToolbarModule, MatButtonMo
     MatDialogModule,
     MatButtonModule,
     MatIconModule,
-    FlexLayoutModule,
+    // FlexLayoutModule,
     MatProgressSpinnerModule,
     CoreModule,
     // SharedModule,
     // routing module
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    LayoutModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent],
